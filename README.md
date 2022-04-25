@@ -1,6 +1,6 @@
 # **Takım İsmi**
 
-Takım X
+Virtuoso
 
 # Ürün İle İlgili Bilgiler
 
