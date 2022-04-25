@@ -1,12 +1,28 @@
-# Takım İsmi
+# **Takım İsmi**
 
-Virtuoso
+Takım X
 
-## Ürün İle İlgili Bilgiler
+# Ürün İle İlgili Bilgiler
 
-# Takım Elemanları
-# Ürün İsmi 
-# Ürün Açıklaması
-# Ürün Özellikleri
-# Hedef Kitle
-# Product Backlog URL
+## Takım Elemanları
+
+
+
+## Ürün İsmi
+-Vivance: Dinle ve Öğren
+
+
+## Ürün Açıklaması
+
+
+## Ürün Özellikleri
+
+
+
+## Hedef Kitle
+
+
+
+## Product Backlog URL
+
+
