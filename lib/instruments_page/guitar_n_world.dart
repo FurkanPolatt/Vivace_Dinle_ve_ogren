@@ -10,6 +10,19 @@ class GuitarnWorld extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      extendBodyBehindAppBar: true,
+      appBar: AppBar(
+        title: Opacity(
+          opacity: 0.80,
+          child: Text(
+            'Telli Enstrümanlar',
+            style: GoogleFonts.pacifico(fontSize: 25),
+          ),
+        ),
+        centerTitle: true,
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+      ),
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
@@ -53,7 +66,7 @@ class GuitarnWorld extends StatelessWidget {
                               ),
                               image: AssetImage(
                                   'assets/page_images/classic_guitar.jpg'),
-                              height: 160,
+                              height: 150,
                               fit: BoxFit.cover,
                             ),
                           ),
@@ -108,7 +121,7 @@ class GuitarnWorld extends StatelessWidget {
                 SizedBox(
                   height: 10,
                 ),
-                SafeArea(
+                Expanded(
                   child: Row(
                     children: [
                       Expanded(
@@ -149,7 +162,7 @@ class GuitarnWorld extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: 10),
-                SafeArea(
+                Expanded(
                   child: Row(
                     children: [
                       Expanded(
@@ -180,7 +193,7 @@ class GuitarnWorld extends StatelessWidget {
                               ),
                               image: AssetImage(
                                   'assets/page_images/bass_guitar.jpg'),
-                              height: 150,
+                              height: 140,
                               fit: BoxFit.cover,
                             ),
                           ),

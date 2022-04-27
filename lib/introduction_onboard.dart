@@ -68,7 +68,9 @@ class _IntroductionPageState extends State<IntroductionPage> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 GestureDetector(
-                  child: Text('Geç'),
+                  child: Text('Geç',
+                      style:
+                          TextStyle(fontSize: 15, fontWeight: FontWeight.bold)),
                   onTap: () {
                     _controller.jumpToPage(2);
                   },
@@ -83,7 +85,9 @@ class _IntroductionPageState extends State<IntroductionPage> {
                 ),
                 onLastPage
                     ? GestureDetector(
-                        child: Text('Bitir'),
+                        child: Text('Bitir',
+                            style: TextStyle(
+                                fontSize: 15, fontWeight: FontWeight.bold)),
                         onTap: () {
                           Navigator.pushAndRemoveUntil(
                             context,
@@ -97,7 +101,9 @@ class _IntroductionPageState extends State<IntroductionPage> {
                         },
                       )
                     : GestureDetector(
-                        child: Text('İleri'),
+                        child: Text('İleri',
+                            style: TextStyle(
+                                fontSize: 15, fontWeight: FontWeight.bold)),
                         onTap: () {
                           _controller.nextPage(
                               duration: Duration(milliseconds: 500),

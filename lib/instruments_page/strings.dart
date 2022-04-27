@@ -10,6 +10,19 @@ class Strings extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      extendBodyBehindAppBar: true,
+      appBar: AppBar(
+        title: Opacity(
+          opacity: 0.80,
+          child: Text(
+            'Yaylı Enstrümanlar',
+            style: GoogleFonts.pacifico(fontSize: 25),
+          ),
+        ),
+        centerTitle: true,
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+      ),
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
@@ -53,7 +66,7 @@ class Strings extends StatelessWidget {
                               ),
                               image:
                                   AssetImage('assets/page_images/violin.jpg'),
-                              height: 160,
+                              height: 150,
                               fit: BoxFit.cover,
                             ),
                           ),
@@ -107,7 +120,7 @@ class Strings extends StatelessWidget {
                 SizedBox(
                   height: 10,
                 ),
-                SafeArea(
+                Expanded(
                   child: Row(
                     children: [
                       Expanded(
@@ -147,7 +160,7 @@ class Strings extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: 10),
-                SafeArea(
+                Expanded(
                   child: Row(
                     children: [
                       Expanded(
@@ -178,7 +191,7 @@ class Strings extends StatelessWidget {
                               ),
                               image: AssetImage(
                                   'assets/page_images/contrabass.jpg'),
-                              height: 150,
+                              height: 140,
                               fit: BoxFit.cover,
                             ),
                           ),

@@ -10,6 +10,19 @@ class Rhythm extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      extendBodyBehindAppBar: true,
+      appBar: AppBar(
+        title: Opacity(
+          opacity: 0.80,
+          child: Text(
+            'Ritim Enstrümanları',
+            style: GoogleFonts.pacifico(fontSize: 25),
+          ),
+        ),
+        centerTitle: true,
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+      ),
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
@@ -53,7 +66,7 @@ class Rhythm extends StatelessWidget {
                               ),
                               image:
                                   AssetImage('assets/page_images/drumkit.jpg'),
-                              height: 160,
+                              height: 150,
                               fit: BoxFit.cover,
                             ),
                           ),
@@ -107,7 +120,7 @@ class Rhythm extends StatelessWidget {
                 SizedBox(
                   height: 10,
                 ),
-                SafeArea(
+                Expanded(
                   child: Row(
                     children: [
                       Expanded(
@@ -148,7 +161,7 @@ class Rhythm extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: 10),
-                SafeArea(
+                Expanded(
                   child: Row(
                     children: [
                       Expanded(
@@ -179,7 +192,7 @@ class Rhythm extends StatelessWidget {
                               ),
                               image:
                                   AssetImage('assets/page_images/handpan.jpg'),
-                              height: 150,
+                              height: 140,
                               fit: BoxFit.cover,
                             ),
                           ),

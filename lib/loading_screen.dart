@@ -1,5 +1,7 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:lottie/lottie.dart';
 import 'package:musicedu_app/introduction_onboard.dart';
 
 class LoadingPage extends StatefulWidget {
@@ -17,7 +19,7 @@ class _LoadingPageState extends State<LoadingPage> {
   }
 
   loadinPage() async {
-    await Future.delayed(Duration(seconds: 3));
+    await Future.delayed(Duration(seconds: 6));
 
     Navigator.pushAndRemoveUntil(
         context,
@@ -33,28 +35,33 @@ class _LoadingPageState extends State<LoadingPage> {
       body: Stack(children: [
         SafeArea(
           child: Container(
-              // decoration: BoxDecoration(
-              //   image: DecorationImage(
-              //       //Arkaplan resmi
-              //       image: AssetImage('assets/images/splash.jpg'),
-              //       fit: BoxFit.cover),
-              // ),
-              alignment: Alignment.bottomCenter,
-              child: AnimatedTextKit(
-                animatedTexts: [
-                  FadeAnimatedText('Merhaba',
-                      textStyle: TextStyle(fontSize: 25, color: Colors.white),
-                      duration: Duration(seconds: 4))
-                ],
-              )),
+            // decoration: BoxDecoration(
+            //   image: DecorationImage(
+            //       //Arkaplan resmi
+            //       image: AssetImage('assets/images/splash.jpg'),
+            //       fit: BoxFit.cover),
+            // ),
+            alignment: Alignment.bottomCenter,
+            child: SizedBox(
+              width: 250.0,
+              child: TextLiquidFill(
+                text: 'Vivance Dinle ve Öğren',
+                waveColor: Colors.amber,
+                boxBackgroundColor: Colors.black,
+                textStyle: GoogleFonts.pacifico(
+                  fontSize: 25.0,
+                  fontWeight: FontWeight.bold,
+                ),
+                boxHeight: 150.0,
+              ),
+            ),
+          ),
         ),
         Padding(
           padding: const EdgeInsets.all(20),
           child: Center(
-            child: Image.asset(
-              'assets/images/loading.gif',
-              fit: BoxFit.cover,
-            ),
+            child: Lottie.network(
+                'https://assets4.lottiefiles.com/private_files/lf30_lhpjycyu.json'),
           ),
         ),
       ]),

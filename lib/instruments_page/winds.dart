@@ -10,6 +10,20 @@ class Winds extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      extendBodyBehindAppBar: true,
+      appBar: AppBar(
+        toolbarHeight: 50,
+        title: Opacity(
+          opacity: 0.80,
+          child: Text(
+            'Nefesli Enstrümanlar',
+            style: GoogleFonts.pacifico(fontSize: 25),
+          ),
+        ),
+        centerTitle: true,
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+      ),
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
@@ -53,7 +67,7 @@ class Winds extends StatelessWidget {
                               ),
                               image:
                                   AssetImage('assets/page_images/clairnet.jpg'),
-                              height: 160,
+                              height: 150,
                               fit: BoxFit.cover,
                             ),
                           ),
@@ -108,7 +122,7 @@ class Winds extends StatelessWidget {
                 SizedBox(
                   height: 10,
                 ),
-                SafeArea(
+                Expanded(
                   child: Row(
                     children: [
                       Expanded(
@@ -149,7 +163,7 @@ class Winds extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: 10),
-                SafeArea(
+                Expanded(
                   child: Row(
                     children: [
                       Expanded(
@@ -179,7 +193,7 @@ class Winds extends StatelessWidget {
                                 ),
                               ),
                               image: AssetImage('assets/page_images/flute.jpg'),
-                              height: 150,
+                              height: 130,
                               fit: BoxFit.cover,
                             ),
                           ),
