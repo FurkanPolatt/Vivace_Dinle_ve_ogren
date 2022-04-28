@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "871300266933",
+    "project_id": "vivace-671f8",
+    "storage_bucket": "vivace-671f8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:871300266933:android:3c34af4b873402800af7fc",
+        "android_client_info": {
+          "package_name": "com.example.musicedu_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "871300266933-ged36r3em04veaufbe5ub4l3b6l8n60v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.musicedu_app",
+            "certificate_hash": "58635f9933a8b94f86dbc3e030efa107b5bfe05c"
+          }
+        },
+        {
+          "client_id": "871300266933-dv5b187n7th40kecam7kala8gmq35ej3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZZf3Qn5Vmi-UmoPjZGnABdKSJHDGv1wQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "871300266933-dv5b187n7th40kecam7kala8gmq35ej3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
