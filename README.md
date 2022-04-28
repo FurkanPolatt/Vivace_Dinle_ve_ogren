@@ -13,11 +13,11 @@ Virtuoso
 
 
 ## Ürün İsmi
--Vivance: Dinle ve Öğren
+-Vivace: Dinle ve Öğren
 
 
 ## Ürün Açıklaması
-'Vivance: Dinle ve Öğren' uygulamamız ile başta Türkiye’de zor koşullar altında eğitim alan ve sanattan uzakta kalan öğrencileri olmak üzere tüm insalar için tek elden müzik aletlerini tanıtmayı hedefliyoruz. Uygulamayı kullanacak olanlar 'Kendini test et' bölümü sayesinde öğrendikleri hakkında sorular çözebilecek. Ayrıca 'Eğitim İlanları' bölümü ile hem eğitmenler gelir elde edebilecek hem de öğrenciler kolayca eğitmen bulabilecek. 
+'Vivace: Dinle ve Öğren' uygulamamız ile başta Türkiye’de zor koşullar altında eğitim alan ve sanattan uzakta kalan öğrencileri olmak üzere tüm insalar için tek elden müzik aletlerini tanıtmayı hedefliyoruz. Uygulamayı kullanacak olanlar 'Kendini test et' bölümü sayesinde öğrendikleri hakkında sorular çözebilecek. Ayrıca 'Eğitim İlanları' bölümü ile hem eğitmenler gelir elde edebilecek hem de öğrenciler kolayca eğitmen bulabilecek. 
 
 ## Ürün Özellikleri
 * Telli enstrümanlar, yaylı enstrümanlar, nefesli enstrümanlar, ritim enstrümanları ve tuşlu enstrümanlar olmak üzere 5 farklı bölüme ayrılmış uygulamanın her bölümünde 4 farklı müzik aleti bulunmakta
