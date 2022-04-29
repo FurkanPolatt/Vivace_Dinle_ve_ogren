@@ -72,14 +72,7 @@ class _LoginPageState extends State<LoginPage> {
                   elevation: 5,
                   color: Color(0xff1c2c4c),
                   child: MaterialButton(
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => HomePage(),
-                        ),
-                      );
-                    },
+                    onPressed: () {},
                     child: Text(
                       'Çevrimdışı Devam Et',
                       style: GoogleFonts.pacifico(color: Colors.white70),
