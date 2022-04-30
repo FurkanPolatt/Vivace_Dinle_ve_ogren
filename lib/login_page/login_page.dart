@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:musicedu_app/home_page.dart';
@@ -72,7 +73,12 @@ class _LoginPageState extends State<LoginPage> {
                   elevation: 5,
                   color: Color(0xff1c2c4c),
                   child: MaterialButton(
-                    onPressed: () {},
+                    onPressed: () async {
+                      await signInAnonymously();
+                      Navigator.of(context).pushReplacement(MaterialPageRoute(
+                        builder: (context) => HomePage(),
+                      ));
+                    },
                     child: Text(
                       'Çevrimdışı Devam Et',
                       style: GoogleFonts.pacifico(color: Colors.white70),
