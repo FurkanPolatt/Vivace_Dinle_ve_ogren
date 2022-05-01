@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:musicedu_app/home_page.dart';
 import 'package:musicedu_app/intro_screens/intro_page1.dart';
 import 'package:musicedu_app/intro_screens/intro_page2.dart';
 import 'package:musicedu_app/intro_screens/intro_page3.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+
+import 'login_page/splash_creen.dart';
 
 class IntroductionPage extends StatefulWidget {
   const IntroductionPage({Key? key}) : super(key: key);
@@ -93,7 +94,7 @@ class _IntroductionPageState extends State<IntroductionPage> {
                             context,
                             MaterialPageRoute(
                               builder: (BuildContext context) {
-                                return HomePage();
+                                return SplashScreen();
                               },
                             ),
                             (route) => false,

@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:musicedu_app/instruments_page/guitar_n_world.dart';
@@ -5,6 +6,8 @@ import 'package:musicedu_app/instruments_page/keyboards.dart';
 import 'package:musicedu_app/instruments_page/rhythm.dart';
 import 'package:musicedu_app/instruments_page/strings.dart';
 import 'package:musicedu_app/instruments_page/winds.dart';
+import 'package:musicedu_app/login_page/google_sign_in.dart';
+import 'package:musicedu_app/login_page/login_page.dart';
 import 'package:musicedu_app/quiz_page/quiz_page.dart';
 
 class HomePage extends StatelessWidget {
@@ -14,12 +17,6 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
-        actions: [
-          IconButton(
-            onPressed: () {},
-            icon: Icon(Icons.search, size: 38),
-          ),
-        ],
         title: Text(
           'Vivance',
           style: GoogleFonts.damion(
@@ -29,6 +26,37 @@ class HomePage extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.transparent,
         elevation: 0,
+      ),
+      drawer: Drawer(
+        child: Container(
+          color: Colors.grey[900],
+          child: ListView(
+            children: [
+              DrawerHeader(
+                child: Text(
+                  FirebaseAuth.instance.currentUser!.displayName!,
+                  style: TextStyle(
+                      color: Colors.white, fontWeight: FontWeight.bold),
+                ),
+              ),
+              ListTile(
+                title: Text(
+                  'Çıkış Yap',
+                  style: TextStyle(
+                      color: Colors.white, fontWeight: FontWeight.bold),
+                ),
+                onTap: () async {
+                  await signOutWithGoogle();
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(
+                      builder: (context) => LoginPage(),
+                    ),
+                  );
+                },
+              )
+            ],
+          ),
+        ),
       ),
       body: Container(
         decoration: BoxDecoration(
