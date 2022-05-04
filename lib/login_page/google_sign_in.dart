@@ -23,3 +23,7 @@ Future<void> signOutWithGoogle() async {
   await FirebaseAuth.instance.signOut();
   await GoogleSignIn().signOut();
 }
+
+Future<UserCredential> signInAnonymously() async {
+  return await FirebaseAuth.instance.signInAnonymously();
+}

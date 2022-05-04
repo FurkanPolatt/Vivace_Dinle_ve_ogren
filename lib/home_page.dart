@@ -6,19 +6,18 @@ import 'package:musicedu_app/instruments_page/keyboards.dart';
 import 'package:musicedu_app/instruments_page/rhythm.dart';
 import 'package:musicedu_app/instruments_page/strings.dart';
 import 'package:musicedu_app/instruments_page/winds.dart';
-import 'package:musicedu_app/login_page/google_sign_in.dart';
-import 'package:musicedu_app/login_page/login_page.dart';
 import 'package:musicedu_app/quiz_page/quiz_page.dart';
 
 class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
+  final user = FirebaseAuth.instance.currentUser!;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
         title: Text(
-          'Vivance',
+          'Vivace',
           style: GoogleFonts.damion(
             fontSize: 30,
           ),
@@ -33,11 +32,8 @@ class HomePage extends StatelessWidget {
           child: ListView(
             children: [
               DrawerHeader(
-                child: Text(
-                  FirebaseAuth.instance.currentUser!.displayName!,
-                  style: TextStyle(
-                      color: Colors.white, fontWeight: FontWeight.bold),
-                ),
+                decoration: BoxDecoration(color: Colors.blueGrey),
+                child: Text('Giriş Yapıldı:  ' + user.email!),
               ),
               ListTile(
                 title: Text(
@@ -45,15 +41,10 @@ class HomePage extends StatelessWidget {
                   style: TextStyle(
                       color: Colors.white, fontWeight: FontWeight.bold),
                 ),
-                onTap: () async {
-                  await signOutWithGoogle();
-                  Navigator.of(context).pushReplacement(
-                    MaterialPageRoute(
-                      builder: (context) => LoginPage(),
-                    ),
-                  );
+                onTap: () {
+                  FirebaseAuth.instance.signOut();
                 },
-              )
+              ),
             ],
           ),
         ),
