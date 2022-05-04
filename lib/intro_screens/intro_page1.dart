@@ -13,7 +13,7 @@ class IntroPage1 extends StatelessWidget {
               child: Column(mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   SizedBox(
-                    height: 200),
+                    height: 30),
                   Lottie.network(
                         'https://assets3.lottiefiles.com/packages/lf20_bfgchzaf.json'),
                   SizedBox(height: 50),
