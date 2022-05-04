@@ -17,7 +17,7 @@ class HomePage extends StatelessWidget {
       extendBodyBehindAppBar: true,
       appBar: AppBar(
         title: Text(
-          'Vivance',
+          'Vivace',
           style: GoogleFonts.damion(
             fontSize: 30,
           ),

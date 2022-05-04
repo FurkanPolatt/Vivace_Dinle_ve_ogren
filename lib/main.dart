@@ -5,11 +5,11 @@ import 'package:musicedu_app/loading_screen.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
-  runApp(const MusicMachine());
+  runApp(const Vivace());
 }
 
-class MusicMachine extends StatelessWidget {
-  const MusicMachine({Key? key}) : super(key: key);
+class Vivace extends StatelessWidget {
+  const Vivace({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

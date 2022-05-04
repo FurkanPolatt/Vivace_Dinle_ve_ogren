@@ -155,7 +155,7 @@ class _RegisterPageState extends State<RegisterPage> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        'Üye Değilmisiniz?',
+                        'Zaten Üyemisiniz?',
                         style: GoogleFonts.pacifico(
                             fontWeight: FontWeight.bold, color: Colors.black54),
                       ),
