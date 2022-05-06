@@ -1,10 +1,26 @@
 import 'package:flutter/material.dart';
 
+import 'cello/cello_info1.dart';
+import 'cello/cello_info2.dart';
+import 'cello/cello_info3.dart';
+
 class Cello extends StatelessWidget {
   const Cello({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(backgroundColor: Colors.orange, body: Container());
+    final _controller = PageController();
+    return Scaffold(
+      backgroundColor: Colors.grey[900],
+      body: PageView(
+        scrollDirection: Axis.vertical,
+        controller: _controller,
+        children: [
+          CelloInfo1(),
+          CelloInfo2(),
+          CelloInfo3(),
+        ],
+      ),
+    );
   }
 }

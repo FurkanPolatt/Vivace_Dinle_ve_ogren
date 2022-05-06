@@ -1,4 +1,6 @@
+import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
 
 class IntroPage1 extends StatelessWidget {
@@ -13,12 +15,19 @@ class IntroPage1 extends StatelessWidget {
           child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
             SizedBox(height: 30),
             Lottie.network(
-                'https://assets3.lottiefiles.com/packages/lf20_bfgchzaf.json'),
+                'https://assets3.lottiefiles.com/packages/lf20_bfgchzaf.json',
+                height: 300),
             SizedBox(height: 50),
-            Text(
-              'Müziğin derinlerine ineceğiniz Vivace dünyasına hoşgeldiniz!',
-              textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 15, fontWeight: FontWeight.w500),
+            AnimatedTextKit(
+              totalRepeatCount: 1,
+              animatedTexts: [
+                TypewriterAnimatedText(
+                    'Müziğin derinlerine ineceğiniz Vivace dünyasına hoşgeldiniz',
+                    textAlign: TextAlign.center,
+                    speed: Duration(milliseconds: 50),
+                    textStyle:
+                        GoogleFonts.robotoMono(fontWeight: FontWeight.bold)),
+              ],
             ),
           ]),
         ),

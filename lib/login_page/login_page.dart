@@ -40,11 +40,13 @@ class _LoginPageState extends State<LoginPage> {
           child: Center(
             child:
                 Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+              SizedBox(height: 10),
               Image.asset(
                 'assets/images/music-disc.gif',
                 scale: 2,
+                height: 160,
               ),
-              SizedBox(height: 25),
+              SizedBox(height: 20),
               // Karşılama Ekranı
               Text(
                 'Merhaba!',
@@ -57,7 +59,7 @@ class _LoginPageState extends State<LoginPage> {
                 style:
                     GoogleFonts.pacifico(fontSize: 20, color: Colors.black54),
               ),
-              SizedBox(height: 30),
+              SizedBox(height: 10),
               // Giriş
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 25.0),
@@ -97,7 +99,7 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                 ),
               ),
-              SizedBox(height: 10),
+              SizedBox(height: 20),
               GestureDetector(
                 onTap: signIn,
                 child: Container(
@@ -113,7 +115,7 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                 ),
               ),
-              SizedBox(height: 15),
+              SizedBox(height: 20),
               //üye değilmisiniz? çevrimdışı devam edin
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -144,7 +146,7 @@ class _LoginPageState extends State<LoginPage> {
                     style: GoogleFonts.pacifico(
                         fontWeight: FontWeight.bold, color: Colors.black54),
                   ),
-                  SizedBox(height: 10),
+                  SizedBox(height: 20),
                   Material(
                     borderRadius: BorderRadius.circular(10),
                     elevation: 5,

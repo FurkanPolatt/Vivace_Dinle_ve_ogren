@@ -1,10 +1,26 @@
 import 'package:flutter/material.dart';
 
+import 'handpan/handpan_info1.dart';
+import 'handpan/handpan_info2.dart';
+import 'handpan/handpan_info3.dart';
+
 class HandPan extends StatelessWidget {
   const HandPan({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(backgroundColor: Colors.orange, body: Container());
+    final _controller = PageController();
+    return Scaffold(
+      backgroundColor: Colors.grey[900],
+      body: PageView(
+        scrollDirection: Axis.vertical,
+        controller: _controller,
+        children: [
+          HandpanInfo1(),
+          HandpanInfo2(),
+          HandpanInfo3(),
+        ],
+      ),
+    );
   }
 }
