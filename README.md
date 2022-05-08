@@ -51,7 +51,7 @@ Virtuoso
 
 Story'ler yapılacak işlere (task'lere) bölünmüştür. Miro Board'da gözüken kırmızı item'lar yapılacak işleri (task) gösterirken, mavi item'lar story'leri temsil etmektedir.
 
-- **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü Discord üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği word dosyası içine yazılıp ekran görüntüleri ile desteklenerek Readme'de tarafımızdan paylaşılmaktadır: [Sprint 1 Daily Scrum Chats](
+- **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü Discord üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği word dosyası içine yazılıp ekran görüntüleri ile desteklenerek Readme'de tarafımızdan paylaşılmaktadır: [Sprint 1 Daily Scrum Chats](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/DailyScrumChatNotesSprint1.docx)
 
 - **Sprint board update**: Sprint board screenshotları: 
 ![Backlog 1](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/backlog1.png)
@@ -94,13 +94,38 @@ Story'ler yapılacak işlere (task'lere) bölünmüştür. Miro Board'da gözük
   ![Screenshot 30](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/productss30.png)
   
 - **Sprint Review**: 
-Alınan kararlar: 
-Sprint Review katılımcıları: Halil Furkan Polat, Firdevs Birinci, Onur Arık, Hazal Taneri, Merve Köse
+-  Sprint hedeflerine ulaştı ve ürün planladığı gibi geliştirildi. 
+-  *Alınan Kararlar:* 
+- Dikkat çekici olması açısından intro kısmının animasyonla dolu olmasına karar verilmiştir.
+- İntro’da yazı stili göz yormamalı.
+- Uygulamaya ‘misafir girişi’ ile girenler ‘Kendini Test Et’ bölümünü yapamayacak. Kullanıcı oraya bastığında ‘Lütfen giriş yapın’ uyarısı alacak.
+- Müzik aletlerinin sayfalarında ilk sayfada metin aşağı doğru kaydırılacak şekilde olacak. 2.sayfada da videolar kaydırmalı şekilde olacak.
+- *Sprint Review katılımcıları:* Halil Furkan Polat, Firdevs Birinci, Onur Arık, Hazal Taneri, Merve Köse 
 
-- **Sprint Retrospective:**
+- **Sprint Retrospective**:
+3 şey üzerine konuştuk: Neler iyi gitti, hangi sorunlar ile karşılaştık ve neler geliştirilmeli?
+Neler iyi gitti?
 
--**Diğer Notlar**:
+*Neler İyi Gitti?r* 
+- Çok hızlı toplandık, tanıştık ve takım ruhunu kazandık.
+- Ortak zevklerimiz olduğu için ortak kararlar aldık, çoğunlukla verimli şekilde ilerledik.
+- Sorunlarla karşılaştığımızda ve bilmediğimiz bir şey olduğunda birbirimize destek olduk ve hızlıca sorunların üstesinden geldik. Furkan her an her şeye özellikle çok fazla zaman ayırdı.
+- Firdevs proje yöneticiliği konusunda süreci güzel yönetti.
+- Birbirimizi yapıcı olarak eleştirdik ve çok daha verimli ilerledik.
+
+*Hangi Sorunlar İle Karşılaştık?*
+- 1 task için yazılımsal anlamda çok fazla hata alınan bir süreç geçirdik. Bu da bize zaman kaybettirdi ve sprintte o taskı bitirememe riski ile karşılaştık. Furkan bu süreçte fazlaca emek verdi ve sprintin tüm görevleri başarıyla tamamlanmış oldu.
+- Developer olan Merve başka şehre taşındı ve ama bulunduğu yerde internet altyapısı kötü.
+
+*Neler Geliştirilmeli?*
+- Daily Scrum Chat’i doldurmak unutulmamalı. Scrum master akşam hatırlatma yaptıktan sonra tekrar yazmak durumunda kalmasın.
+- Gant şeması yapılmalı ve sprint backlogları tarihsel anlamda belli hedefler içinde ilerlemeli.
+- Backlog’lar Sprintin son Pazar gününe kalmamalı, daha erken bitirilmeli.
+- Herkes yaptığı işi yaparken daha sık feedback vermeli.
+
+**Diğer Notlar**:
+
+ Miro'da ve Miro'daki Drive linkinde  sprint boyu yaptığımız her aşamayı anlattık, dosyaladık.
 
 ---
-
 
