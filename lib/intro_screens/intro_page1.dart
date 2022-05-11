@@ -14,9 +14,7 @@ class IntroPage1 extends StatelessWidget {
         child: Center(
           child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
             SizedBox(height: 30),
-            Lottie.network(
-                'https://assets3.lottiefiles.com/packages/lf20_bfgchzaf.json',
-                height: 300),
+            Lottie.asset('assets/animation/intro1.json', height: 300),
             SizedBox(height: 50),
             AnimatedTextKit(
               totalRepeatCount: 1,
