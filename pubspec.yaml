@@ -51,6 +51,7 @@ dependencies:
   firebase_core: ^1.15.0
   firebase_auth: ^3.3.16
   google_sign_in: ^5.3.0
+  animate_do: ^2.1.0
 
 
 
@@ -86,6 +87,9 @@ flutter:
     - assets/pages/
     - assets/page_images/
     - assets/background/
+    - assets/logo/
+    - assets/animation/
+    - assets/cities/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
