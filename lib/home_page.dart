@@ -8,11 +8,14 @@ import 'package:musicedu_app/instruments_page/strings.dart';
 import 'package:musicedu_app/instruments_page/winds.dart';
 import 'package:musicedu_app/quiz_page/quiz_page.dart';
 
+import 'education_ad/edu_page.dart';
+
 class HomePage extends StatelessWidget {
-  final user = FirebaseAuth.instance.currentUser!;
+  const HomePage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    final user = FirebaseAuth.instance.currentUser!;
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
@@ -26,26 +29,76 @@ class HomePage extends StatelessWidget {
         backgroundColor: Colors.transparent,
         elevation: 0,
       ),
-      drawer: Drawer(
-        child: Container(
-          color: Colors.grey[900],
-          child: ListView(
-            children: [
-              DrawerHeader(
-                decoration: BoxDecoration(color: Colors.blueGrey),
-                child: Text('Giriş Yapıldı:  ' + user.email!),
-              ),
-              ListTile(
-                title: Text(
-                  'Çıkış Yap',
-                  style: TextStyle(
-                      color: Colors.white, fontWeight: FontWeight.bold),
+      drawer: SafeArea(
+        child: Drawer(
+          child: Container(
+            color: Color(0xff1c2c4c),
+            child: ListView(
+              children: [
+                Material(
+                  color: Colors.indigo,
+                  elevation: 12,
+                  borderRadius: BorderRadius.only(
+                    bottomLeft: Radius.circular(25),
+                    bottomRight: Radius.circular(25),
+                  ),
+                  child: DrawerHeader(
+                    // decoration: BoxDecoration(color: Colors.black38),
+                    child: Text('Kullanıcı:  ' + user.email!,
+                        style: TextStyle(color: Colors.white)),
+                  ),
                 ),
-                onTap: () {
-                  FirebaseAuth.instance.signOut();
-                },
-              ),
-            ],
+                ListTile(
+                  title: InkWell(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => EduTest(),
+                        ),
+                      );
+                    },
+                    child: Row(children: [
+                      Expanded(
+                        child: Icon(
+                          Icons.search,
+                          color: Colors.white54,
+                        ),
+                      ),
+                      Expanded(
+                        flex: 6,
+                        child: Text(
+                          'Kurs Ara',
+                          style: TextStyle(color: Colors.white),
+                        ),
+                      ),
+                    ]),
+                  ),
+                ),
+                ListTile(
+                  title: InkWell(
+                    onTap: () {
+                      FirebaseAuth.instance.signOut();
+                    },
+                    child: Row(children: [
+                      Expanded(
+                        child: Icon(
+                          Icons.exit_to_app,
+                          color: Colors.white54,
+                        ),
+                      ),
+                      Expanded(
+                        flex: 6,
+                        child: Text(
+                          'Çıkış Yap',
+                          style: TextStyle(color: Colors.white),
+                        ),
+                      ),
+                    ]),
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
       ),

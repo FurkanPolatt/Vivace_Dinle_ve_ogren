@@ -10,7 +10,7 @@ class MelodicaInfo1 extends StatelessWidget {
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage('assets/background/melodica.jpg'),
+            image: AssetImage('assets/background/melodica2.jpg'),
             fit: BoxFit.cover,
           ),
         ),

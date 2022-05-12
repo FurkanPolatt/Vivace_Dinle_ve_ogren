@@ -60,8 +60,7 @@ class _LoadingPageState extends State<LoadingPage> {
         Padding(
           padding: const EdgeInsets.all(20),
           child: Center(
-            child: Lottie.network(
-                'https://assets4.lottiefiles.com/private_files/lf30_lhpjycyu.json'),
+            child: Lottie.asset('assets/animation/opening.json'),
           ),
         ),
       ]),
