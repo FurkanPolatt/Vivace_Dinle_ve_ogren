@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:musicedu_app/guitar_pages/classic_guitar/cinfo3_2.dart';
-
 import 'package:video_player/video_player.dart';
 
 class Cinfo1 extends StatelessWidget {
@@ -35,7 +34,7 @@ class Cinfo1 extends StatelessWidget {
               child: ListView(
                 children: [
                   VideoItems(
-                    videoPlayerController: VideoPlayerController.network(),
+                    videoPlayerController: VideoPlayerController.network(''),
                     autoplay: true,
                     looping: true,
                   ),
