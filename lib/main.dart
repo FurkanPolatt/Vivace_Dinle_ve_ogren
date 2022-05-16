@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:musicedu_app/loading_screen.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import 'animationScreen.dart';
 import 'home_page.dart';
 import 'loading_screen.dart';
 import 'login_page/main_page.dart';
@@ -27,7 +28,7 @@ class Vivace extends StatelessWidget {
       initialRoute: initScreen == 0 || initScreen == null ? 'onBoard' : 'home',
       routes: {
         'onBoard': (context) => LoadingPage(),
-        'home': (context) => MainPage(),
+        'home': (context) => AnimationPage(),
       },
     );
   }
