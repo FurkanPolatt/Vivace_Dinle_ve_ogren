@@ -29,7 +29,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  youtube_player_flutter: ^8.0.0
+  youtube_player_flutter: ^8.1.0
   
 
   
@@ -92,6 +92,9 @@ flutter:
     - assets/animation/
     - assets/cities/
     - assets/app_images/
+    - assets/icons/
+    - assets/icons/category/
+    - assets/data/
 
     
 

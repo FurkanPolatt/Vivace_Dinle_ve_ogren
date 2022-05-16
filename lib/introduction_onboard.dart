@@ -16,34 +16,6 @@ class IntroductionPage extends StatefulWidget {
 class _IntroductionPageState extends State<IntroductionPage> {
   final PageController _controller = PageController();
   bool onLastPage = false;
-  @override
-  void initState() {
-    super.initState();
-    // checkScreen();
-  }
-
-  // Future checkScreen() async {
-  //   SharedPreferences prefs = await SharedPreferences.getInstance();
-  //   bool _introSeen = (prefs.getBool('intro_seen') ?? false);
-  //
-  //   Navigator.pop(context);
-  //   if (_introSeen) {
-  //     Navigator.push(
-  //       context,
-  //       MaterialPageRoute(
-  //         builder: (context) => HomePage(),
-  //       ),
-  //     );
-  //   } else {
-  //     await prefs.setBool('intro_seen', true);
-  //     Navigator.push(
-  //       context,
-  //       MaterialPageRoute(
-  //         builder: (context) => IntroductionPage(),
-  //       ),
-  //     );
-  //   }
-  // }
 
   @override
   Widget build(BuildContext context) {

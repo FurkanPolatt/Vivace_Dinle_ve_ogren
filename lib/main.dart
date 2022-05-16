@@ -4,9 +4,7 @@ import 'package:musicedu_app/loading_screen.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'animationScreen.dart';
-import 'home_page.dart';
 import 'loading_screen.dart';
-import 'login_page/main_page.dart';
 
 dynamic initScreen;
 
@@ -25,6 +23,7 @@ class Vivace extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       initialRoute: initScreen == 0 || initScreen == null ? 'onBoard' : 'home',
       routes: {
         'onBoard': (context) => LoadingPage(),

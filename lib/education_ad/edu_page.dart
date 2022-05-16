@@ -8,8 +8,8 @@ import 'package:musicedu_app/education_ad/cities/rize.dart';
 
 import 'cities/istanbul.dart';
 
-class EduTest extends StatelessWidget {
-  const EduTest({Key? key}) : super(key: key);
+class EduPage extends StatelessWidget {
+  const EduPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

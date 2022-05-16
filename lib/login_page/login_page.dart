@@ -2,7 +2,7 @@ import 'package:animate_do/animate_do.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:musicedu_app/home_page.dart';
+import 'package:musicedu_app/homepage_2.dart';
 
 class LoginPage extends StatefulWidget {
   final VoidCallback showRegisterPage;
@@ -159,11 +159,10 @@ class _LoginPageState extends State<LoginPage> {
                           elevation: 5,
                           color: Color(0xff1c2c4c),
                           child: MaterialButton(
-                            onPressed: () async {
-                              await signInAnonymously();
+                            onPressed: () {
                               Navigator.of(context)
                                   .pushReplacement(MaterialPageRoute(
-                                builder: (context) => HomePage(),
+                                builder: (context) => HomePage2(),
                               ));
                             },
                             child: Text(
