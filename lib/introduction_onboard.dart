@@ -71,7 +71,7 @@ class _IntroductionPageState extends State<IntroductionPage> {
                 GestureDetector(
                   child: Text('Geç',
                       style:
-                          TextStyle(fontSize: 15, fontWeight: FontWeight.bold)),
+                          TextStyle(fontSize: 15, fontWeight: FontWeight.bold, color: Colors.white)),
                   onTap: () {
                     _controller.jumpToPage(2);
                   },
@@ -88,7 +88,7 @@ class _IntroductionPageState extends State<IntroductionPage> {
                     ? GestureDetector(
                         child: Text('Bitir',
                             style: TextStyle(
-                                fontSize: 15, fontWeight: FontWeight.bold)),
+                                fontSize: 15, fontWeight: FontWeight.bold,color: Colors.white)),
                         onTap: () {
                           Navigator.pushAndRemoveUntil(
                             context,
@@ -104,7 +104,7 @@ class _IntroductionPageState extends State<IntroductionPage> {
                     : GestureDetector(
                         child: Text('İleri',
                             style: TextStyle(
-                                fontSize: 15, fontWeight: FontWeight.bold)),
+                                fontSize: 15, fontWeight: FontWeight.bold, color: Colors.white)),
                         onTap: () {
                           _controller.nextPage(
                               duration: Duration(milliseconds: 500),
