@@ -1,4 +1,3 @@
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:musicedu_app/instruments_page/guitar_n_world.dart';
@@ -6,16 +5,13 @@ import 'package:musicedu_app/instruments_page/keyboards.dart';
 import 'package:musicedu_app/instruments_page/rhythm.dart';
 import 'package:musicedu_app/instruments_page/strings.dart';
 import 'package:musicedu_app/instruments_page/winds.dart';
-import 'package:musicedu_app/quiz_page/quiz_page.dart';
+import 'package:musicedu_app/login_page/main_page.dart';
 
-import 'education_ad/edu_page.dart';
-
-class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
+class HomePage2 extends StatelessWidget {
+  const HomePage2({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    final user = FirebaseAuth.instance.currentUser!;
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
@@ -43,20 +39,65 @@ class HomePage extends StatelessWidget {
                     bottomRight: Radius.circular(25),
                   ),
                   child: DrawerHeader(
-                    // decoration: BoxDecoration(color: Colors.black38),
-                    child: Text('Kullanıcı:  ' + user.email!,
-                        style: TextStyle(color: Colors.white)),
+                    child: Stack(children: [
+                      Align(
+                        alignment: Alignment.centerLeft,
+                        child: CircleAvatar(
+                          backgroundImage:
+                              AssetImage('assets/images/music-disc.gif'),
+                          radius: 50,
+                        ),
+                      ),
+                      Align(
+                        alignment: Alignment.centerRight + Alignment(0, 0.4),
+                        child: Text(
+                          'Vivace Dinle ve Öğren',
+                          style: GoogleFonts.pacifico(
+                              color: Colors.white, fontSize: 17),
+                        ),
+                      ),
+                    ]),
                   ),
                 ),
                 ListTile(
                   title: InkWell(
                     onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => EduPage(),
-                        ),
-                      );
+                      showDialog(
+                          context: context,
+                          builder: (BuildContext context) {
+                            return AlertDialog(
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(12),
+                              ),
+                              backgroundColor: Colors.white70,
+                              title: Text(
+                                  'Bu özelliği kullanmak için lütfen giriş yapınız',
+                                  textAlign: TextAlign.center),
+                              actions: [
+                                Center(
+                                  child: MaterialButton(
+                                    onPressed: () {
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) => MainPage(),
+                                        ),
+                                      );
+                                    },
+                                    child: Text(
+                                      'Giriş Yap',
+                                      style: TextStyle(fontSize: 20),
+                                    ),
+                                    color: Colors.white54,
+                                    elevation: 10,
+                                    shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(10),
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            );
+                          });
                     },
                     child: Row(children: [
                       Expanded(
@@ -78,12 +119,42 @@ class HomePage extends StatelessWidget {
                 ListTile(
                   title: InkWell(
                     onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => QuizPage(),
-                        ),
-                      );
+                      showDialog(
+                          context: context,
+                          builder: (BuildContext context) {
+                            return AlertDialog(
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(12),
+                              ),
+                              backgroundColor: Colors.white70,
+                              title: Text(
+                                  'Bu özelliği kullanmak için lütfen giriş yapınız',
+                                  textAlign: TextAlign.center),
+                              actions: [
+                                Center(
+                                  child: MaterialButton(
+                                    onPressed: () {
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) => MainPage(),
+                                        ),
+                                      );
+                                    },
+                                    child: Text(
+                                      'Giriş Yap',
+                                      style: TextStyle(fontSize: 20),
+                                    ),
+                                    color: Colors.white54,
+                                    elevation: 10,
+                                    shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(10),
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            );
+                          });
                     },
                     child: Row(children: [
                       Expanded(
@@ -105,7 +176,12 @@ class HomePage extends StatelessWidget {
                 ListTile(
                   title: InkWell(
                     onTap: () {
-                      FirebaseAuth.instance.signOut();
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => MainPage(),
+                        ),
+                      );
                     },
                     child: Row(children: [
                       Expanded(
@@ -353,12 +429,44 @@ class HomePage extends StatelessWidget {
                           elevation: 15,
                           child: InkWell(
                             onTap: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => QuizPage(),
-                                ),
-                              );
+                              showDialog(
+                                  context: context,
+                                  builder: (BuildContext context) {
+                                    return AlertDialog(
+                                      shape: RoundedRectangleBorder(
+                                        borderRadius: BorderRadius.circular(12),
+                                      ),
+                                      backgroundColor: Colors.white70,
+                                      title: Text(
+                                          'Bu özelliği kullanmak için lütfen giriş yapınız',
+                                          textAlign: TextAlign.center),
+                                      actions: [
+                                        Center(
+                                          child: MaterialButton(
+                                            onPressed: () {
+                                              Navigator.push(
+                                                context,
+                                                MaterialPageRoute(
+                                                  builder: (context) =>
+                                                      MainPage(),
+                                                ),
+                                              );
+                                            },
+                                            child: Text(
+                                              'Giriş Yap',
+                                              style: TextStyle(fontSize: 20),
+                                            ),
+                                            color: Colors.white54,
+                                            elevation: 10,
+                                            shape: RoundedRectangleBorder(
+                                              borderRadius:
+                                                  BorderRadius.circular(10),
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    );
+                                  });
                             },
                             child: Ink.image(
                               child: Center(
