@@ -52,7 +52,6 @@ dependencies:
   firebase_auth: ^3.3.16
   google_sign_in: ^5.3.0
   animate_do: ^2.1.0
-  confetti: ^0.6.0
 
 
 
@@ -92,9 +91,7 @@ flutter:
     - assets/animation/
     - assets/cities/
     - assets/app_images/
-    - assets/icons/
-    - assets/icons/category/
-    - assets/data/
+
 
     
 
