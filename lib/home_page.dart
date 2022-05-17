@@ -6,7 +6,7 @@ import 'package:musicedu_app/instruments_page/keyboards.dart';
 import 'package:musicedu_app/instruments_page/rhythm.dart';
 import 'package:musicedu_app/instruments_page/strings.dart';
 import 'package:musicedu_app/instruments_page/winds.dart';
-import 'package:musicedu_app/quiz_page/main.dart';
+import 'package:musicedu_app/quiz_page/quiz_page.dart';
 
 import 'education_ad/edu_page.dart';
 
@@ -81,7 +81,7 @@ class HomePage extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => QuizApp(),
+                          builder: (context) => QuizPage(),
                         ),
                       );
                     },
@@ -356,7 +356,7 @@ class HomePage extends StatelessWidget {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                  builder: (context) => QuizApp(),
+                                  builder: (context) => QuizPage(),
                                 ),
                               );
                             },
