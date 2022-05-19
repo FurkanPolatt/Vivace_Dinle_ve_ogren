@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:page_view_indicators/circle_page_indicator.dart';
 
-import '../../infoScreens/Bassguitarinfo.dart';
 import 'view_image.dart';
 
 class BassInfo1 extends StatefulWidget {
@@ -43,7 +42,7 @@ class ClassicPageState extends State<BassInfo1> {
         title: Opacity(
           opacity: 0.80,
           child: Text(
-            'Klasik Gitar',
+            'Bas Gitar',
             style: GoogleFonts.pacifico(fontSize: 25, color: Colors.white),
           ),
         ),
@@ -75,18 +74,20 @@ class ClassicPageState extends State<BassInfo1> {
 
   _buildPageView() {
     return Container(
-      color: Colors.black87,
       height: _boxHeight,
       margin: EdgeInsets.only(top: _boxHeight / 3.5),
       child: PageView.builder(
           itemCount: appBannerList.length,
           controller: _pageController,
           itemBuilder: (BuildContext context, int index) {
-            return Container(
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage(appBannerList[index].image),
-                  fit: BoxFit.cover,
+            return Expanded(
+              child: Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(28),
+                  image: DecorationImage(
+                    image: AssetImage(appBannerList[index].image),
+                    fit: BoxFit.cover,
+                  ),
                 ),
               ),
             );
@@ -98,62 +99,72 @@ class ClassicPageState extends State<BassInfo1> {
   }
 
   _buildPageView2() {
-    return Card(
-      elevation: 50,
-      shadowColor: Colors.black,
-      color: Colors.transparent,
-      child: SizedBox(
-        width: 400,
-        height: 370,
-        child: Padding(
-          padding: const EdgeInsets.all(20.0),
-          child: Column(
-            children: [
-              SizedBox(
-                height: 10,
-              ),
-              Text(
-                'Gitar Tarihçe',
-                style: TextStyle(
-                  fontSize: 30,
-                  color: Color.fromARGB(255, 226, 241, 240),
-                  fontWeight: FontWeight.w500,
+    return Expanded(
+      child: Card(
+        elevation: 50,
+        shadowColor: Colors.black,
+        color: Colors.transparent,
+        child: SizedBox(
+          width: 400,
+          height: 370,
+          child: Padding(
+            padding: const EdgeInsets.all(20.0),
+            child: Column(
+              children: [
+                SizedBox(
+                  height: 10,
                 ),
-              ),
-              SizedBox(
-                height: 10,
-              ),
-              Text(
-                'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore ',
-                style: TextStyle(
-                  fontSize: 15,
-                  color: Color.fromARGB(255, 227, 227, 227),
+                Text(
+                  'Bass Gitar Tarihçe',
+                  style: GoogleFonts.pacifico(
+                    fontSize: 28,
+                    color: Colors.white,
+                    fontWeight: FontWeight.w500,
+                  ),
                 ),
-              ),
-              SizedBox(
-                height: 20,
-              ),
-              SizedBox(
-                width: 170,
-                child: RaisedButton(
-                  onPressed: () => {
-                    Navigator.of(context).pushReplacement(MaterialPageRoute(
-                      builder: (context) => BassExtra(),
-                    ))
-                  },
-                  color: Color.fromARGB(255, 9, 172, 231),
-                  child: Padding(
-                    padding: const EdgeInsets.all(4.0),
-                    child: Row(
-                      children: [
-                        Icon(Icons.touch_app),
-                        Text('Tamamını oku'),
-                      ],
+                SizedBox(
+                  height: 10,
+                ),
+                Expanded(
+                  child: SingleChildScrollView(
+                    child: Text(
+                      'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore ',
+                      style: TextStyle(
+                        fontSize: 15,
+                        color: Colors.white,
+                      ),
+                      textAlign: TextAlign.center,
                     ),
                   ),
                 ),
-              )
-            ],
+                SizedBox(
+                  height: 20,
+                ),
+                // SizedBox(
+                //   width: 170,
+                //   child: MaterialButton(
+                //     shape: RoundedRectangleBorder(
+                //       borderRadius: BorderRadius.circular(8),
+                //     ),
+                //     onPressed: () => {
+                //       Navigator.of(context).pushReplacement(MaterialPageRoute(
+                //         builder: (context) => BassExtra(),
+                //       ))
+                //     },
+                //     color: Colors.white70,
+                //     child: Padding(
+                //       padding: const EdgeInsets.all(4.0),
+                //       child: Row(
+                //         children: [
+                //           Icon(Icons.touch_app),
+                //           Text('Tamamını oku'),
+                //         ],
+                //       ),
+                //     ),
+                //   ),
+                // )
+              ],
+            ),
           ),
         ),
       ),

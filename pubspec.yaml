@@ -33,6 +33,7 @@ dependencies:
   page_view_indicators: ^2.0.0
   better_player: ^0.0.82
   vertical_card_pager: ^1.5.0
+  visibility_detector: ^0.2.2
 
   
 
@@ -51,12 +52,11 @@ dependencies:
   firebase_auth: ^3.3.16
   google_sign_in: ^5.3.0
   animate_do: ^2.1.0
-<<<<<<< HEAD
-  confetti: ^0.6.0
-  auto_size_text: ^3.0.0
 
-=======
->>>>>>> 1b3bbbd04e245e0677b6bb6dbbdc4200b138b8c6
+
+
+
+
 
 
 
