@@ -9,7 +9,7 @@ class IntroPage1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blueGrey[200],
+      backgroundColor: Colors.black87,
       body: SafeArea(
         child: Center(
           child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
@@ -24,7 +24,8 @@ class IntroPage1 extends StatelessWidget {
                     textAlign: TextAlign.center,
                     speed: Duration(milliseconds: 50),
                     textStyle:
-                        GoogleFonts.robotoMono(fontWeight: FontWeight.bold)),
+                        GoogleFonts.robotoMono(fontWeight: FontWeight.bold,
+                            textStyle: TextStyle(color: Colors.white, fontSize: 15))),
               ],
             ),
           ]),

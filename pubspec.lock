@@ -91,6 +91,7 @@ packages:
       name: collection
       url: "https://pub.dartlang.org"
     source: hosted
+<<<<<<< HEAD
     version: "1.15.0"
   confetti:
     dependency: "direct main"
@@ -99,6 +100,9 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.6.0"
+=======
+    version: "1.16.0"
+>>>>>>> 1b3bbbd04e245e0677b6bb6dbbdc4200b138b8c6
   crypto:
     dependency: transitive
     description:
