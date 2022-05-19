@@ -1,12 +1,7 @@
-import 'package:better_player/better_player.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:vertical_card_pager/vertical_card_pager.dart';
 
-import '../../quiz_page/quiz_page.dart';
-
-class BassInfo2 extends StatelessWidget {
-  const BassInfo2({Key? key}) : super(key: key);
+class BassExtra extends StatelessWidget {
+  const BassExtra({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     final _controller = PageController();
@@ -16,10 +11,6 @@ class BassInfo2 extends StatelessWidget {
       appBar: AppBar(
         title: Opacity(
           opacity: 0.80,
-          child: Text(
-            'Öğretici',
-            style: GoogleFonts.pacifico(fontSize: 25, color: Colors.white),
-          ),
         ),
         centerTitle: true,
         backgroundColor: Colors.transparent,
@@ -31,6 +22,7 @@ class BassInfo2 extends StatelessWidget {
 }
 
 const _boxHeight = 250.0;
+const _boxHeight2 = 450.0;
 
 _buildBody(
     {required PageController controller, required BoxDecoration decoration}) {
@@ -38,36 +30,14 @@ _buildBody(
     children: <Widget>[
       Stack(
         children: <Widget>[
-          _buildPageView(),
+          _buildPageView2(),
         ],
       ),
-      //_buildPageView2(),,
     ],
   );
 }
 
-_buildPageView() {
-  return Container(
-      color: Colors.black87,
-      height: _boxHeight,
-      margin: EdgeInsets.only(top: _boxHeight / 3.1),
-      child: PageView.builder(
-        itemBuilder: (BuildContext context, int index) {
-          return AspectRatio(
-            aspectRatio: 16 / 9,
-            child: BetterPlayer.network(
-              "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
-              betterPlayerConfiguration: BetterPlayerConfiguration(
-                aspectRatio: 16 / 9,
-              ),
-            ),
-          );
-        },
-      ));
-}
-
-
-/*_buildPageView2() {
+_buildPageView2() {
   return Container(
       height: _boxHeight2,
       margin: EdgeInsets.only(top: _boxHeight / 50.1),
@@ -91,7 +61,7 @@ _buildPageView() {
                       'Başlık',
                       style: TextStyle(
                         fontSize: 30,
-                        color: Colors.green[900],
+                        color: Color.fromARGB(255, 238, 254, 239),
                         fontWeight: FontWeight.w500,
                       ),
                     ),
@@ -108,27 +78,6 @@ _buildPageView() {
                     SizedBox(
                       height: 10,
                     ),
-                    SizedBox(
-                      width: 110,
-                      child: RaisedButton(
-                        onPressed: () => {
-                          Navigator.of(context)
-                              .pushReplacement(MaterialPageRoute(
-                            builder: (context) => QuizPage(),
-                          ))
-                        },
-                        color: Color.fromARGB(255, 9, 172, 231),
-                        child: Padding(
-                          padding: const EdgeInsets.all(4.0),
-                          child: Row(
-                            children: [
-                              Icon(Icons.touch_app),
-                              Text('Visit'),
-                            ],
-                          ),
-                        ),
-                      ),
-                    )
                   ],
                 ),
               ),
@@ -137,4 +86,3 @@ _buildPageView() {
         },
       ));
 }
-*/

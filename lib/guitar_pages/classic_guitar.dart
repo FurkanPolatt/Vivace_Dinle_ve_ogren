@@ -1,20 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:musicedu_app/guitar_pages/classic_guitar/classic_info1.dart';
-import 'package:musicedu_app/guitar_pages/classic_guitar/classic_info2.dart';
-import 'package:musicedu_app/guitar_pages/classic_guitar/classic_info3.dart';
 
-class ClassicGuitar extends StatefulWidget {
-  const ClassicGuitar({Key? key}) : super(key: key);
+import 'classic_guitar/classic_info1.dart';
+import 'classic_guitar/classic_info2.dart';
+import 'classic_guitar/classic_info3.dart';
 
-  @override
-  _ClassicGuitarState createState() => _ClassicGuitarState();
-}
-
-class _ClassicGuitarState extends State<ClassicGuitar> {
-  final _controller = PageController();
+class ClassicPage extends StatelessWidget {
+  const ClassicPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    final _controller = PageController();
     return Scaffold(
       backgroundColor: Colors.grey[900],
       body: PageView(

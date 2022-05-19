@@ -48,7 +48,7 @@ class GuitarnWorld extends StatelessWidget {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                  builder: (context) => ClassicGuitar(),
+                                  builder: (context) => ClassicPage(),
                                 ),
                               );
                             },
