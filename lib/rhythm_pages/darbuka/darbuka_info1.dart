@@ -115,7 +115,7 @@ class ClassicPageState extends State<DarbukaInfo1> {
                   height: 10,
                 ),
                 Text(
-                  'Darbuka Tarihçe',
+                  'Hakkında',
                   style: GoogleFonts.pacifico(
                     fontSize: 28,
                     color: Colors.white,
@@ -128,7 +128,17 @@ class ClassicPageState extends State<DarbukaInfo1> {
                 Expanded(
                   child: SingleChildScrollView(
                     child: Text(
-                      'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore ',
+                      '''- Darbuka veya dümbelek, özellikle Orta Doğu'da ve Balkanlarda kullanılan vurmalı bir çalgıdır.
+- Türk musikisinde usul tutmaya yarayan bir alettir. 
+- İki tarafı da açık bir çömleğin bir tarafına deri kaplayarak yapılır. 
+- Parmaklarla vurularak çalınır.
+- Milattan önceki dönemde günümüz darbukasına benzer çalgılar, çeşitli biçim ve büyüklüklerde Anadolu, Mezopotamya ve Orta Asya uygarlıklarında kullanılmışlardır. Daha sonraki süreçler içinde değişip gelişerek yine aynı coğrafyalar içinde kullanılmıştır.
+- Çömlekten yapılanlarına bugün «dümbelek» denmektedir, darbuka sözü ise tenekeden yapılanlar için kullanılıyor. 
+- Anadolu’da daha çok kadınlar tarafından düğünlerde ve özellikle kendi aralarında düzenledikleri eğlencelerde kullandıkları ve halk arasında ‘’dümbelek, dümbek, cümlek, küp’’ gibi adlarla çalınan sazlardan fazla farklı olmayıp, sadece gövde kısmı ağaç ve ya metalden yapilip derisi ise vidalar yardımı ile gerdirilen bir vurgulu sazdır. 
+- Daha ziyade oyun havalarında çalınır. Dümbelekte olduğu gibi parmak uçlarıyla diz üzerinde vurularak çalınır.	
+- Türk sanat ve Türk halk müziğinde çalınmaktadır.
+
+ ''',
                       style: TextStyle(
                         fontSize: 15,
                         color: Colors.white,

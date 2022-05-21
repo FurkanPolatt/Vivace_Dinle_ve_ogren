@@ -115,7 +115,7 @@ class ClassicPageState extends State<CelloInfo1> {
                   height: 10,
                 ),
                 Text(
-                  'Çello Tarihçe',
+                  'Hakkında',
                   style: GoogleFonts.pacifico(
                     fontSize: 28,
                     color: Colors.white,
@@ -128,7 +128,21 @@ class ClassicPageState extends State<CelloInfo1> {
                 Expanded(
                   child: SingleChildScrollView(
                     child: Text(
-                      'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore ',
+                      '''- Viyolonsel ya da çello, keman, viyola ve kontrbas ile aynı ailedendir.
+- 16. yüzyılda ilk örnekleri Fransa'da ortaya çıkan bu çalgının şekli kadın vücudunu andırır. 
+- Başlangıçta beş telli olarak yapılan bu çalgı, önceleri orkestrada bas sesleri desteklemek için kullanılmıştır. 
+- Tek başına belirgin bir çalgı olarak ortaya çıkması ise 18. yüzyılda olmuştur.
+- Dört tellidir. 
+- Tenor sesli bir çalgıdır.
+- Bu çalgının atası viola da gamba adı verilen 4 adet teli bulunan perdeli bir çalgıdır.
+- Keman ile viyolonselin şekilleri büyük oranda birbirini andırsa da boyutları çok farklıdır.
+- Viyolonsel genellikle akustik olarak kullanılan bir enstrümandır. 
+- Her mekânda (açık alan, konser salonu vs.) çalınabilir. 
+- Karşıdan bakıldığında gövdesinin orta bölümünde bulunan ve el yazısı ile f harfini andıran 2 ses deliği ve eşik (köprü) olarak adlandırılan bir destek bulunur. 
+- Yayın tellere teması ile titreşen tellerden çıkan ses, eşik tarafından gövdenin içindeki havayı titreştirerek, içeride dikey olarak bulunan can direğine iletilir ve bu deliklerden geri döner.
+- Özellikle operaya ait eserlerin vazgeçilmezi haline gelmiştir. 
+
+ ''',
                       style: TextStyle(
                         fontSize: 15,
                         color: Colors.white,

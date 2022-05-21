@@ -115,7 +115,7 @@ class ClassicPageState extends State<ViolinInfo1> {
                   height: 10,
                 ),
                 Text(
-                  'Keman Tarihçe',
+                  'Hakkında',
                   style: GoogleFonts.pacifico(
                     fontSize: 28,
                     color: Colors.white,
@@ -128,7 +128,25 @@ class ClassicPageState extends State<ViolinInfo1> {
                 Expanded(
                   child: SingleChildScrollView(
                     child: Text(
-                      'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore ',
+                      '''- Keman (veya viyolon), viyola ve viyolonselin de bulunduğu violin ailesinin en yüksek tondan çalan, en küçük üyesidir. 
+- Günümüz anlamdaki keman ilk olarak 14. yüzyılda Kuzey İtalya'da ortaya çıktı. 
+- Bu dönemden sonra keman Avrupa'da yayıldı.
+- İlk keman yapımcılarının Rebec, Rönesans da Fer tarafından Orta Çağ'da İtalya'da Lira da Braci, Fransa'da Viel adlarıyla kullanılan yaylı çalgılar Keman'ın atası sayılır. 
+- 16. ve 17. yüzyıldaki keman yapım ustaları Nicolo Amati, Paolo Maggini, Giuseppe Guarneru, Antonio Stradivarius kemana son şeklini vermişlerdir. 
+- Keman asıl biçimi korumakla birlikte 19. yüzyılda bazı değişikliklere uğradı. Çağdaş kemanda gövde ve sap daha uzun, köprü daha yüksektir.
+- Keman kelimesi, Ortacağ Latincesindeki “vitula” kelimesinden gelmektedir.
+- Almanca Geige, Fransızca Violon, İngilizce Violin, İtalyanca Violino'dur.
+- Dört teli vardır. 
+- Akort sesleri pesten tize sol, re, la ve mi'dir.
+- Yayla çalınan telli bir çalgıdır.
+- Keman yayına arşe denir.
+- Keman yayı genellikle 170 ile 200 saç teli içermektedir. Keman yayı naylon ve at saçı dahil olmak üzere çeşitli malzemelerden oluşmaktadır.
+- Ayrıca yayını düzgünleştirmek ve sesi güzelleştirmek amacıyla arşeye reçine adı verilen madde sürülür. Reçine bala benzeyen sarı renkli katı bir maddedir.
+- Solo ve eşlik görevi verilir (özellikle bir solo çalgıdır).
+- Uzunluğu 60 cm'dir.
+- Keman asıl olarak Batı’da ortaya çıkan bir enstrümandır. Bunun için genelde Batı Müziği’nde kullanılmaktadır. Keman çok yönlü bir enstrüman olduğundan dolayı pek bi’ tür kısıtlaması yoktur. Klasik müzikten tutun da pop müziğe, metal müziğe kadar kullanım alanları mevcuttur.
+
+ ''',
                       style: TextStyle(
                         fontSize: 15,
                         color: Colors.white,

@@ -115,7 +115,7 @@ class ClassicPageState extends State<HandpanInfo1> {
                   height: 10,
                 ),
                 Text(
-                  'Handpan Tarihçe',
+                  'Hakkında',
                   style: GoogleFonts.pacifico(
                     fontSize: 28,
                     color: Colors.white,
@@ -128,7 +128,16 @@ class ClassicPageState extends State<HandpanInfo1> {
                 Expanded(
                   child: SingleChildScrollView(
                     child: Text(
-                      'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore ',
+                      '''- Hang (drum) olarak bilenen daha sonra el yapımı olup ve daha anlaşılır olması için hang yerine handpan adı verilen bir çeşit perküsyon enstrümandır.
+- Karayip enstrümanı Steelpan’in kuzeni sınıflandırılan ve ‘Hipnotik Enstrüman’ olarak nitelendirilen hang, Bern dilinde ve Macarca’da el anlamına geliyor.
+- İlk kez 1989 yılında, Felix Rohner, Macaristan turunda icat etmiştir. 
+- Steelband olarak adlandırdığı perküsyon aletini 1 yıl kadar güneşin altında bekletmiş, onun deyimiyle yaşlanmış varilden yapmıştır. Harika sıcak bir ses elde ettiği ilk Steelband, fabrikadan çıkan yeni bir varilden çok daha iyi bir sese sahiptir. Bunun fark edilmesi yapay yaşlanmış metaller olan pang kompozit markasının oluşumunda uzun süren araştırma sürecinin başlangıcı olmuştur. Böylece hang veya handpan yaygınlaşmaya başlamıştır.
+- Görünüşü kaplumbağa kabuğunu andıran perküsyon aleti, çelikten üretilir. 
+- Kucakta ya da yere konularak el ve parmaklarla çalınır. 
+- Sesini hiç duymayanlar için benzetme yapmak gerekirse arp, gong ya da yere düşen gözleme sacını andıran bir sesi var. 
+- Yüzeydeki 7 çukura vurarak titreşim yoluyla sesler elde edilir. Sesler diyoruz çünkü notalar konusunda belirsizlik var. 
+- Bugüne kadar hang’in boy boy 45’ten fazla modeli geliştirildi. Ancak çalma konusunda bir kural ya da okullarda öğretilen bir yöntemi henüz yok. Yine de bir mantığı var: 35 nota düzeninde tasarlanan Hang’ı satın alırken yalnızca bir notayı seçebiliyorsunuz, örneğin fa diyez hang. Ancak bu enstrümanda düşük bas tonları çalmak kimilerine göre imkânsız.
+ ''',
                       style: TextStyle(
                         fontSize: 15,
                         color: Colors.white,

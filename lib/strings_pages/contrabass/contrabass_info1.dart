@@ -115,7 +115,7 @@ class ClassicPageState extends State<CtbInfo1> {
                   height: 10,
                 ),
                 Text(
-                  'Kontrbas Tarihçe',
+                  'Hakkında',
                   style: GoogleFonts.pacifico(
                     fontSize: 28,
                     color: Colors.white,
@@ -128,7 +128,22 @@ class ClassicPageState extends State<CtbInfo1> {
                 Expanded(
                   child: SingleChildScrollView(
                     child: Text(
-                      'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore ',
+                      '''- Kontrbas, keman ailesinden, yaylılar grubunun en kalın sesli çalgısıdır. 
+- Kontrbas Violone adı verilen bir Rönesans çalgısından türemiştir. 
+- 16. yüzyıldan 18. yüzyıla kadar bir değişim süreci geçirmiştir. 
+- 18. yüzyılın ikinci yarısında bugünkü biçimini almıştır. 
+- 4 telli ve 5 telli olmak üzere iki türü bulunur. 
+- 5 telli olan kontrbasa senfonik orkestra eserlerinin icrasında sık olarak ihtiyaç duyulmaktadır. 
+- Kontrbasın, özel bir tür çelikten yapılmış dört teli vardır. 
+- Bunun yanında yalnız bağırsak ya da bağırsak üzerine çelik sargı veya başka yapay malzemeler kullanılarak hazırlanmış teller de bulunabilmektedir. 
+- Teller Mi, La, Re, Sol olarak akort edilir. 
+- Yay kullanılarak ya da parmaklar yardımıyla çalınır. 
+- Diğer yaylı çalgılardan farklı olarak iki çeşit yay modeli bulunmaktadır. Bunlar Alman ve Fransız olarak adlandırılmaktadır. Alman modelde yay yan taraftan kavranarak tutulurken, Fransız modelde yay yukarıdan tutulur. 
+- Çok büyütülmüş bir keman görünümündedir. 
+- Boyu 1,80 metre, eni 60 cm olan kontrbas bu boyutları nedeniyle ayakta ya da yüksek bir tabureye oturularak çalınır. 
+- Senfonik orkestraların, caz, pop ve rock müzik topluluklarının ana çalgılarından biridir. Kontrbas, özellikle caz müziğin vazgeçilmez çalgısı olmuştur. 
+- Bu enstrüman için eser yazmış olan bestecilerin başında; K.D.von Dittesdorf, G.B.Vanhal, J.M.Sperger, V.Pichl, A.F.Hoffmeister, G.Bottesini, D.Dragonetti, A.Misek, S.Koussevitzky gelmektedir.
+ ''',
                       style: TextStyle(
                         fontSize: 15,
                         color: Colors.white,

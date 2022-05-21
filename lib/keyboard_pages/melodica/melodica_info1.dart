@@ -115,7 +115,7 @@ class ClassicPageState extends State<MelodicaInfo1> {
                   height: 10,
                 ),
                 Text(
-                  'Melodika Tarihçe',
+                  'Hakkında',
                   style: GoogleFonts.pacifico(
                     fontSize: 28,
                     color: Colors.white,
@@ -128,7 +128,26 @@ class ClassicPageState extends State<MelodicaInfo1> {
                 Expanded(
                   child: SingleChildScrollView(
                     child: Text(
-                      'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore ',
+                      '''- Melodika, üflemeli ve tuşlu bir müzik enstrümanıdır. 
+- Bu enstrüman ağızla üflenir ve tuşlara basılarak ses çıkarılır. 
+- Flüte benzer ama tek bir tuşa basınca o nota çıkar.
+- Melodikada her tuş bir notaya karşılık gelmektedir.
+- Notalar “fa” ile başlar ve “do” ile biter. 
+- Parmaklar numaralandırılır ve baş parmak 1, işaret parmağı 2, orta parmak 3, yüzük parmağı 4, serçe parmağı da 5 olarak adlandırılır.
+- Tuş adetine göre adlandırılmış 2 tür melodika bulunmaktadır:
+1.	13 tuşlu melodika
+
+- En basit melodika çeşididir. Blok flüte en çok benzeyen türü olup çalan kişinin enstrümanı elinde tutması gerekir. 13 tuşlu melodikalar hortumla çalınamazlar.
+
+2.	- 25, 32 veya 37 tuşlu melodika
+- Birbirinden farkı sadece tuş sayısı olan bu üç tip melodikaların özelliği 13 tuşluya göre daha fazla farklı sesin çıkarılabilmesi ve düz bir zemine konularak ve hortum ile üflenerek çalınabilmesidir. Çoğunlukla üfleme hortumu ile birlikte satılmaktadır.
+- Yeni başlayanlar uzun hortumuyla kullanırlar. 
+- Sol elle tutulur, sağ elle üzerindeki (piyano tuşları gibi) tuşlarına basılarak çalınır. 
+- Arkasında tutacak sapı bulunur.
+
+- Müzik eğitimi için ideal bir çalgıdır. Melodika genelde ilköğretim okullarında eğitim amaçlı olarak müzik derslerinde çalınmaktadır. 
+
+ ''',
                       style: TextStyle(
                         fontSize: 15,
                         color: Colors.white,

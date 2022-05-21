@@ -115,7 +115,7 @@ class ClassicPageState extends State<ClairnetInfo1> {
                   height: 10,
                 ),
                 Text(
-                  'Klarnet Tarihçe',
+                  'Hakkında',
                   style: GoogleFonts.pacifico(
                     fontSize: 28,
                     color: Colors.white,
@@ -128,7 +128,23 @@ class ClassicPageState extends State<ClairnetInfo1> {
                 Expanded(
                   child: SingleChildScrollView(
                     child: Text(
-                      'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore ',
+                      '''- Klarnet, sert ve dayanıklı ağaçlardan genellikle de abanoz ağacından yapılan üflemeli bir çalgı türüdür. 
+- Klarnet çalabilmek için kamış ve kamışı beke sabitleyip düzgün frekanslarda titreşim oluşması için bileziğe ihtiyaç vardır. 
+- Klarnetin bir arada durması için parçaların uç kısımlarında genellikle mantarlar bulunur. Bu parçaların tamamının birleştirilmiş haline klarnet denilmektedir. 
+- Klarnetin içi silindirik yapıdadır. 
+- Gövdesi üzerinde delikler, halkalar ve metal tuşlar bulunmaktadır. 
+- Yapısı silindir bir boru şeklindedir ve alt kısmına indikçe hafifçe kalınlaşan bir kalakla son bulur. 
+- Klarnet, tarihi 19. yüzyılda Chalumeau (Şalümo) adıyla orkestralarda icra edilen nefesli saz klarnetin atasıdır. Fransızcadan gelen bu isim nefesli sazların genel adıdır. 
+- Aynı yüzyılda Denner adlı çalgı yapım ustası Şalümo’yu geliştirerek bugünkü sisteme doğru ilk adımı atmıştır. 
+- 18. yüzyılda keşfedilen enstrümanın orkestraya dâhil edilmesi 1750 yılında olmuştur.
+- 1800’lü yıllarda klarnetin oda orkestralarında yaygınlaşmasında Mozart’ın rolünün büyük olduğu bilinmektedir. 
+- Klarnet temel olarak 5 parçanın birleşiminden oluşmaktadır bunlar; Bek (Ağızlık), Baril (Fıçı veya barel), Üst Gövde, Alt Gövde (Şalümo), Kalak (Pavillon) Klarnet kalabalık bir aileye sahiptir. 
+- Çeşitleri şunlardır; Sol Klarnet (G), Mi Bemol Klarnet (Eb), Bas Klarnet , La Klarnet (A) , Do Klarnet, Si Bemol Klarnet (Bb), Alto Klarnet (Mi Bemol), Kontrabas Klarnet, La Bemol Klarnettir. 
+- Türkiye’de en yayın olarak kullanılan çeşidi ise sol (G) klarnettir. 
+- Tüm klarnet çeşitlerinde parmak pozisyonlarının isimleri ve parmak pozisyonları kullanımını gösteren işaretler aynı olduğu gibi, ses sahalarının gösterilişi ve nota yazımları da aynıdır. Sadece duyulan sesin piyanodaki karşılığına göre klarnetler isimlendirilir ve transpozisyon yapılarak seslendirme yapılır. 
+- Birbirinden farklı birçok müzik türünde kullanılan klarnet; caz müzikten arabesk müziğe kadar, klasik müzik, Türk müziği, Batı müziği gibi müzik türlerinde kullanılabilen bir müzik aletidir.
+
+ ''',
                       style: TextStyle(
                         fontSize: 15,
                         color: Colors.white,
