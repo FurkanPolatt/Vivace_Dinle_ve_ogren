@@ -73,28 +73,29 @@ class ClassicPageState extends State<BassInfo1> {
   }
 
   _buildPageView() {
-    return Container(
-      height: _boxHeight,
-      margin: EdgeInsets.only(top: _boxHeight / 3.5),
-      child: PageView.builder(
-          itemCount: appBannerList.length,
-          controller: _pageController,
-          itemBuilder: (BuildContext context, int index) {
-            return Expanded(
-              child: Container(
+    return Expanded(
+      child: Container(
+        padding: EdgeInsets.all(8),
+        height: _boxHeight,
+        margin: EdgeInsets.only(top: _boxHeight / 3.5),
+        child: PageView.builder(
+            itemCount: appBannerList.length,
+            controller: _pageController,
+            itemBuilder: (BuildContext context, int index) {
+              return Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(28),
                   image: DecorationImage(
-                    image: AssetImage(appBannerList[index].image),
+                    image: AssetImage(appBannerList[2].image),
                     fit: BoxFit.cover,
                   ),
                 ),
-              ),
-            );
-          },
-          onPageChanged: (int index) {
-            _currentPageNotifier.value = index;
-          }),
+              );
+            },
+            onPageChanged: (int index) {
+              _currentPageNotifier.value = index;
+            }),
+      ),
     );
   }
 

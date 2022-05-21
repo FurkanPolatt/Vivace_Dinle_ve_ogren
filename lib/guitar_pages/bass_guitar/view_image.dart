@@ -26,10 +26,10 @@ List<AppBanner> appBannerList = [
     id: 2,
     title: 'TİTLE',
     images: DecorationImage(
-      image: AssetImage('assets/background/bass_guitar.jpg'),
+      image: AssetImage('assets/background/classic_guitar.jpg'),
       fit: BoxFit.cover,
     ),
-    image: 'assets/background/bass_guitar.jpg',
+    image: 'assets/background/classic_guitar.jpg',
   ),
   AppBanner(
     id: 3,

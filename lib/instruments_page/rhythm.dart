@@ -57,7 +57,7 @@ class Rhythm extends StatelessWidget {
                                 child: Opacity(
                                   opacity: 0.85,
                                   child: Text(
-                                    'Bateri',
+                                    'Akustik Davul',
                                     textAlign: TextAlign.center,
                                     style: GoogleFonts.pacifico(
                                         color: Colors.white, fontSize: 30),
