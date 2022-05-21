@@ -115,7 +115,7 @@ class ClassicPageState extends State<SaxInfo1> {
                   height: 10,
                 ),
                 Text(
-                  'Saksafon Tarihçe',
+                  'Hakkında',
                   style: GoogleFonts.pacifico(
                     fontSize: 28,
                     color: Colors.white,
@@ -128,7 +128,15 @@ class ClassicPageState extends State<SaxInfo1> {
                 Expanded(
                   child: SingleChildScrollView(
                     child: Text(
-                      'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore ',
+                      '''- Saksafon çoğunlukla pirinçten yapılan, koni ve “S” biçiminde olan, ağızındaki kamışla ses çıkaran bir çalgıdır.
+- Saksafon genellikle Pop-müziği, “big band” müziği ve caz ile ilişkilendirilse de, önceleri klasik batı müziği ve ordu müziği çalgısı olarak tasarlanmıştır.
+- Hem ellerin hem de hem de ağzın kullanılarak çalındığı bir müzik aletidir. 
+- Saksafon çalınırken, sol el üstte ve sağ el alttadır. Başparmak arka kısımdan destek alır. Bu şekilde saksafon sabit bir hale getirilerek, nefes ve nota uyumuyla çalınır.
+- Adolphe Sax, saksafonu oluşturmaya başladığında ana fikri ya da amacı, pirincin gücünü ve bir tahta rüzgârlığın ton kalitesini içerecek bir araç yapmaktır. Temelde hem pirinç hem de nefesli çalgıların senfonik seslerini bir araya getirmek istemiştir. Bu hedefi göz önünde bulundurarak büyük bir saksafon, çok belirgin bir konik şekle sahip olan ilk eseridir ve bu esere 20 Mart 1864 tarihinde saksafon denmiştir.
+- Küçükten büyüğe saksafon türleri ve sıralanışı şu şekildedir; Sopranino, C Soprano, Soprano, F Mezzo Soprano, Alto, C – Ezgi, Tenor, Bariton,Soprano, Bas, Kontrbas, Subkontrbas. 
+- Günümüzde en çok alto, bariton, tenor saksafon kullanılır.
+- Saksafon genelde caz müzikte kullanımı yaygındır.
+ ''',
                       style: TextStyle(
                         fontSize: 15,
                         color: Colors.white,

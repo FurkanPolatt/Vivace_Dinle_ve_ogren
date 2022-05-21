@@ -115,7 +115,7 @@ class ClassicPageState extends State<ViolaInfo1> {
                   height: 10,
                 ),
                 Text(
-                  'Viola Tarihçe',
+                  'Hakkında',
                   style: GoogleFonts.pacifico(
                     fontSize: 28,
                     color: Colors.white,
@@ -128,7 +128,15 @@ class ClassicPageState extends State<ViolaInfo1> {
                 Expanded(
                   child: SingleChildScrollView(
                     child: Text(
-                      'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore ',
+                      '''- Viyola, yaylı çalgılar ailesinin ikinci üyesidir ve Alto' da denir. 
+- 7. yüzyılda İngiltere’de icat edildiği ileri sürüldüğü gibi, aynı yüzyılda İtalya’da bulunduğu da iddia edilmektedir. 
+- Fiziki yapısı kemana çok benzer. Keman ailesi müzik aletlerinde orta sese sahiptir ve keman ile çello arasında yer alır. 
+- Gövde uzunluğu 41 – 45 cm civarındadır.
+- Viyolanın da dört teli vardır ve tam beşli aralıklarla DO, SOL, RE, LA olarak akort edilir.
+- Viyola teknik açıdan da kemana çok benzer. Parmak ve yay tekniği, pozisyonlar ve değişik ses renklerini elde etme yöntemleri kemandan farksızdır. Fakat viyolanın genelde koyu, derin ve can alıcı bir ses rengi vardır.
+- Genellikle viyolaya, orkestrada armoni eşliğinin orta partilerini seslendirme görevi verilir çünkü viyolanın ses alanı, orkestranın ses alanının tam ortasındadır. Kimi zaman özelliklerinden faydalanmak için bu çalgıya karakteristik ezgileri seslendirme görevi de verilir.
+- Viyola bazen çağdaş popüler müzikte, çoğunlukla avangardda kullanılır.
+ ''',
                       style: TextStyle(
                         fontSize: 15,
                         color: Colors.white,

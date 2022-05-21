@@ -116,7 +116,7 @@ class ClassicPageState extends State<BassInfo1> {
                   height: 10,
                 ),
                 Text(
-                  'Bass Gitar Tarihçe',
+                  'Hakkında',
                   style: GoogleFonts.pacifico(
                     fontSize: 28,
                     color: Colors.white,
@@ -129,7 +129,19 @@ class ClassicPageState extends State<BassInfo1> {
                 Expanded(
                   child: SingleChildScrollView(
                     child: Text(
-                      'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore ',
+                      '''- İlk olarak Fender tarafından 1950'li yılların başlarında Fender Precision Bass modeliyle üretilmiştir.
+- Çoğunlukla dört teli olan ve kalın ses veren telli bir çalgıdır
+- Bas gitar bir türev enstrümandır; her müzik türünün kendine özgü bas enstrümanı vardır.
+- Bas gitar, elektrik ve akustik olarak ikiye ayrılır:
+- Elektrikli basta tellerden gelen titreşimler manyetikler tarafından elektrik sinyaline çevrilip bu sinyali sese çevirecek olan yükselteçe yollanırken, akustik basta akustik gitar gibi geniş ve oyuk olan gövde tellerden gelen sesi güçlendirip duyulabilir bir seviyeye çıkarır. 
+- Bas gitarın sesi, normal gitarlardan daha kalın, kontrbas gitarlardan daha incedir. 
+- Normal bir gitardan daha kalın tellere ve daha uzun bir ölçeğe sahip olan bas gitarın gövdesinin elektrik baslarda ön, akustik baslarda yan tarafında ton ve sesi değiştirmeye yarayan bir eşitleyici bulunur. 
+- Bas gitarların elektro gitar yükselticilerinden farklı olan, düşük frekanstaki sesleri daha iyi verebilen özel yükselteçleri bulunur.
+- Bas gitar, genel olarak rock müzik için kullanılan bas çalgıdır denebilir. Türk müziği için "bas bağlama", klasik yaylılar için "kontrbas", metal üflemeliler için "tuba", ağaç üflemeliler için "kontrfagot", piyanonun sol eli ve benzeri enstrümanlar da icra edilen müzik tarzları için kullanılan bas çalgılardır.
+- Bas gitarlar ise daha çok rock, metal, caz, blues, punk ve R&B gibi müzik türlerinde kullanılmaktadır.
+
+
+ ''',
                       style: TextStyle(
                         fontSize: 15,
                         color: Colors.white,

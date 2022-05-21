@@ -115,7 +115,7 @@ class ClassicPageState extends State<ClassicInfo1> {
                   height: 10,
                 ),
                 Text(
-                  'Klasik Gitar Tarihçe',
+                  'Hakkında',
                   style: GoogleFonts.pacifico(
                     fontSize: 28,
                     color: Colors.white,
@@ -128,7 +128,20 @@ class ClassicPageState extends State<ClassicInfo1> {
                 Expanded(
                   child: SingleChildScrollView(
                     child: Text(
-                      'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore ',
+                      '''- Modern klasik gitar, 1850'li yıllarda İspanyol usta Antonio Torres sayesinde günümüzdeki şeklini aldı.
+- Gitarın gövdesinin ortasında ses deliği denilen yuvarlak bir boşluk bulunur. 
+- Gitarın telleri titreştiğinde gövdenin içinde bulunan hava titreşir ve tek çıkış noktası olan bu yuvarlak boşluktan dışarı ses olarak geri çıkar. 
+- Toplam 6 tel vardır: 3’ü kalın tel çelikten ve kalan 3’ü de ince tel naylondan yapılmıştır.
+- Genellikle parmak ile çalınır.
+- Sağ elini kullanan müzisyenler tellere vurmak için sağ elin parmaklarını kullanır, başparmak telin tepesinden aşağıya doğru (aşağı vuruş) ve diğer parmaklar telin altından yukarıya doğru (yukarı vuruş) vurulur.
+- Genelde klasik ve flamenko tarzı müziklerde kullanılır.
+Parmak Gösterimi:
+P: Başparmak
+İ: İşaret parmağı
+M: Orta parmak
+A: Yüzük parmağı
+X: Sağ elin serçe parmağı
+ ''',
                       style: TextStyle(
                         fontSize: 15,
                         color: Colors.white,

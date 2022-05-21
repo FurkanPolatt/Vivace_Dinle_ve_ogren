@@ -115,7 +115,7 @@ class ClassicPageState extends State<ElectroInfo1> {
                   height: 10,
                 ),
                 Text(
-                  'Elektro Gitar Tarihçe',
+                  'Hakkında',
                   style: GoogleFonts.pacifico(
                     fontSize: 28,
                     color: Colors.white,
@@ -128,7 +128,31 @@ class ClassicPageState extends State<ElectroInfo1> {
                 Expanded(
                   child: SingleChildScrollView(
                     child: Text(
-                      'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore ',
+                      '''- 1900' lü yılların sonlarında Orville Gibson oval ses delikli archtop gitarları yaptı. 
+- 1920’ lerin erken dönemlerinde tasarımcı Lloyd Loar, Gibson’ a katıldı ve archtop caz gitarı bugünkü f-delikli tanıdık formuna soktu.
+- 1920 lerin sonuna doğru caz gitarlara manyetiklerin eklenmesi ile elektro gitar doğdu.
+- Elektro gitar veya elektronik gitar, sesini manyetikleri aracılığı ile elektrik akımına dönüştüren ve bir amplifikatör ile bu akımdan ses elde edilmesine olanak tanıyan gitar türüdür.
+- Oluşturduğu sinyalin değiştirilebilir olması ve yüksek bir sese sahip olması nedeniyle, kullanım alanı çok genişlemiş bir gitar türüdür.
+- Elektro gitar boş gövdeli ve katı gövdeli olmak üzere 2 gruba ayrılır:
+a. Boş Gövdeli: 
+- Bir yükselticiye gereksinim duymadan, sesin gitardaki boşlukta yankılanarak zengin bir ton çıkarmasıyla çalınan gitarlardır. 
+- Bu tip gövdelerde keman ailesindeki gibi f delikleri bulunabilir. 
+- Bu tarz gövdeyi 1890'da tasarlayan ve dünyaya tanıtan Gibson firmasıdır.
+b. Katı Gövdeli
+- Katı gövdeli gitarlar; masif gövdeye sahip, sesin doğal yollardan yükselmesine izin vermeyen tipte gövdelere sahip gitarlardır. 
+- Yüksek çıkış gücü olan ses kaynaklarının olduğu yerlerde geri beslemeyi en aza indirgeyen gövde türüdür.
+- Elektro gitarlar daha çok rock ve metal gibi sert müzik türleri ile anılsa da günümüzde pop müzik türünde dahi kullanılabilmektedir.
+- Kendi içinde 9’a ayrılır:
+1. Amerikan elektro gitar markaları: B.C Rich, Dean, PRS , Fender, Gibson…
+2. Japon elektro gitar markaları: Aria, ESP, Ibanez, Yamaha…
+3. Kore elektro gitar markaları: Cort
+4. Kanada elektro gitar markaları: Eastwood Guitars, Godin Guitars
+5. İtalyan elektro gitar markaları: Eko
+6. Alman elektro gitar markaları: Steinberger, Gretsch, Höfner
+7. Çek elektro gitar markaları: Ashton, Crafter
+8. Avustralya elektro gitar markaları: Tatra, Czerny
+9. Belçikalı elektro gitar markaları: Stagg
+ ''',
                       style: TextStyle(
                         fontSize: 15,
                         color: Colors.white,

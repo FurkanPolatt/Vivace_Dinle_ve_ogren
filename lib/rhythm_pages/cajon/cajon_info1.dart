@@ -115,7 +115,7 @@ class ClassicPageState extends State<CajonInfo1> {
                   height: 10,
                 ),
                 Text(
-                  'Kahon Tarihçe',
+                  'Hakkında',
                   style: GoogleFonts.pacifico(
                     fontSize: 28,
                     color: Colors.white,
@@ -128,7 +128,17 @@ class ClassicPageState extends State<CajonInfo1> {
                 Expanded(
                   child: SingleChildScrollView(
                     child: Text(
-                      'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore ',
+                      '''- Cajón, başlangıçta Peru'dan gelen, ön veya arka yüzleri eller, parmaklar veya bazen fırçalar, tokmaklar veya çubuklar gibi aletlerle tokatlayarak çalınan kutu şeklinde bir vurmalı çalgıdır. 
+- Cajones esas olarak Afro-Perulu müziğinde çalınır, ancak flamenkoya da girmiştir.
+- Cajon, 18. yüzyılın sonlarından itibaren en fazla kullanılan Afrika-Peru kökenli müzik çalgısıdır. Amerika’daki müzik performanslarında yaygın olarak kullanılan bir çalgı olmasına rağmen, İç ve Batı Amerika’daki Afrika kökeninin, özellikle Peru’nun cajonların kaynağı olduğu düşünülmektedir.
+- Cajonun beş yüzeyi için genellikle 1,3 cm’den 1,9 cm’e değişen kontra plaklar kullanılır. 
+Diğer yüzey yani vurulan başlıca yüzey (tapa) için ise daha ince kontra plaklar kullanılır. 
+- Vurulan bu başlıca yüzeyin (tapa) tam karşısında yani cajonun arka yüzeyinde ise bir ses deliği bulunur. 
+- Üst kenarlar çoğu zaman serbest / birleşik olmayan şekilde bırakılır. 
+- Çalgıcı, kutunun üzerine bacaklarını açarak oturur ve ona bir açıyla eğim verirken, bir yandan da dizlerinin arasından cajonun başlıca yüzeyine (tapa) vurur. 
+- Modern cajonların kauçuk ayakları olabilmektedir ve üst tarafında vurmalı ses tınısını ayarlayıcı birkaç vidası vardır.
+- Cajon en fazla Küba müziklerinde, Peru sahil müziklerinde ve (Afrikan-İspanyol-And Dağları müziklerinin etkisiyle oluşmuş) Musica Criolla denen müzik türlerinde duyulmaktadır: Tondero, Zamacueca ve Peru Walsi, modern Flamenko ve Rumba’nın bazı modern türlerinde cajon yaygın olarak kullanılır.
+ ''',
                       style: TextStyle(
                         fontSize: 15,
                         color: Colors.white,

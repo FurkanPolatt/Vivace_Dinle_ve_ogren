@@ -115,7 +115,7 @@ class ClassicPageState extends State<AcousticInfo1> {
                   height: 10,
                 ),
                 Text(
-                  'Akustik Gitar Tarihçe',
+                  'Hakkında',
                   style: GoogleFonts.pacifico(
                     fontSize: 28,
                     color: Colors.white,
@@ -128,7 +128,17 @@ class ClassicPageState extends State<AcousticInfo1> {
                 Expanded(
                   child: SingleChildScrollView(
                     child: Text(
-                      'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore ',
+                      '''- İspanyol usta Torre ve Amerika’ ya göçen Alman göçmenler X-balkonlama ile gitar yapmaya başladılar. 
+- 1900 lerde çelik tel geniş çapta ulaşılabilir oldu ve bu da akustik gitarın icadı için bir yol açtı. 
+- Görünüş olarak klasik gitara benzer.
+- Akustik gitarın gövdesi, klasik gitardan biraz daha şişman ve basıktır.
+- Akustik gitarın klasik gitara göre daha dar bir sapa sahiptir
+- Genellikle 4 teli sarımlı çelik, diğer 2 teli ise sarımsız çelikten oluşur. 
+- Akustik gitar çalınırken pena kullanılabilir.
+- Belli bir elektronik sisteme gerek duymaz. Klasik gitara oranla daha yüksek, daha temiz ve sert ses çıkarabilen bit gitar türüdür.
+- Rock, blues ve caz müzik türlerinde çok kullanılan bir gitar türüdür.
+- Aynı zamanda Pop müzikte de ritmi sağlamak için çok önemli bir enstrümandır. 
+ ''',
                       style: TextStyle(
                         fontSize: 15,
                         color: Colors.white,

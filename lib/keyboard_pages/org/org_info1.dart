@@ -115,7 +115,7 @@ class ClassicPageState extends State<OrgInfo1> {
                   height: 10,
                 ),
                 Text(
-                  'Org Tarihçe',
+                  'Hakkında',
                   style: GoogleFonts.pacifico(
                     fontSize: 28,
                     color: Colors.white,
@@ -128,7 +128,15 @@ class ClassicPageState extends State<OrgInfo1> {
                 Expanded(
                   child: SingleChildScrollView(
                     child: Text(
-                      'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore ',
+                      '''- Org, ismini Latince “Organum”dan alır. 
+- İlk yapımı çok eski yüzyıllara uzanıp (M.Ö. 150-200 yıllarında) Mısır da Ktesibios adında birinin ilk su orgunu yaptığı söylenir. 
+- 18.ci yy a kadar üç tip org varlığını sürdürdü; Portatif Org, Pozitif Org, Büyük Org. 
+- Klasik org, Avrupalı yapıcılar elinde gelişerek 13-14ncü yy. sonlarında bugünkü durumuna geldi.
+- Laurens Hammond’ un elektrikli orgu yapmasıyla, en kullanışlı biçimine ulaşmıştır. İlk kez 1934’te ABD’de yapılan elektronik orgda borular ve hava mekanizması bulunmaz; sesler elektronik olarak üretilir.
+- Orgda Ses, körükle verilen havanın tahta veya metal borulardan geçerken üflemeli çalgılarda olduğu gibi içerdeki hava sütunlarını titreştirmesiyle elde edilir. 
+- Klavyeli ve pedallı bir enstrümandır. Değişik ses tonları ve notalar piyanoda olduğu gibi tuşlarla denetlenir. En çok bilinen türü kilise orgudur.
+- İlk olarak tiyatrolarda ve sirklerde kullanılan ve dindışı müzik çalgısı olan org; Roma İmparatorluğu döneminde bütün batı dünyasına yayıldı. 10ncu yy dan başlayarak, çok sesli yapıtların çoğalmasıyla da birlikte dindışı müzik alanından kilise müziği alanına kaydı. Uzun süre kilise müziğinde kullanılan bu çalgı, sonraları dindışı müziğin de en yetkin çalgıları içinde yer almıştır. 
+ ''',
                       style: TextStyle(
                         fontSize: 15,
                         color: Colors.white,

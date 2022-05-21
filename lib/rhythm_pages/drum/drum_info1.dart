@@ -115,7 +115,7 @@ class ClassicPageState extends State<DrumInfo1> {
                   height: 10,
                 ),
                 Text(
-                  'Akustik Davul Tarihçe',
+                  'Hakkında',
                   style: GoogleFonts.pacifico(
                     fontSize: 28,
                     color: Colors.white,
@@ -128,7 +128,26 @@ class ClassicPageState extends State<DrumInfo1> {
                 Expanded(
                   child: SingleChildScrollView(
                     child: Text(
-                      'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore ',
+                      '''- Bateri ritim tutmaya yarayan, zil ve davullardan oluşan, çalarken akıcı, dengeli ve koordineli olmayı gerektiren bir müzik aletidir. 
+- Perküsyonların yani vurmalı çalgıların en popüler üyelerinden birisidir. 
+- Çalarken hız ve çevikliğin yanında el ve ayak koordinasyonu çok önemlidir.
+- Bateri ahşap bir materyal olan bagetlerle bateristler tarafından çalınır.
+- Baterinin tarihçesi aslında davulun bulunmasıyla başlar. Davul ise tarihteki en eski çalgılardan biridir. Eski medeniyetlerin çeşitli törenlerinde veya savaşa giderken davullar kullanılırdı. 
+- Bateri kelimesi Fransızcada vurulan anlamına gelen “batterie” den gelmektedir. 
+- 18. Yüzyıl’ da bateri gibi toplu çalgılar yerine insanlar davulu ayrı, trampeti ayrı, zilleri ayrı çalıyordu. 
+- 19.Yüzyıl’ a kadar baterinin gelişimi devam etti. 
+- Önce iki davuldan oluşan setler sonra da pedallar eklendi. 
+- Pedallar sayesinde bateri çalarken ayaklarımızı kullanma imkânı da oluştu.
+- Genellikle baterinin yapısında 5 parça davul ve 3 parça zil bulunur. 
+- 5 parça davul 1 high tom, 1 mid tom, 1 floor tom, trampet ve pes (bass drum) davuldan oluşur. 
+- 3 parça zil takımı ise crash, hi-hat ve ride ismindedir. 
+- Bu standartların dışında bateristler müzik türüne veya kendi tarzına göre istediği modifikasyonları yapabilir. 
+- Davulları sabitlemek için stand denilen sehpalar kullanılır. 
+- Kick davulunu kullanmak için single veya twin pedallar vardır. 
+- Davulları çalmak için ise baget, fırça veya tokmaktan faydalanılır. 
+- Değişik uzunluk ve kalınlıkta olan bagetler ahşap dışında karbon veya metal de olabilmektedir.
+- Bateri rock, jazz, blues, pop ve metal müzik türlerinde daha çok kullanılır.
+ ''',
                       style: TextStyle(
                         fontSize: 15,
                         color: Colors.white,

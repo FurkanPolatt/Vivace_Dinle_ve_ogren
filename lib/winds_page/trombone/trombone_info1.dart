@@ -115,7 +115,7 @@ class ClassicPageState extends State<TromboneInfo1> {
                   height: 10,
                 ),
                 Text(
-                  'Trombon Tarihçe',
+                  'Hakkında',
                   style: GoogleFonts.pacifico(
                     fontSize: 28,
                     color: Colors.white,
@@ -128,7 +128,20 @@ class ClassicPageState extends State<TromboneInfo1> {
                 Expanded(
                   child: SingleChildScrollView(
                     child: Text(
-                      'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore ',
+                      '''- Trombon, üflemeli ve bakır nefesli çalgılar grubunda bulunan bir çalgı çeşididir. 
+- Fincan biçimli bir ağızlığa dayanan dudakların titreşmesiyle ses çıkarmaktadır. 
+- Boru uzunluğunu değiştiren ve "kulis" adı verilen bir sürgüsü vardır. Bu sürgü trombonun farklı notalarda ses çıkarabilmesini sağlar.
+- Trombonun tarihçesi 15. yüzyıla dayanır. 
+- Enstrüman trombetin değişimi sonucu Burgonya'da meydana gelir. 
+- 1700'lü yıllara kadar saqueboute olarak adlandırılır. Saqueboute eski bir Fransızca sözcük olup kelime manası çek-it' tir.
+- Trombonun iki türü vardır. Bunlar pistonlu trombon ve sürgülü trombondur. 
+- Pistonlu trombon tenor ve bas olarak iki gruba ayrılır. Si bemol veya do sesine göre yapılmış olan pistonlu trombonda do ve fa anahtarları kullanılmaktadır. Piston mekanizması üç ses bölgesini kapsayacak biçimde bulunmaktadır. Kalın bölgenin ses renginin boğuk olması hasebiyle pürüzsüz ses çıkarmak güçtür. En rahat ses çalgının ikinci ses aralığı olan orta bölgeden çıkar. Üçüncü bölüm ise tiz olduğundan ötürü seslerin çıkarması zordur. 
+- Sürgülü trombon de tenor ve bas olarak iki gruba ayrılır. Sürgülü trombon yapısal olarak pistonlu trombona ile benzerlik göstermektedir. Bu çalgıda piston yerini kulis adıyla anılan sürgülü bir kısmına bırakır. Enstrümandan ses elde etmek içi sürgünün açılıp kapanması gerekmektedir.
+- Bakır üflemeli bir çalgı olan trombon orkestralarda, bando ve mızıkalarda kullanılan enstrümanlar arasındadır. 
+- Enstrümanın geniş ses olanağı vardır. 
+- Son yıllarda caz müziği gruplarında solo olarak kullanılabilen önemli sayılabilecek bir enstrümandır.
+
+ ''',
                       style: TextStyle(
                         fontSize: 15,
                         color: Colors.white,

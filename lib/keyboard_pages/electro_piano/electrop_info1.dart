@@ -115,7 +115,7 @@ class ClassicPageState extends State<ElectroPInfo1> {
                   height: 10,
                 ),
                 Text(
-                  'Elektronik Piyano Tarihçe',
+                  'Hakkında',
                   style: GoogleFonts.pacifico(
                     fontSize: 28,
                     color: Colors.white,
@@ -128,7 +128,11 @@ class ClassicPageState extends State<ElectroPInfo1> {
                 Expanded(
                   child: SingleChildScrollView(
                     child: Text(
-                      'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore ',
+                      '''- Teknolojinin gelişmesiyle birlikte müzikte de hayatı kolaylaştırmaya yönelik çözümler üretilmiştir. Bu çözümlerden bazıları, akustik piyanoları daha küçük bir hale getirmek ve sesini kontrol altına alabilmek olmuştur. Meraklı, araştırmacı ve ısrarcı yaklaşımlar en sonunda 1980’lerin sonlarında dijital piyanoları üretmeyi başarmıştır. 
+- Akustik piyano yapısı itibarıyla çekiçlerin tele vurmasıyla ortaya çıkan mekanik bir sestir ancak dijital piyanolar da adından belli olduğu üzere daha elektronik sistemin kolaylıklarından yararlanarak elde eder. Bu konuda en dikkat edilen unsur dijital piyanoların tuşe konusunda yetersiz kalmasıydı, son birkaç yılda büyük piyano markalarının da el atmasıyla birlikte bu farklılık büyük oranda azaltılmıştır. 
+- Yine akustik piyanolarda kullanılan çekiç sistemi (hammer-action) sistemi dijital piyanolarda da kullanılmakta ve çoğu dijital piyano modelinde gerçek tel gerginliği hissiyatını vermektedir.
+- Birçok ses barındırdığı için kullanım alanı geniş olan elektronik piyano, genel olarak birçok müzik türünde kullanılıyor.
+ ''',
                       style: TextStyle(
                         fontSize: 15,
                         color: Colors.white,
