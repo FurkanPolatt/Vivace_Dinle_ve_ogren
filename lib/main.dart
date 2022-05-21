@@ -8,7 +8,7 @@ import 'animationScreen.dart';
 import 'loading_screen.dart';
 
 dynamic initScreen;
-
+//
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   SharedPreferences prefences = await SharedPreferences.getInstance();
