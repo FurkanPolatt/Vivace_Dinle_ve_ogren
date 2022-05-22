@@ -129,3 +129,71 @@ Neler iyi gitti?
 
 ---
 
+# Sprint 2
+
+- **Sprint Notları**: User Story'ler product backlog'ların içine yazılmıştır. Product backlog item'lara tıklandığında hikayelerin detayları okunabilir.
+
+- **Sprint içinde tamamlanması tahmin edilen puan**: 100 Puan
+
+- **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 300 puanlık backlog bulunmaktadır. İlk sprintte 100 puan tamamlandı ve 2. sprintte de 100 puanın tamamlanmasına karar verildi.
+
+- **Backlog düzeni ve Story seçimleri**: Backlog'umuz ilk yapılacak story'lere göre düzenlenmiştir. Sprint başına tahmin edilen puan sayısını geçmeyecek şekilde sıradan seçimler yapılmaktadır. Story başına çıkan tahmin puanı, toplam puanın yarısından az tutulmuştur. 
+
+Story'ler yapılacak işlere (task'lere) bölünmüştür. Miro Board'da gözüken kırmızı item'lar yapılacak işleri (task) gösterirken, mavi item'lar story'leri temsil etmektedir.
+
+- **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü Discord üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği word dosyası içine yazılıp ekran görüntüleri ile desteklenerek Readme'de tarafımızdan paylaşılmaktadır: [Sprint 2 Daily Scrum Chats](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/DailyScrumChatNotesSprint2.docx)
+
+- **Sprint board update**: Sprint board screenshotları: 
+![Backlog 1](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/2.%20Sprint-backlog/2backlog1.jpg)
+![Backlog 2](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/2.%20Sprint-backlog/2backlog2.jpg)
+![Backlog 3](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/2.%20Sprint-backlog/2backlog3.jpg)
+![Backlog 4](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/2.%20Sprint-backlog/2backlog4.jpg)
+![Backlog 5](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/2.%20Sprint-backlog/2backlog5.jpg)
+
+- **Ürün Durumu**: Ekran görüntüleri:
+  ![Screenshot 1](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/2.%20Sprint-productss/2productss2%20intro1-.png)
+  ![Screenshot 2](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/2.%20Sprint-productss/2productss2%20intro2.png)
+  ![Screenshot 3](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/2.%20Sprint-productss/2productss2%20intro3.png)
+  ![Screenshot 4](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/2.%20Sprint-productss/2productss4.png)
+  ![Screenshot 5](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/2.%20Sprint-productss/2productss5.png)
+  ![Screenshot 6](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/2.%20Sprint-productss/2productss6.png)
+  ![Screenshot 7](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/2.%20Sprint-productss/2productss11.png)
+  ![Screenshot 8](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/2.%20Sprint-productss/2productss12.png)
+  ![Screenshot 9](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/2.%20Sprint-productss/2productss14.png)
+  ![Screenshot 10](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/2.%20Sprint-productss/2productss15.png)
+  ![Screenshot 11](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/2.%20Sprint-productss/2productss16.png)
+  
+- **Sprint Review**: 
+-  Sprint hedeflerine ulaştı ve ürün planladığı gibi geliştirildi. 
+-  *Alınan Kararlar:* 
+- 
+- 
+- 
+- 
+- *Sprint Review katılımcıları:* Halil Furkan Polat, Firdevs Birinci, Onur Arık, Hazal Taneri, Merve Köse 
+
+- **Sprint Retrospective**:
+3 şey üzerine konuştuk: Neler iyi gitti, hangi sorunlar ile karşılaştık ve neler geliştirilmeli?
+Neler iyi gitti?
+
+*Neler İyi Gitti?* 
+- 
+- 
+- 
+- 
+- 
+
+*Hangi Sorunlar İle Karşılaştık?*
+- 
+- 
+
+*Neler Geliştirilmeli?*
+- 
+- 
+- 
+- 
+
+**Diğer Notlar**:
+
+ Miro'da ve Miro'daki Drive linkinde  sprint boyu yaptığımız her aşamayı anlattık, dosyaladık.
+
