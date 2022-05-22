@@ -106,7 +106,7 @@ Story'ler yapılacak işlere (task'lere) bölünmüştür. Miro Board'da gözük
 3 şey üzerine konuştuk: Neler iyi gitti, hangi sorunlar ile karşılaştık ve neler geliştirilmeli?
 Neler iyi gitti?
 
-*Neler İyi Gitti?r* 
+*Neler İyi Gitti?* 
 - Çok hızlı toplandık, tanıştık ve takım ruhunu kazandık.
 - Ortak zevklerimiz olduğu için ortak kararlar aldık, çoğunlukla verimli şekilde ilerledik.
 - Sorunlarla karşılaştığımızda ve bilmediğimiz bir şey olduğunda birbirimize destek olduk ve hızlıca sorunların üstesinden geldik. Furkan her an her şeye özellikle çok fazla zaman ayırdı.
@@ -139,7 +139,7 @@ Neler iyi gitti?
 
 - **Backlog düzeni ve Story seçimleri**: Backlog'umuz ilk yapılacak story'lere göre düzenlenmiştir. Sprint başına tahmin edilen puan sayısını geçmeyecek şekilde sıradan seçimler yapılmaktadır. Story başına çıkan tahmin puanı, toplam puanın yarısından az tutulmuştur. 
 
-Story'ler yapılacak işlere (task'lere) bölünmüştür. Miro Board'da gözüken kırmızı item'lar yapılacak işleri (task) gösterirken, mavi item'lar story'leri temsil etmektedir.
+Story'ler yapılacak işlere (task'lara) bölünmüştür. Miro Board'da gözüken kırmızı item'lar yapılacak işleri (task) gösterirken, mavi item'lar story'leri temsil etmektedir.
 
 - **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü Discord üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği word dosyası içine yazılıp ekran görüntüleri ile desteklenerek Readme'de tarafımızdan paylaşılmaktadır: [Sprint 2 Daily Scrum Chats](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/DailyScrumChatNotesSprint2.docx)
 
@@ -164,12 +164,13 @@ Story'ler yapılacak işlere (task'lere) bölünmüştür. Miro Board'da gözük
   ![Screenshot 11](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/2.%20Sprint-productss/2productss16.png)
   
 - **Sprint Review**: 
--  Sprint hedeflerine ulaştı ve ürün planladığı gibi geliştirildi. 
+-  Sprint hedeflerine ulaştı ve ürün planlandığı gibi geliştirildi. 
 -  *Alınan Kararlar:* 
-- 
-- 
-- 
-- 
+- Uygulamanın giriş ekranına 'Şifremi Unuttum' kısmı eklenecek. Şifresini sıfırlamak isteyenler de butona bastığında onların mail adreslerine sıfırlama mailleri otomatik gönderilecek.
+- Intro sayfalarının arka planındaki renk değiştirilecek.
+- Enstrüman bölümlerindeki video sayfası toplantıda konuşulduğu gibi yeniden tasarlanacak.
+- Enstrüman bölümlerindeki 'Hakkında' sayfasındaki resim boyutu küçültülecek.
+- Son sprintin backlogları sprint bitmeden en az birkaç gün önce tamamlanacak. Ardından ürün tanıtımı için hazırlanacak 1 dakikalık video için hep birlikte çalışılacak ve video hazırlanacak. 
 - *Sprint Review katılımcıları:* Halil Furkan Polat, Firdevs Birinci, Onur Arık, Hazal Taneri, Merve Köse 
 
 - **Sprint Retrospective**:
@@ -177,21 +178,20 @@ Story'ler yapılacak işlere (task'lere) bölünmüştür. Miro Board'da gözük
 Neler iyi gitti?
 
 *Neler İyi Gitti?* 
-- 
-- 
-- 
-- 
-- 
+- İletişimimiz kopmadan çok güzel ilerledi. 
+- Ekip üyelerinin kişisel hayatında var olan meşguliyetlere empati ve esneklikle yaklaşıldı. 
+- Tüm üyeler hedef odaklıydı ve elinden geleni yaptı.
+- Kim nerede eksikse diğeri/diğerleri o eksiği el birliğiyle kapattı.
+
 
 *Hangi Sorunlar İle Karşılaştık?*
-- 
-- 
+- Firdevs (Scrum Master)’ın kişisel hayatındaki fazlaca meşguliyet 2. Sprintin ilk haftasına yayılmıştı. İlk hafta tasklar konusunda ekibten feedback alma dışında bir katkı veremese de ikinci hafta hızlıca her şeyi toparladı. 
+- Merve’nin hem internet alt yapısı problemleri hem de bilgisayarından aldığı hatalar devam etti. Ona atanan backlog bu hatalar sebebiyle de bitirilememe tehlikesine girdiği için backlog ve tasklar Onur’a atandı. 
+- Merve, Hazal ve Firdevs GitHup’da commit atarken farklı farklı durumlarla karşılaştılar. Onur ve Furkan teknik anlamda yardım etti ve gün sonunda her şey tamamlandı.
+
 
 *Neler Geliştirilmeli?*
-- 
-- 
-- 
-- 
+- Son sprint geldiği ve her şeyin tam takır tamamlanması gerektiği için ekip daha sık iletişim kurma kararı aldı.   
 
 **Diğer Notlar**:
 
