@@ -26,7 +26,7 @@ class ListViewPage extends StatefulWidget {
 
 class _ListViewPageState extends State<ListViewPage> {
   var titleList = [
-    "Solfeğ Eğitim",
+    "Solfej Eğitim",
   ];
 
   var descList = [

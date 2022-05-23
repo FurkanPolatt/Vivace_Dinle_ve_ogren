@@ -40,13 +40,21 @@ class _IntroductionPageState extends State<IntroductionPage> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                GestureDetector(
-                  child: Text('Geç',
-                      style:
-                          TextStyle(fontSize: 15, fontWeight: FontWeight.bold, color: Colors.white)),
-                  onTap: () {
+                MaterialButton(
+                  height: 28,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  onPressed: () {
                     _controller.jumpToPage(2);
                   },
+                  child: Text(
+                    'Geç',
+                    style: TextStyle(
+                        fontSize: 15,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white),
+                  ),
                 ),
                 SmoothPageIndicator(
                   controller: _controller,
@@ -57,11 +65,11 @@ class _IntroductionPageState extends State<IntroductionPage> {
                   ),
                 ),
                 onLastPage
-                    ? GestureDetector(
-                        child: Text('Bitir',
-                            style: TextStyle(
-                                fontSize: 15, fontWeight: FontWeight.bold,color: Colors.white)),
-                        onTap: () {
+                    ? MaterialButton(
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                        onPressed: () {
                           Navigator.pushAndRemoveUntil(
                             context,
                             MaterialPageRoute(
@@ -72,16 +80,30 @@ class _IntroductionPageState extends State<IntroductionPage> {
                             (route) => false,
                           );
                         },
+                        child: Text(
+                          'Bitir',
+                          style: TextStyle(
+                              fontSize: 15,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white),
+                        ),
                       )
-                    : GestureDetector(
-                        child: Text('İleri',
-                            style: TextStyle(
-                                fontSize: 15, fontWeight: FontWeight.bold, color: Colors.white)),
-                        onTap: () {
+                    : MaterialButton(
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                        onPressed: () {
                           _controller.nextPage(
                               duration: Duration(milliseconds: 500),
                               curve: Curves.easeIn);
                         },
+                        child: Text(
+                          'İleri',
+                          style: TextStyle(
+                              fontSize: 15,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white),
+                        ),
                       ),
               ],
             ),

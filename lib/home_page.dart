@@ -22,7 +22,7 @@ class HomePage extends StatelessWidget {
         title: Text(
           'Vivace',
           style: GoogleFonts.damion(
-            fontSize: 30,
+            fontSize: 42,
           ),
         ),
         centerTitle: true,
@@ -37,6 +37,7 @@ class HomePage extends StatelessWidget {
               children: [
                 Material(
                   color: Colors.indigo,
+                  // color: Colors.indigo,
                   elevation: 12,
                   borderRadius: BorderRadius.only(
                     bottomLeft: Radius.circular(25),
@@ -66,7 +67,7 @@ class HomePage extends StatelessWidget {
                         ),
                       ),
                       Expanded(
-                        flex: 6,
+                        flex: 9,
                         child: Text(
                           'Kurs Ara',
                           style: TextStyle(color: Colors.white),
@@ -93,10 +94,52 @@ class HomePage extends StatelessWidget {
                         ),
                       ),
                       Expanded(
-                        flex: 6,
+                        flex: 9,
                         child: Text(
                           'Test',
                           style: TextStyle(color: Colors.white),
+                        ),
+                      ),
+                    ]),
+                  ),
+                ),
+                ListTile(
+                  title: InkWell(
+                    onTap: () {
+                      showDialog(
+                          context: context,
+                          builder: (BuildContext context) {
+                            return AlertDialog(
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(12),
+                              ),
+                              backgroundColor: Colors.white70,
+                              title: Text(
+                                  'Eğitim merkezlerinizi uygulamamıza eklemek için lütfen bizimle iletişime geçiniz',
+                                  textAlign: TextAlign.center),
+                              actions: [
+                                Center(
+                                  child: Text(
+                                    'E-posta: Virtuoso@gmail.com',
+                                    style: TextStyle(fontSize: 20),
+                                  ),
+                                ),
+                              ],
+                            );
+                          });
+                    },
+                    child: Row(children: [
+                      Expanded(
+                        child: Icon(
+                          Icons.mail_outline_outlined,
+                          color: Colors.white54,
+                        ),
+                      ),
+                      Expanded(
+                        flex: 9,
+                        child: Text(
+                          'Bize Ulaşın',
+                          style: TextStyle(color: Colors.white, fontSize: 14),
                         ),
                       ),
                     ]),
@@ -115,7 +158,7 @@ class HomePage extends StatelessWidget {
                         ),
                       ),
                       Expanded(
-                        flex: 6,
+                        flex: 9,
                         child: Text(
                           'Çıkış Yap',
                           style: TextStyle(color: Colors.white),
