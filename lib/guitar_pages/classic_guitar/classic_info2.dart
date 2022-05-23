@@ -38,7 +38,6 @@ _buildBody(
           _buildPageView(),
         ],
       ),
-      //_buildPageView2(),,
     ],
   );
 }
@@ -62,6 +61,8 @@ _buildPageView() {
         },
       ));
 }
+
+
 
 
 /*_buildPageView2() {
