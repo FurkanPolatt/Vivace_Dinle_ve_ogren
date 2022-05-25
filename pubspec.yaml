@@ -101,9 +101,9 @@ flutter:
     - assets/animation/
     - assets/cities/
     - assets/app_images/
-#    - assets/icons/
-#    - assets/icons/category/
-#    - assets/data/
+    - assets/icons/
+    - assets/icons/category/
+    - assets/data/
 
 
     

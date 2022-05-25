@@ -74,26 +74,36 @@ class ClassicPageState extends State<ClassicInfo1> {
 
   _buildPageView() {
     return Expanded(
-      child: Container(
-        height: _boxHeight,
-        margin: EdgeInsets.only(top: _boxHeight / 3.5),
-        child: PageView.builder(
-            itemCount: appBannerList.length,
-            controller: _pageController,
-            itemBuilder: (BuildContext context, int index) {
-              return Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(28),
-                  image: DecorationImage(
-                    image: AssetImage(appBannerList[index].image),
-                    fit: BoxFit.cover,
+      child: Padding(
+        padding: const EdgeInsets.all(1),
+        child: Container(
+          padding: EdgeInsets.all(8),
+          height: _boxHeight,
+          margin: EdgeInsets.only(top: _boxHeight / 5),
+          child: PageView.builder(
+              itemCount: appBannerList.length,
+              controller: _pageController,
+              itemBuilder: (BuildContext context, int index) {
+                return Expanded(
+                  child: Padding(
+                    padding: const EdgeInsets.all(15.0),
+                    child: Container(
+                      padding: EdgeInsets.all(5),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(28),
+                        image: DecorationImage(
+                          image: AssetImage(appBannerList[index].image),
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                    ),
                   ),
-                ),
-              );
-            },
-            onPageChanged: (int index) {
-              _currentPageNotifier.value = index;
-            }),
+                );
+              },
+              onPageChanged: (int index) {
+                _currentPageNotifier.value = index;
+              }),
+        ),
       ),
     );
   }
@@ -108,7 +118,7 @@ class ClassicPageState extends State<ClassicInfo1> {
           width: 400,
           height: 370,
           child: Padding(
-            padding: const EdgeInsets.all(20.0),
+            padding: const EdgeInsets.all(1),
             child: Column(
               children: [
                 SizedBox(
@@ -127,8 +137,10 @@ class ClassicPageState extends State<ClassicInfo1> {
                 ),
                 Expanded(
                   child: SingleChildScrollView(
-                    child: Text(
-                      '''- Modern klasik gitar, 1850'li yıllarda İspanyol usta Antonio Torres sayesinde günümüzdeki şeklini aldı.
+                    child: Padding(
+                      padding: const EdgeInsets.all(5.0),
+                      child: Text(
+                        '''- Modern klasik gitar, 1850'li yıllarda İspanyol usta Antonio Torres sayesinde günümüzdeki şeklini aldı.
 - Gitarın gövdesinin ortasında ses deliği denilen yuvarlak bir boşluk bulunur. 
 - Gitarın telleri titreştiğinde gövdenin içinde bulunan hava titreşir ve tek çıkış noktası olan bu yuvarlak boşluktan dışarı ses olarak geri çıkar. 
 - Toplam 6 tel vardır: 3’ü kalın tel çelikten ve kalan 3’ü de ince tel naylondan yapılmıştır.
@@ -142,11 +154,12 @@ M: Orta parmak
 A: Yüzük parmağı
 X: Sağ elin serçe parmağı
  ''',
-                      style: TextStyle(
-                        fontSize: 15,
-                        color: Colors.white,
+                        style: TextStyle(
+                          fontSize: 15,
+                          color: Colors.white,
+                        ),
+                        textAlign: TextAlign.center,
                       ),
-                      textAlign: TextAlign.center,
                     ),
                   ),
                 ),

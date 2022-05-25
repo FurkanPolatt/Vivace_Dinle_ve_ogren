@@ -1,9 +1,6 @@
 import 'package:better_player/better_player.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:vertical_card_pager/vertical_card_pager.dart';
-
-import '../../quiz_page/quiz_page.dart';
 
 class BassInfo2 extends StatelessWidget {
   const BassInfo2({Key? key}) : super(key: key);
@@ -65,7 +62,6 @@ _buildPageView() {
         },
       ));
 }
-
 
 /*_buildPageView2() {
   return Container(

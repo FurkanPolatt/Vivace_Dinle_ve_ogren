@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Enstrümanları Tanıma",
+    "imagePath": "assets/icons/category/music.png"
+  },
+  {
+    "id": 2,
+    "name": "Müzik Tarihi",
+    "imagePath": "assets/icons/category/music.png"
+  },
+  {
+    "id": 3,
+    "name": "Müzik Türleri",
+    "imagePath": "assets/icons/category/music.png"
+  },
+  {
+    "id": 4,
+    "name": "Müzik Teknolojileri",
+    "imagePath": "assets/icons/category/music.png"
+  },
+  {
+    "id": 5,
+    "name": "Organoloji",
+    "imagePath": "assets/icons/category/music.png"
+  },
+  {
+    "id": 6,
+    "name": "Armoni",
+    "imagePath": "assets/icons/category/music.png"
+  },
+  {
+    "id": 7,
+    "name": "Akustik",
+    "imagePath": "assets/icons/category/music.png"
+  },
+  {
+    "id": 8,
+    "name": "Müzik Teorisi",
+    "imagePath": "assets/icons/category/music.png"
+  }
+]
