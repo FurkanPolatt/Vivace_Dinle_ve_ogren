@@ -28,10 +28,27 @@ class _RegisterPageState extends State<RegisterPage> {
   }
 
   Future signUp() async {
-    if (passwordConfirmed()) {
-      await FirebaseAuth.instance.createUserWithEmailAndPassword(
-          email: _emailController.text.trim(),
-          password: _passwordController.text.trim());
+    try {
+      if (passwordConfirmed()) {
+        await FirebaseAuth.instance.createUserWithEmailAndPassword(
+            email: _emailController.text.trim(),
+            password: _passwordController.text.trim());
+      }
+    } on FirebaseException {
+      showDialog(
+          context: context,
+          builder: (context) {
+            return Padding(
+              padding: const EdgeInsets.all(15.0),
+              child: AlertDialog(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                backgroundColor: Colors.white70,
+                title: Text('Hesap oluşturuldu', textAlign: TextAlign.center),
+              ),
+            );
+          });
     }
   }
 
