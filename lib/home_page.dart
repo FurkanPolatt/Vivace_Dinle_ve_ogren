@@ -16,6 +16,10 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Future<void> _signOut() async {
+      await FirebaseAuth.instance.signOut();
+    }
+
     final user = FirebaseAuth.instance.currentUser!;
     return Scaffold(
       extendBodyBehindAppBar: true,
@@ -157,7 +161,7 @@ class HomePage extends StatelessWidget {
                 Divider(color: Colors.white70, thickness: 1),
                 ListTile(
                   title: InkWell(
-                    onTap: () => FirebaseAuth.instance.signOut(),
+                    onTap: _signOut,
                     child: FadeInLeft(
                       delay: Duration(microseconds: 100),
                       child: Row(children: [

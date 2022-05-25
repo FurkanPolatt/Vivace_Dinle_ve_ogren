@@ -2,6 +2,8 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
+import 'main_page.dart';
+
 class ForgotPasswordPage extends StatefulWidget {
   const ForgotPasswordPage({Key? key}) : super(key: key);
 
@@ -33,6 +35,29 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
               title: Text(
                   'Şifre başarı ile sıfırlandı. Lütfen e postanızı kontrol edin.',
                   textAlign: TextAlign.center),
+              actions: [
+                Center(
+                  child: MaterialButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => MainPage(),
+                        ),
+                      );
+                    },
+                    color: Colors.white54,
+                    elevation: 10,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    child: Text(
+                      'Giriş Yap',
+                      style: TextStyle(fontSize: 20),
+                    ),
+                  ),
+                ),
+              ],
             );
           });
     } on FirebaseAuthException {
