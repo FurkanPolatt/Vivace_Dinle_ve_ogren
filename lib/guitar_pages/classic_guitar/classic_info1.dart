@@ -73,37 +73,33 @@ class ClassicPageState extends State<ClassicInfo1> {
   }
 
   _buildPageView() {
-    return Expanded(
-      child: Padding(
-        padding: const EdgeInsets.all(1),
-        child: Container(
-          padding: EdgeInsets.all(8),
-          height: _boxHeight,
-          margin: EdgeInsets.only(top: _boxHeight / 5),
-          child: PageView.builder(
-              itemCount: appBannerList.length,
-              controller: _pageController,
-              itemBuilder: (BuildContext context, int index) {
-                return Expanded(
-                  child: Padding(
-                    padding: const EdgeInsets.all(15.0),
-                    child: Container(
-                      padding: EdgeInsets.all(5),
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(28),
-                        image: DecorationImage(
-                          image: AssetImage(appBannerList[index].image),
-                          fit: BoxFit.cover,
-                        ),
-                      ),
+    return Padding(
+      padding: const EdgeInsets.all(1),
+      child: Container(
+        padding: EdgeInsets.all(8),
+        height: _boxHeight,
+        margin: EdgeInsets.only(top: _boxHeight / 5),
+        child: PageView.builder(
+            itemCount: appBannerList.length,
+            controller: _pageController,
+            itemBuilder: (BuildContext context, int index) {
+              return Padding(
+                padding: const EdgeInsets.all(15.0),
+                child: Container(
+                  padding: EdgeInsets.all(5),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(28),
+                    image: DecorationImage(
+                      image: AssetImage(appBannerList[index].image),
+                      fit: BoxFit.cover,
                     ),
                   ),
-                );
-              },
-              onPageChanged: (int index) {
-                _currentPageNotifier.value = index;
-              }),
-        ),
+                ),
+              );
+            },
+            onPageChanged: (int index) {
+              _currentPageNotifier.value = index;
+            }),
       ),
     );
   }
@@ -116,7 +112,7 @@ class ClassicPageState extends State<ClassicInfo1> {
         color: Colors.transparent,
         child: SizedBox(
           width: 400,
-          height: 370,
+          height: 500,
           child: Padding(
             padding: const EdgeInsets.all(1),
             child: Column(
@@ -163,9 +159,9 @@ X: Sağ elin serçe parmağı
                     ),
                   ),
                 ),
-                SizedBox(
-                  height: 20,
-                ),
+                // SizedBox(
+                //   height: 20,
+                // ),
                 // SizedBox(
                 //   width: 170,
                 //   child: MaterialButton(

@@ -73,28 +73,26 @@ class ClassicPageState extends State<PianoInfo1> {
   }
 
   _buildPageView() {
-    return Expanded(
-      child: Container(
-        height: _boxHeight,
-        margin: EdgeInsets.only(top: _boxHeight / 3.5),
-        child: PageView.builder(
-            itemCount: appBannerList.length,
-            controller: _pageController,
-            itemBuilder: (BuildContext context, int index) {
-              return Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(28),
-                  image: DecorationImage(
-                    image: AssetImage(appBannerList[index].image),
-                    fit: BoxFit.cover,
-                  ),
+    return Container(
+      height: _boxHeight,
+      margin: EdgeInsets.only(top: _boxHeight / 3.5),
+      child: PageView.builder(
+          itemCount: appBannerList.length,
+          controller: _pageController,
+          itemBuilder: (BuildContext context, int index) {
+            return Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(28),
+                image: DecorationImage(
+                  image: AssetImage(appBannerList[index].image),
+                  fit: BoxFit.cover,
                 ),
-              );
-            },
-            onPageChanged: (int index) {
-              _currentPageNotifier.value = index;
-            }),
-      ),
+              ),
+            );
+          },
+          onPageChanged: (int index) {
+            _currentPageNotifier.value = index;
+          }),
     );
   }
 

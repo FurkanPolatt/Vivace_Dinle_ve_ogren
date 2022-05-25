@@ -44,7 +44,7 @@ class HomePage extends StatelessWidget {
                   ),
                   child: DrawerHeader(
                     // decoration: BoxDecoration(color: Colors.black38),
-                    child: Text('Kullanıcı:  ' + user.email!,
+                    child: Text('Kullanıcı:  ${user.email!}',
                         style: TextStyle(color: Colors.white)),
                   ),
                 ),
@@ -201,6 +201,10 @@ class HomePage extends StatelessWidget {
                               );
                             },
                             child: Ink.image(
+                              image: AssetImage('assets/images/guitar.jpg'),
+                              height: 500,
+                              width: 500,
+                              fit: BoxFit.cover,
                               child: Center(
                                 child: Opacity(
                                   opacity: 0.85,
@@ -212,10 +216,6 @@ class HomePage extends StatelessWidget {
                                   ),
                                 ),
                               ),
-                              image: AssetImage('assets/images/guitar.jpg'),
-                              height: 500,
-                              width: 500,
-                              fit: BoxFit.cover,
                             ),
                           ),
                         ),
@@ -238,6 +238,10 @@ class HomePage extends StatelessWidget {
                                   ));
                             },
                             child: Ink.image(
+                              image: AssetImage('assets/images/violin.jpg'),
+                              height: 500,
+                              width: 500,
+                              fit: BoxFit.cover,
                               child: Center(
                                 child: Opacity(
                                   opacity: 0.85,
@@ -249,10 +253,6 @@ class HomePage extends StatelessWidget {
                                   ),
                                 ),
                               ),
-                              image: AssetImage('assets/images/violin.jpg'),
-                              height: 500,
-                              width: 500,
-                              fit: BoxFit.cover,
                             ),
                           ),
                         ),
@@ -281,6 +281,10 @@ class HomePage extends StatelessWidget {
                               );
                             },
                             child: Ink.image(
+                              image: AssetImage('assets/images/wind.jpg'),
+                              height: 500,
+                              width: 500,
+                              fit: BoxFit.cover,
                               child: Center(
                                 child: Opacity(
                                   opacity: 0.85,
@@ -292,10 +296,6 @@ class HomePage extends StatelessWidget {
                                   ),
                                 ),
                               ),
-                              image: AssetImage('assets/images/wind.jpg'),
-                              height: 500,
-                              width: 500,
-                              fit: BoxFit.cover,
                             ),
                           ),
                         ),
@@ -318,6 +318,10 @@ class HomePage extends StatelessWidget {
                               );
                             },
                             child: Ink.image(
+                              image: AssetImage('assets/images/drum.jpg'),
+                              height: 500,
+                              width: 500,
+                              fit: BoxFit.cover,
                               child: Center(
                                 child: Opacity(
                                   opacity: 0.85,
@@ -329,10 +333,6 @@ class HomePage extends StatelessWidget {
                                   ),
                                 ),
                               ),
-                              image: AssetImage('assets/images/drum.jpg'),
-                              height: 500,
-                              width: 500,
-                              fit: BoxFit.cover,
                             ),
                           ),
                         ),
@@ -361,6 +361,10 @@ class HomePage extends StatelessWidget {
                               );
                             },
                             child: Ink.image(
+                              image: AssetImage('assets/images/piano.jpg'),
+                              height: 130,
+                              width: 500,
+                              fit: BoxFit.cover,
                               child: Center(
                                 child: Opacity(
                                   opacity: 0.85,
@@ -372,10 +376,6 @@ class HomePage extends StatelessWidget {
                                   ),
                                 ),
                               ),
-                              image: AssetImage('assets/images/piano.jpg'),
-                              height: 130,
-                              width: 500,
-                              fit: BoxFit.cover,
                             ),
                           ),
                         ),
@@ -403,6 +403,10 @@ class HomePage extends StatelessWidget {
                               );
                             },
                             child: Ink.image(
+                              image: AssetImage('assets/images/test.jpg'),
+                              height: 100,
+                              width: 100,
+                              fit: BoxFit.cover,
                               child: Center(
                                 child: Opacity(
                                   opacity: 0.85,
@@ -414,10 +418,6 @@ class HomePage extends StatelessWidget {
                                   ),
                                 ),
                               ),
-                              image: AssetImage('assets/images/test.jpg'),
-                              height: 100,
-                              width: 100,
-                              fit: BoxFit.cover,
                             ),
                           ),
                         ),

@@ -34,6 +34,7 @@ dependencies:
   better_player: ^0.0.82
   vertical_card_pager: ^1.5.0
   circular_profile_avatar: ^2.0.5
+  visibility_detector: ^0.2.2
   
 
 
@@ -45,7 +46,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   smooth_page_indicator: ^1.0.0
   flutter_native_splash: ^2.1.6
-  google_fonts: ^2.3.1
+  google_fonts: ^3.0.1
   shared_preferences: ^2.0.13
   after_layout: ^1.1.0
   animated_text_kit: ^4.2.1
@@ -79,7 +80,7 @@ dev_dependencies:
 
 
 
-  flutter_lints: ^1.0.0
+  flutter_lints: ^2.0.1
 
 
 

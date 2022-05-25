@@ -6,7 +6,7 @@ class ClassicInfo2 extends StatelessWidget {
   const ClassicInfo2({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    final _controller = PageController();
+    final controller = PageController();
     return Scaffold(
       extendBodyBehindAppBar: true,
       backgroundColor: Colors.transparent,
@@ -22,7 +22,7 @@ class ClassicInfo2 extends StatelessWidget {
         backgroundColor: Colors.transparent,
         elevation: 0,
       ),
-      body: _buildBody(decoration: BoxDecoration(), controller: _controller),
+      body: _buildBody(decoration: BoxDecoration(), controller: controller),
     );
   }
 }
@@ -61,9 +61,6 @@ _buildPageView() {
         },
       ));
 }
-
-
-
 
 /*_buildPageView2() {
   return Container(
