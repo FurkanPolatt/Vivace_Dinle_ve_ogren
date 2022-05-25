@@ -1,3 +1,4 @@
+import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:musicedu_app/home_page.dart';
@@ -40,7 +41,9 @@ class _HomeScreenState extends State<HomeScreen> {
                   SizedBox(
                     height: 25,
                   ),
-                  headerText('Kendini Test Et'),
+                  FadeInDown(
+                      delay: Duration(microseconds: 200),
+                      child: headerText('Kendini Test Et')),
                   SizedBox(height: 55),
                   ...homeScreenButtons(context),
                 ],
@@ -79,53 +82,65 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
             ListTile(
-              title: const Text(
-                'Ana Sayfa',
-                style: TextStyle(color: Colors.white, fontSize: 15),
+              title: FadeInLeft(
+                delay: Duration(microseconds: 100),
+                child: const Text(
+                  'Ana Sayfa',
+                  style: TextStyle(color: Colors.white, fontSize: 15),
+                ),
               ),
               onTap: () {
                 Navigator.pushReplacementNamed(context, HomeScreen.routeName);
               },
             ),
-            ListTile(
-              title: const Text(
-                'Teste Başla',
-                style: TextStyle(color: Colors.white, fontSize: 15),
+            FadeInLeft(
+              delay: Duration(microseconds: 100),
+              child: ListTile(
+                title: const Text(
+                  'Teste Başla',
+                  style: TextStyle(color: Colors.white, fontSize: 15),
+                ),
+                onTap: () async {
+                  var quiz = await _quizStore.getRandomQuizAsync();
+                  Navigator.pushNamed(context, "/quiz", arguments: quiz);
+                },
               ),
-              onTap: () async {
-                var quiz = await _quizStore.getRandomQuizAsync();
-                Navigator.pushNamed(context, "/quiz", arguments: quiz);
-              },
             ),
-            ListTile(
-              title: const Text(
-                'Test Kategorileri',
-                style: TextStyle(color: Colors.white, fontSize: 15),
+            FadeInLeft(
+              delay: Duration(microseconds: 100),
+              child: ListTile(
+                title: const Text(
+                  'Test Kategorileri',
+                  style: TextStyle(color: Colors.white, fontSize: 15),
+                ),
+                onTap: () {
+                  Navigator.pushNamed(context, QuizCategoryScreen.routeName);
+                },
               ),
-              onTap: () {
-                Navigator.pushNamed(context, QuizCategoryScreen.routeName);
-              },
             ),
             Divider(
               color: Colors.white70,
               thickness: 1,
             ),
-            ListTile(
-              title: const Text(
-                'Çıkış',
-                style: TextStyle(color: Colors.white, fontSize: 15),
+            FadeInLeft(
+              delay: Duration(microseconds: 100),
+              child: ListTile(
+                title: const Text(
+                  'Çıkış',
+                  style: TextStyle(color: Colors.white, fontSize: 15),
+                ),
+                onTap: () {
+                  Navigator.pushAndRemoveUntil(
+                    context,
+                    MaterialPageRoute(
+                      builder: (BuildContext context) {
+                        return HomePage();
+                      },
+                    ),
+                    (route) => false,
+                  );
+                },
               ),
-              onTap: () {
-                Navigator.pushAndRemoveUntil(
-                  context,
-                  MaterialPageRoute(
-                    builder: (BuildContext context) {
-                      return HomePage();
-                    },
-                  ),
-                  (route) => false,
-                );
-              },
             ),
           ],
         ),
@@ -163,33 +178,39 @@ class _HomeScreenState extends State<HomeScreen> {
 
   List<Widget> homeScreenButtons(BuildContext context) {
     return [
-      DiscoButton(
-        onPressed: () async {
-          var quiz = await _quizStore.getRandomQuizAsync();
-          Navigator.pushNamed(context, QuizScreen.routeName, arguments: quiz);
-        },
-        child: Text(
-          "Teste Başla",
-          style: GoogleFonts.pacifico(
-            fontSize: 32,
+      FadeInRight(
+        delay: Duration(microseconds: 200),
+        child: DiscoButton(
+          onPressed: () async {
+            var quiz = await _quizStore.getRandomQuizAsync();
+            Navigator.pushNamed(context, QuizScreen.routeName, arguments: quiz);
+          },
+          isActive: true,
+          child: Text(
+            "Teste Başla",
+            style: GoogleFonts.pacifico(
+              fontSize: 32,
+            ),
           ),
         ),
-        isActive: true,
       ),
       SizedBox(
         height: 35,
       ),
-      DiscoButton(
-        onPressed: () {
-          Navigator.pushNamed(context, QuizCategoryScreen.routeName);
-        },
-        child: Text(
-          "Test Kategorileri",
-          style: GoogleFonts.pacifico(
-            fontSize: 30,
+      FadeInLeft(
+        delay: Duration(microseconds: 200),
+        child: DiscoButton(
+          onPressed: () {
+            Navigator.pushNamed(context, QuizCategoryScreen.routeName);
+          },
+          isActive: true,
+          child: Text(
+            "Test Kategorileri",
+            style: GoogleFonts.pacifico(
+              fontSize: 30,
+            ),
           ),
         ),
-        isActive: true,
       ),
       // DiscoButton(
       //   onPressed: () {

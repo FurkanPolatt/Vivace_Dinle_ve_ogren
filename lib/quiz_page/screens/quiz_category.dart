@@ -1,5 +1,6 @@
 import 'dart:core';
 
+import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:musicedu_app/quiz_page/screens/quiz_category_details.dart';
@@ -95,23 +96,26 @@ class _QuizCategoryScreenState extends State<QuizCategoryScreen> {
   }
 
   Widget categoryListViewItem(Category category) {
-    return Container(
-      width: 160,
-      alignment: Alignment.center,
-      padding: EdgeInsets.all(10),
-      decoration: BoxDecoration(
-          color: Colors.white,
-          borderRadius: BorderRadius.all(Radius.circular(15))),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          Image(
-            image: AssetImage(category.imagePath),
-            width: 130,
-          ),
-          Text(category.name),
-        ],
+    return FadeInUp(
+      delay: Duration(microseconds: 100),
+      child: Container(
+        width: 160,
+        alignment: Alignment.center,
+        padding: EdgeInsets.all(10),
+        decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.all(Radius.circular(15))),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Image(
+              image: AssetImage(category.imagePath),
+              width: 130,
+            ),
+            Text(category.name),
+          ],
+        ),
       ),
     );
   }

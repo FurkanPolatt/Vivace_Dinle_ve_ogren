@@ -1,3 +1,4 @@
+import 'package:animate_do/animate_do.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -58,21 +59,24 @@ class HomePage extends StatelessWidget {
                         ),
                       );
                     },
-                    child: Row(children: [
-                      Expanded(
-                        child: Icon(
-                          Icons.search,
-                          color: Colors.white54,
+                    child: FadeInLeft(
+                      delay: Duration(microseconds: 100),
+                      child: Row(children: [
+                        Expanded(
+                          child: Icon(
+                            Icons.search,
+                            color: Colors.white54,
+                          ),
                         ),
-                      ),
-                      Expanded(
-                        flex: 9,
-                        child: Text(
-                          'Kurs Ara',
-                          style: TextStyle(color: Colors.white),
+                        Expanded(
+                          flex: 9,
+                          child: Text(
+                            'Kurs Ara',
+                            style: TextStyle(color: Colors.white),
+                          ),
                         ),
-                      ),
-                    ]),
+                      ]),
+                    ),
                   ),
                 ),
                 ListTile(
@@ -85,21 +89,24 @@ class HomePage extends StatelessWidget {
                         ),
                       );
                     },
-                    child: Row(children: [
-                      Expanded(
-                        child: Icon(
-                          Icons.book_outlined,
-                          color: Colors.white54,
+                    child: FadeInLeft(
+                      delay: Duration(microseconds: 100),
+                      child: Row(children: [
+                        Expanded(
+                          child: Icon(
+                            Icons.book_outlined,
+                            color: Colors.white54,
+                          ),
                         ),
-                      ),
-                      Expanded(
-                        flex: 9,
-                        child: Text(
-                          'Test',
-                          style: TextStyle(color: Colors.white),
+                        Expanded(
+                          flex: 9,
+                          child: Text(
+                            'Test',
+                            style: TextStyle(color: Colors.white),
+                          ),
                         ),
-                      ),
-                    ]),
+                      ]),
+                    ),
                   ),
                 ),
                 ListTile(
@@ -127,43 +134,48 @@ class HomePage extends StatelessWidget {
                             );
                           });
                     },
-                    child: Row(children: [
-                      Expanded(
-                        child: Icon(
-                          Icons.mail_outline_outlined,
-                          color: Colors.white54,
+                    child: FadeInLeft(
+                      delay: Duration(microseconds: 100),
+                      child: Row(children: [
+                        Expanded(
+                          child: Icon(
+                            Icons.mail_outline_outlined,
+                            color: Colors.white54,
+                          ),
                         ),
-                      ),
-                      Expanded(
-                        flex: 9,
-                        child: Text(
-                          'Bize Ulaşın',
-                          style: TextStyle(color: Colors.white, fontSize: 14),
+                        Expanded(
+                          flex: 9,
+                          child: Text(
+                            'Bize Ulaşın',
+                            style: TextStyle(color: Colors.white, fontSize: 14),
+                          ),
                         ),
-                      ),
-                    ]),
+                      ]),
+                    ),
                   ),
                 ),
+                Divider(color: Colors.white70, thickness: 1),
                 ListTile(
                   title: InkWell(
-                    onTap: () {
-                      FirebaseAuth.instance.signOut();
-                    },
-                    child: Row(children: [
-                      Expanded(
-                        child: Icon(
-                          Icons.exit_to_app,
-                          color: Colors.white54,
+                    onTap: () => FirebaseAuth.instance.signOut(),
+                    child: FadeInLeft(
+                      delay: Duration(microseconds: 100),
+                      child: Row(children: [
+                        Expanded(
+                          child: Icon(
+                            Icons.exit_to_app,
+                            color: Colors.white54,
+                          ),
                         ),
-                      ),
-                      Expanded(
-                        flex: 9,
-                        child: Text(
-                          'Çıkış Yap',
-                          style: TextStyle(color: Colors.white),
+                        Expanded(
+                          flex: 9,
+                          child: Text(
+                            'Çıkış Yap',
+                            style: TextStyle(color: Colors.white),
+                          ),
                         ),
-                      ),
-                    ]),
+                      ]),
+                    ),
                   ),
                 ),
               ],

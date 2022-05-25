@@ -189,6 +189,9 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
             });
             Navigator.pop(context);
           },
+          width: 130,
+          height: 50,
+          isActive: true,
           child: Text(
             "Çık",
             style: GoogleFonts.pacifico(
@@ -196,14 +199,14 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
               color: Color(0xff1c2c4c),
             ),
           ),
-          width: 130,
-          height: 50,
-          isActive: true,
         ),
         DiscoButton(
           onPressed: () {
             engine.next();
           },
+          isActive: true,
+          width: 130,
+          height: 50,
           child: Text(
             "İlerle",
             style: GoogleFonts.pacifico(
@@ -211,9 +214,6 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
               color: Color(0xff1c2c4c),
             ),
           ),
-          isActive: true,
-          width: 130,
-          height: 50,
         ),
       ],
     );
