@@ -135,7 +135,7 @@ class ClassicPageState extends State<DarbukaInfo1> {
 - Anadolu’da daha çok kadınlar tarafından düğünlerde ve özellikle kendi aralarında düzenledikleri eğlencelerde kullanılır. Halk arasında ‘’dümbelek, dümbek, cümlek, küp’’ gibi adlarla çalınan sazlardan fazla farklı olmayıp, sadece gövde kısmı ağaç ve ya metalden yapilip derisi ise vidalar yardımı ile gerdirilen bir vurgulu sazdır. 
 - Dümbelekte olduğu gibi parmak uçlarıyla diz üzerinde vurularak çalınır.	
 - Türk sanat ve Türk halk müziğinde çalınmaktadır.
-
+  
  ''',
                       style: TextStyle(
                         fontSize: 15,
