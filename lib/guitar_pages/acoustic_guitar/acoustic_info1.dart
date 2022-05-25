@@ -130,8 +130,8 @@ class ClassicPageState extends State<AcousticInfo1> {
 - 1900 lerde çelik tel geniş çapta ulaşılabilir oldu ve bu da akustik gitarın icadı için bir yol açtı. 
 - Görünüş olarak klasik gitara benzer.
 - Akustik gitarın gövdesi, klasik gitardan biraz daha şişman ve basıktır.
-- Akustik gitarın klasik gitara göre daha dar bir sapa sahiptir
-- Genellikle 4 teli sarımlı çelik, diğer 2 teli ise sarımsız çelikten oluşur. 
+- Akustik gitar, klasik gitara göre daha dar bir sapa sahiptir
+- Genellikle 4 teli sarımlı çelik ve diğer 2 teli ise sarımsız çelikten oluşur. 
 - Akustik gitar çalınırken pena kullanılabilir.
 - Belli bir elektronik sisteme gerek duymaz. Klasik gitara oranla daha yüksek, daha temiz ve sert ses çıkarabilen bit gitar türüdür.
 - Rock, blues ve caz müzik türlerinde çok kullanılan bir gitar türüdür.

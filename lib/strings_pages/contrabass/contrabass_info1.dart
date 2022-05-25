@@ -126,7 +126,7 @@ class ClassicPageState extends State<CtbInfo1> {
                 Expanded(
                   child: SingleChildScrollView(
                     child: Text(
-                      '''- Kontrbas, keman ailesinden, yaylılar grubunun en kalın sesli çalgısıdır. 
+                      '''- Kontrbas, keman ailesindendir ve yaylılar grubunun en kalın sesli çalgısıdır. 
 - Kontrbas Violone adı verilen bir Rönesans çalgısından türemiştir. 
 - 16. yüzyıldan 18. yüzyıla kadar bir değişim süreci geçirmiştir. 
 - 18. yüzyılın ikinci yarısında bugünkü biçimini almıştır. 

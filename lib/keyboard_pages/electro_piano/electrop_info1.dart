@@ -127,9 +127,9 @@ class ClassicPageState extends State<ElectroPInfo1> {
                   child: SingleChildScrollView(
                     child: Text(
                       '''- Teknolojinin gelişmesiyle birlikte müzikte de hayatı kolaylaştırmaya yönelik çözümler üretilmiştir. Bu çözümlerden bazıları, akustik piyanoları daha küçük bir hale getirmek ve sesini kontrol altına alabilmek olmuştur. Meraklı, araştırmacı ve ısrarcı yaklaşımlar en sonunda 1980’lerin sonlarında dijital piyanoları üretmeyi başarmıştır. 
-- Akustik piyano yapısı itibarıyla çekiçlerin tele vurmasıyla ortaya çıkan mekanik bir sestir ancak dijital piyanolar da adından belli olduğu üzere daha elektronik sistemin kolaylıklarından yararlanarak elde eder. Bu konuda en dikkat edilen unsur dijital piyanoların tuşe konusunda yetersiz kalmasıydı, son birkaç yılda büyük piyano markalarının da el atmasıyla birlikte bu farklılık büyük oranda azaltılmıştır. 
-- Yine akustik piyanolarda kullanılan çekiç sistemi (hammer-action) sistemi dijital piyanolarda da kullanılmakta ve çoğu dijital piyano modelinde gerçek tel gerginliği hissiyatını vermektedir.
-- Birçok ses barındırdığı için kullanım alanı geniş olan elektronik piyano, genel olarak birçok müzik türünde kullanılıyor.
+- Akustik piyano yapısı itibarıyla çekiçlerin tele vurmasıyla ortaya çıkan mekanik bir sestir ancak dijital piyanolar da adından belli olduğu üzere daha elektronik sistemin kolaylıklarından yararlanarak elde eder. Bu konuda en dikkat edilen unsur dijital piyanoların tuşe konusunda yetersiz kalmasıydı ama son birkaç yılda büyük piyano markalarının da el atmasıyla birlikte bu farklılık büyük oranda azaltılmıştır. 
+- Yine akustik piyanolarda kullanılan çekiç sistemi (hammer-action) dijital piyanolarda da kullanılmakta ve çoğu dijital piyano modelinde gerçek tel gerginliği hissiyatını vermektedir.
+- Birçok ses barındırdığı için kullanım alanı geniş olan elektronik piyano, genel olarak birçok müzik türünde kullanılır.
  ''',
                       style: TextStyle(
                         fontSize: 15,

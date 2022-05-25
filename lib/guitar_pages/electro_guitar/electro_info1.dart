@@ -149,7 +149,7 @@ b. Katı Gövdeli
 6. Alman elektro gitar markaları: Steinberger, Gretsch, Höfner
 7. Çek elektro gitar markaları: Ashton, Crafter
 8. Avustralya elektro gitar markaları: Tatra, Czerny
-9. Belçikalı elektro gitar markaları: Stagg
+9. Belçika elektro gitar markaları: Stagg
  ''',
                       style: TextStyle(
                         fontSize: 15,

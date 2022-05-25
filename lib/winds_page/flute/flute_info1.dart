@@ -127,7 +127,7 @@ class ClassicPageState extends State<FluteInfo1> {
                   child: SingleChildScrollView(
                     child: Text(
                       ''' - Flüt, yanlamasına çalınan, metalden ya da tahtadan yapılabilen bir üflemeli çalgıdır. 
-- Flüt ailesinin en yaygın türüdür, orkestralarda ve bandolarda sıkça kullanılır. 
+- Flüt ailesinin en yaygın türüdür. Orkestralarda ve bandolarda sıkça kullanılır. 
 - Çalgının baş bölümünde bir üfleme deliği vardır. Bu nedenle bu bölüme "ağızlık" da denir. 
 - Üfleme deliği çalıcının alt dudağına dayalıdır. Sağ omuz yönünde, yere koşut olarak tutulur. Sol el ağızlık tarafında, sağ el ise kuyruk tarafında tutulur. İki elin baş parmağı alttan flütü destekler. 
 - Flütün borusu silindir şeklindedir. 
@@ -142,9 +142,9 @@ class ClassicPageState extends State<FluteInfo1> {
 - Zamanla daha fazla tuş eklenerek daha çok ses eklenmiştir. Böylelikle artık orkestra ve koro içinde de yer almıştır. 
 - Orkestranın vazgeçilmez enstrümanları arasındadır. 
 - Yan flüt imalinde ilk zamanlarda abanoz ağacı kullanılırdı. Bugünlerde daha çok bakır, krom, nikel ve gümüş gibi paslanmaz madenlerden imal edilmektedir. 
-- Yan flütlerin iç çapı 1.9 cm, uzunluğu 67 cm’dir.
+- Yan flütlerin iç çapı 1.9 cm ve uzunluğu 67 cm’dir.
 - Baş kısmı (ağızlık) hafif konik şeklindedir. 
-- Parmak deliklerine perde adı verilmektedir. Bu deliklerin birbirine olan mesafeleri ve çapı farklı ölçüdedir. 
+- Parmak deliklerine perde adı verilmektedir. Bu deliklerin birbirine olan mesafeleri ve çapları farklı ölçüdedir. 
 - Bakır nefesli flütlerin ağaç olanlara göre dezavantajı vardır. Bakır nefesli flütte ses çıkarken yumuşaklığını ve tatlılığını kaybeder. Bu flütte daha çevik ve tok bir ses çıkar.
 - Klasik müziğin yanı sıra pop, yerli-yabancı ve daha birçok müzik türünde yan flüt kullanılır.
 

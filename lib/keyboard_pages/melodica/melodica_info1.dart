@@ -135,12 +135,12 @@ class ClassicPageState extends State<MelodicaInfo1> {
 - Tuş adetine göre adlandırılmış 2 tür melodika bulunmaktadır:
 1.	13 tuşlu melodika
 
-- En basit melodika çeşididir. Blok flüte en çok benzeyen türü olup çalan kişinin enstrümanı elinde tutması gerekir. 13 tuşlu melodikalar hortumla çalınamazlar.
+- En basit melodika çeşididir. Blok flüte en çok benzeyen tür olup çalan kişinin enstrümanı elinde tutması gerekir. 13 tuşlu melodikalar hortumla çalınamazlar.
 
 2.	- 25, 32 veya 37 tuşlu melodika
-- Birbirinden farkı sadece tuş sayısı olan bu üç tip melodikaların özelliği 13 tuşluya göre daha fazla farklı sesin çıkarılabilmesi ve düz bir zemine konularak ve hortum ile üflenerek çalınabilmesidir. Çoğunlukla üfleme hortumu ile birlikte satılmaktadır.
+- Birbirinden farkı sadece tuş sayısı olan bu üç tip melodikaların özelliği 13 tuşluya göre daha fazla farklı sesin çıkarılabilmesi ve düz bir zemine konulup hortum ile üflenerek çalınabilmesidir. Çoğunlukla üfleme hortumu ile birlikte satılmaktadır.
 - Yeni başlayanlar uzun hortumuyla kullanırlar. 
-- Sol elle tutulur, sağ elle üzerindeki (piyano tuşları gibi) tuşlarına basılarak çalınır. 
+- Sol elle tutulur ve sağ elle üzerindeki (piyano tuşları gibi) tuşlarına basılarak çalınır. 
 - Arkasında tutacak sapı bulunur.
 
 - Müzik eğitimi için ideal bir çalgıdır. Melodika genelde ilköğretim okullarında eğitim amaçlı olarak müzik derslerinde çalınmaktadır. 

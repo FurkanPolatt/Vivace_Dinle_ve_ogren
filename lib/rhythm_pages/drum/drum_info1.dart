@@ -131,8 +131,8 @@ class ClassicPageState extends State<DrumInfo1> {
 - Çalarken hız ve çevikliğin yanında el ve ayak koordinasyonu çok önemlidir.
 - Bateri ahşap bir materyal olan bagetlerle bateristler tarafından çalınır.
 - Baterinin tarihçesi aslında davulun bulunmasıyla başlar. Davul ise tarihteki en eski çalgılardan biridir. Eski medeniyetlerin çeşitli törenlerinde veya savaşa giderken davullar kullanılırdı. 
-- Bateri kelimesi Fransızcada vurulan anlamına gelen “batterie” den gelmektedir. 
-- 18. Yüzyıl’ da bateri gibi toplu çalgılar yerine insanlar davulu ayrı, trampeti ayrı, zilleri ayrı çalıyordu. 
+- Bateri kelimesi Fransızca bir kelime olan “batterie” den gelmektedir. 
+- 18. Yüzyıl’ da bateri gibi toplu çalgılar yerine insanlar davulu ayrı, trampeti ayrı ve zilleri ayrı çalıyordu. 
 - 19.Yüzyıl’ a kadar baterinin gelişimi devam etti. 
 - Önce iki davuldan oluşan setler sonra da pedallar eklendi. 
 - Pedallar sayesinde bateri çalarken ayaklarımızı kullanma imkânı da oluştu.

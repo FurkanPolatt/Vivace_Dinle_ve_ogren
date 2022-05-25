@@ -131,9 +131,9 @@ class ClassicPageState extends State<DarbukaInfo1> {
 - İki tarafı da açık bir çömleğin bir tarafına deri kaplayarak yapılır. 
 - Parmaklarla vurularak çalınır.
 - Milattan önceki dönemde günümüz darbukasına benzer çalgılar, çeşitli biçim ve büyüklüklerde Anadolu, Mezopotamya ve Orta Asya uygarlıklarında kullanılmışlardır. Daha sonraki süreçler içinde değişip gelişerek yine aynı coğrafyalar içinde kullanılmıştır.
-- Çömlekten yapılanlarına bugün «dümbelek» denmektedir, darbuka sözü ise tenekeden yapılanlar için kullanılıyor. 
-- Anadolu’da daha çok kadınlar tarafından düğünlerde ve özellikle kendi aralarında düzenledikleri eğlencelerde kullandıkları ve halk arasında ‘’dümbelek, dümbek, cümlek, küp’’ gibi adlarla çalınan sazlardan fazla farklı olmayıp, sadece gövde kısmı ağaç ve ya metalden yapilip derisi ise vidalar yardımı ile gerdirilen bir vurgulu sazdır. 
-- Daha ziyade oyun havalarında çalınır. Dümbelekte olduğu gibi parmak uçlarıyla diz üzerinde vurularak çalınır.	
+- Çömlekten yapılanlarına bugün «dümbelek» denmektedir. Darbuka sözü ise tenekeden yapılanlar için kullanır. 
+- Anadolu’da daha çok kadınlar tarafından düğünlerde ve özellikle kendi aralarında düzenledikleri eğlencelerde kullanılır. Halk arasında ‘’dümbelek, dümbek, cümlek, küp’’ gibi adlarla çalınan sazlardan fazla farklı olmayıp, sadece gövde kısmı ağaç ve ya metalden yapilip derisi ise vidalar yardımı ile gerdirilen bir vurgulu sazdır. 
+- Dümbelekte olduğu gibi parmak uçlarıyla diz üzerinde vurularak çalınır.	
 - Türk sanat ve Türk halk müziğinde çalınmaktadır.
 
  ''',

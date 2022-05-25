@@ -132,11 +132,11 @@ class ClassicPageState extends State<ClairnetInfo1> {
 - Klarnetin içi silindirik yapıdadır. 
 - Gövdesi üzerinde delikler, halkalar ve metal tuşlar bulunmaktadır. 
 - Yapısı silindir bir boru şeklindedir ve alt kısmına indikçe hafifçe kalınlaşan bir kalakla son bulur. 
-- Klarnet, tarihi 19. yüzyılda Chalumeau (Şalümo) adıyla orkestralarda icra edilen nefesli saz klarnetin atasıdır. Fransızcadan gelen bu isim nefesli sazların genel adıdır. 
+- Klarnet, tarihi 19. yüzyılda Chalumeau (Şalümo) adıyla orkestralarda icra edilen nefesli saz klarnetin atasıdır. Fransızca'dan gelen bu isim nefesli sazların genel adıdır. 
 - Aynı yüzyılda Denner adlı çalgı yapım ustası Şalümo’yu geliştirerek bugünkü sisteme doğru ilk adımı atmıştır. 
 - 18. yüzyılda keşfedilen enstrümanın orkestraya dâhil edilmesi 1750 yılında olmuştur.
 - 1800’lü yıllarda klarnetin oda orkestralarında yaygınlaşmasında Mozart’ın rolünün büyük olduğu bilinmektedir. 
-- Klarnet temel olarak 5 parçanın birleşiminden oluşmaktadır bunlar; Bek (Ağızlık), Baril (Fıçı veya barel), Üst Gövde, Alt Gövde (Şalümo), Kalak (Pavillon) Klarnet kalabalık bir aileye sahiptir. 
+- Klarnet temel olarak 5 parçanın birleşiminden oluşmaktadır. Bunlar: Bek (Ağızlık), Baril (Fıçı veya barel), Üst Gövde, Alt Gövde (Şalümo), Kalak (Pavillon) Klarnet kalabalık bir aileye sahiptir. 
 - Çeşitleri şunlardır; Sol Klarnet (G), Mi Bemol Klarnet (Eb), Bas Klarnet , La Klarnet (A) , Do Klarnet, Si Bemol Klarnet (Bb), Alto Klarnet (Mi Bemol), Kontrabas Klarnet, La Bemol Klarnettir. 
 - Türkiye’de en yayın olarak kullanılan çeşidi ise sol (G) klarnettir. 
 - Tüm klarnet çeşitlerinde parmak pozisyonlarının isimleri ve parmak pozisyonları kullanımını gösteren işaretler aynı olduğu gibi, ses sahalarının gösterilişi ve nota yazımları da aynıdır. Sadece duyulan sesin piyanodaki karşılığına göre klarnetler isimlendirilir ve transpozisyon yapılarak seslendirme yapılır. 
