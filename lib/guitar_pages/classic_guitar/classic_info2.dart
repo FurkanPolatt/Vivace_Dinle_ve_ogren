@@ -6,7 +6,7 @@ class ClassicInfo2 extends StatelessWidget {
   const ClassicInfo2({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    final controller = PageController();
+    final _controller = PageController();
     return Scaffold(
       extendBodyBehindAppBar: true,
       backgroundColor: Colors.transparent,
@@ -22,7 +22,7 @@ class ClassicInfo2 extends StatelessWidget {
         backgroundColor: Colors.transparent,
         elevation: 0,
       ),
-      body: _buildBody(decoration: BoxDecoration(), controller: controller),
+      body: _buildBody(decoration: BoxDecoration(), controller: _controller),
     );
   }
 }
@@ -35,14 +35,15 @@ _buildBody(
     children: <Widget>[
       Stack(
         children: <Widget>[
-          _buildPageView(),
+          _buildPageView2(),
         ],
       ),
+      _buildPageView()
     ],
   );
 }
 
-_buildPageView() {
+_buildPageView2() {
   return Container(
       color: Colors.black87,
       height: _boxHeight,
@@ -60,6 +61,65 @@ _buildPageView() {
           );
         },
       ));
+}
+
+_buildPageView() {
+  return Container(
+    child: Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: <
+        Widget>[
+      SizedBox(height: 30.0),
+      Text('Bilgiler',
+          textAlign: TextAlign.center,
+          style: GoogleFonts.roboto(
+              fontSize: 25, color: Colors.white, fontWeight: FontWeight.bold)),
+      DefaultTabController(
+          length: 4, // length of tabs
+          initialIndex: 0,
+          child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: <Widget>[
+                Container(
+                  child: TabBar(
+                    labelColor: Color.fromARGB(255, 36, 133, 168),
+                    unselectedLabelColor: Color.fromARGB(255, 226, 218, 218),
+                    tabs: [
+                      Tab(text: 'Tab 1'),
+                      Tab(text: 'Tab 2'),
+                      Tab(text: 'Tab 3'),
+                      Tab(text: 'Tab 4'),
+                    ],
+                  ),
+                ),
+                Container(
+                    height: 200, //height of TabBarView
+                    decoration: BoxDecoration(
+                        border: Border(
+                            top: BorderSide(color: Colors.grey, width: 0.5))),
+                    child: TabBarView(children: <Widget>[
+                      Center(
+                        child: Text('Display Tab 1',
+                            style: GoogleFonts.roboto(
+                                fontSize: 25, color: Colors.white)),
+                      ),
+                      Center(
+                        child: Text('Display Tab 2',
+                            style: GoogleFonts.roboto(
+                                fontSize: 25, color: Colors.white)),
+                      ),
+                      Center(
+                        child: Text('Display Tab 3',
+                            style: GoogleFonts.roboto(
+                                fontSize: 25, color: Colors.white)),
+                      ),
+                      Center(
+                        child: Text('Display Tab 4',
+                            style: GoogleFonts.roboto(
+                                fontSize: 25, color: Colors.white)),
+                      ),
+                    ]))
+              ])),
+    ]),
+  );
 }
 
 /*_buildPageView2() {
