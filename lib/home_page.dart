@@ -8,11 +8,50 @@ import 'package:musicedu_app/instruments_page/rhythm.dart';
 import 'package:musicedu_app/instruments_page/strings.dart';
 import 'package:musicedu_app/instruments_page/winds.dart';
 import 'package:musicedu_app/quiz_page/quiz_main.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import 'package:showcaseview/showcaseview.dart';
 
 import 'education_ad/edu_page.dart';
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
+
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+
+
+  final keyOne = GlobalKey();
+
+  @override
+  void initState() {
+    super.initState();
+    SharedPreferences sharedPrefs;
+
+    displayShowCase() async {
+      sharedPrefs =  await SharedPreferences.getInstance();
+      bool? showCaseVisibilityStatus = sharedPrefs.getBool('displayShowcaseHomePage');
+      if ( showCaseVisibilityStatus == null) {
+        sharedPrefs.setBool('displayShowcaseHomePage', false);
+        return true;
+      }
+
+      return false;
+    }
+
+    displayShowCase().then((status) {
+      if(status) {
+        WidgetsBinding.instance.addPostFrameCallback(
+              (_) =>
+              ShowCaseWidget.of(context)?.startShowCase([
+                keyOne,
+              ]),
+        );
+      }
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -203,32 +242,36 @@ class HomePage extends StatelessWidget {
                   child: Row(
                     children: [
                       Expanded(
-                        child: Material(
-                          borderRadius: BorderRadius.circular(23),
-                          clipBehavior: Clip.antiAliasWithSaveLayer,
-                          elevation: 15,
-                          child: InkWell(
-                            onTap: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => GuitarnWorld(),
-                                ),
-                              );
-                            },
-                            child: Ink.image(
-                              image: AssetImage('assets/images/guitar.jpg'),
-                              height: 500,
-                              width: 500,
-                              fit: BoxFit.cover,
-                              child: Center(
-                                child: Opacity(
-                                  opacity: 0.85,
-                                  child: Text(
-                                    'Telli       Enstrümanlar',
-                                    textAlign: TextAlign.center,
-                                    style: GoogleFonts.pacifico(
-                                        color: Colors.white, fontSize: 20),
+                        child: Showcase(
+                          key: keyOne,
+                          description: 'TAB',
+                          child: Material(
+                            borderRadius: BorderRadius.circular(23),
+                            clipBehavior: Clip.antiAliasWithSaveLayer,
+                            elevation: 15,
+                            child: InkWell(
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => GuitarnWorld(),
+                                  ),
+                                );
+                              },
+                              child: Ink.image(
+                                image: AssetImage('assets/images/guitar.jpg'),
+                                height: 500,
+                                width: 500,
+                                fit: BoxFit.cover,
+                                child: Center(
+                                  child: Opacity(
+                                    opacity: 0.85,
+                                    child: Text(
+                                      'Telli       Enstrümanlar',
+                                      textAlign: TextAlign.center,
+                                      style: GoogleFonts.pacifico(
+                                          color: Colors.white, fontSize: 20),
+                                    ),
                                   ),
                                 ),
                               ),
