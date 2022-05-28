@@ -21,9 +21,11 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-
-
   final keyOne = GlobalKey();
+  final keyTwo = GlobalKey();
+  final keyThree = GlobalKey();
+  final keyFour = GlobalKey();
+  final keyFive = GlobalKey();
 
   @override
   void initState() {
@@ -37,7 +39,6 @@ class _HomePageState extends State<HomePage> {
         sharedPrefs.setBool('displayShowcaseHomePage', false);
         return true;
       }
-
       return false;
     }
 
@@ -47,6 +48,10 @@ class _HomePageState extends State<HomePage> {
               (_) =>
               ShowCaseWidget.of(context)?.startShowCase([
                 keyOne,
+                keyTwo,
+                keyThree,
+                keyFour,
+                keyFive,
               ]),
         );
       }
@@ -104,21 +109,25 @@ class _HomePageState extends State<HomePage> {
                     },
                     child: FadeInLeft(
                       delay: Duration(microseconds: 100),
-                      child: Row(children: [
-                        Expanded(
-                          child: Icon(
-                            Icons.search,
-                            color: Colors.white54,
+                      child: Showcase(
+                        key: keyThree,
+                        description: 'Bulunduğunuz ildeki kurs yeri bilgilerine buradan ulaşabilirsiniz',
+                        child: Row(children: [
+                          Expanded(
+                            child: Icon(
+                              Icons.search,
+                              color: Colors.white54,
+                            ),
                           ),
-                        ),
-                        Expanded(
-                          flex: 9,
-                          child: Text(
-                            'Kurs Ara',
-                            style: TextStyle(color: Colors.white),
+                          Expanded(
+                            flex: 9,
+                            child: Text(
+                              'Kurs Ara',
+                              style: TextStyle(color: Colors.white),
+                            ),
                           ),
-                        ),
-                      ]),
+                        ]),
+                      ),
                     ),
                   ),
                 ),
@@ -134,21 +143,25 @@ class _HomePageState extends State<HomePage> {
                     },
                     child: FadeInLeft(
                       delay: Duration(microseconds: 100),
-                      child: Row(children: [
-                        Expanded(
-                          child: Icon(
-                            Icons.book_outlined,
-                            color: Colors.white54,
+                      child: Showcase(
+                        key: keyFour,
+                        description: 'Yaptığınız test bilgilerine ulaşmak için burayı kullanabilirsiniz',
+                        child: Row(children: [
+                          Expanded(
+                            child: Icon(
+                              Icons.book_outlined,
+                              color: Colors.white54,
+                            ),
                           ),
-                        ),
-                        Expanded(
-                          flex: 9,
-                          child: Text(
-                            'Test',
-                            style: TextStyle(color: Colors.white),
+                          Expanded(
+                            flex: 9,
+                            child: Text(
+                              'Test',
+                              style: TextStyle(color: Colors.white),
+                            ),
                           ),
-                        ),
-                      ]),
+                        ]),
+                      ),
                     ),
                   ),
                 ),
@@ -179,21 +192,25 @@ class _HomePageState extends State<HomePage> {
                     },
                     child: FadeInLeft(
                       delay: Duration(microseconds: 100),
-                      child: Row(children: [
-                        Expanded(
-                          child: Icon(
-                            Icons.mail_outline_outlined,
-                            color: Colors.white54,
+                      child: Showcase(
+                        key: keyFive,
+                        description: 'Eğitim merkezlerini eklemek için ilgililerin irtibat bilgisi',
+                        child: Row(children: [
+                          Expanded(
+                            child: Icon(
+                              Icons.mail_outline_outlined,
+                              color: Colors.white54,
+                            ),
                           ),
-                        ),
-                        Expanded(
-                          flex: 9,
-                          child: Text(
-                            'Bize Ulaşın',
-                            style: TextStyle(color: Colors.white, fontSize: 14),
+                          Expanded(
+                            flex: 9,
+                            child: Text(
+                              'Bize Ulaşın',
+                              style: TextStyle(color: Colors.white, fontSize: 14),
+                            ),
                           ),
-                        ),
-                      ]),
+                        ]),
+                      ),
                     ),
                   ),
                 ),
@@ -244,7 +261,7 @@ class _HomePageState extends State<HomePage> {
                       Expanded(
                         child: Showcase(
                           key: keyOne,
-                          description: 'TAB',
+                          description: 'Enstrümanlar hakkında bilgi edinmek için ilgili kategoriyi seçin',
                           child: Material(
                             borderRadius: BorderRadius.circular(23),
                             clipBehavior: Clip.antiAliasWithSaveLayer,
@@ -448,32 +465,36 @@ class _HomePageState extends State<HomePage> {
                   child: Row(
                     children: [
                       Expanded(
-                        child: Material(
-                          borderRadius: BorderRadius.circular(23),
-                          clipBehavior: Clip.antiAliasWithSaveLayer,
-                          elevation: 15,
-                          child: InkWell(
-                            onTap: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => QuizApp(),
-                                ),
-                              );
-                            },
-                            child: Ink.image(
-                              image: AssetImage('assets/images/test.jpg'),
-                              height: 100,
-                              width: 100,
-                              fit: BoxFit.cover,
-                              child: Center(
-                                child: Opacity(
-                                  opacity: 0.85,
-                                  child: Text(
-                                    'Kendini Test et',
-                                    textAlign: TextAlign.center,
-                                    style: GoogleFonts.pacifico(
-                                        color: Colors.white, fontSize: 25),
+                        child: Showcase(
+                          key: keyTwo,
+                          description: 'Öğrendiğiniz bilgileri test etmek için buraya tıklayın',
+                          child: Material(
+                            borderRadius: BorderRadius.circular(23),
+                            clipBehavior: Clip.antiAliasWithSaveLayer,
+                            elevation: 15,
+                            child: InkWell(
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => QuizApp(),
+                                  ),
+                                );
+                              },
+                              child: Ink.image(
+                                image: AssetImage('assets/images/test.jpg'),
+                                height: 100,
+                                width: 100,
+                                fit: BoxFit.cover,
+                                child: Center(
+                                  child: Opacity(
+                                    opacity: 0.85,
+                                    child: Text(
+                                      'Kendini Test et',
+                                      textAlign: TextAlign.center,
+                                      style: GoogleFonts.pacifico(
+                                          color: Colors.white, fontSize: 25),
+                                    ),
                                   ),
                                 ),
                               ),
