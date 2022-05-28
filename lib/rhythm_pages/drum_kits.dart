@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 import 'drum/drum_info1.dart';
 import 'drum/drum_info2.dart';
-import 'drum/drum_info3.dart';
 
 class DrumKit extends StatelessWidget {
   const DrumKit({Key? key}) : super(key: key);
@@ -18,7 +17,6 @@ class DrumKit extends StatelessWidget {
         children: [
           DrumInfo1(),
           DrumInfo2(),
-          DrumInfo3(),
         ],
       ),
     );

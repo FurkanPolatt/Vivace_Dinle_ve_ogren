@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:musicedu_app/strings_pages/viola/viola_info1.dart';
 import 'package:musicedu_app/strings_pages/viola/viola_info2.dart';
-import 'package:musicedu_app/strings_pages/viola/viola_info3.dart';
 
 class Viola extends StatelessWidget {
   const Viola({Key? key}) : super(key: key);
@@ -17,7 +16,6 @@ class Viola extends StatelessWidget {
         children: [
           ViolaInfo1(),
           ViolaInfo2(),
-          ViolaInfo3(),
         ],
       ),
     );

@@ -33,7 +33,7 @@ class ClassicPageState extends State<DrumInfo1> {
 
   @override
   Widget build(BuildContext context) {
-    final _controller = PageController();
+    final controller = PageController();
 
     return Scaffold(
       extendBodyBehindAppBar: true,
@@ -52,7 +52,7 @@ class ClassicPageState extends State<DrumInfo1> {
       ),
       body: _buildBody(
         decoration: BoxDecoration(),
-        controller: _controller,
+        controller: controller,
       ),
     );
   }
@@ -74,18 +74,22 @@ class ClassicPageState extends State<DrumInfo1> {
 
   _buildPageView() {
     return Container(
+      padding: EdgeInsets.all(8),
       height: _boxHeight,
-      margin: EdgeInsets.only(top: _boxHeight / 3.5),
+      margin: EdgeInsets.only(top: _boxHeight / 5),
       child: PageView.builder(
           itemCount: appBannerList.length,
           controller: _pageController,
           itemBuilder: (BuildContext context, int index) {
-            return Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(28),
-                image: DecorationImage(
-                  image: AssetImage(appBannerList[index].image),
-                  fit: BoxFit.cover,
+            return Padding(
+              padding: const EdgeInsets.all(15.0),
+              child: Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(28),
+                  image: DecorationImage(
+                    image: AssetImage(appBannerList[index].image),
+                    fit: BoxFit.cover,
+                  ),
                 ),
               ),
             );
@@ -105,26 +109,26 @@ class ClassicPageState extends State<DrumInfo1> {
         child: SizedBox(
           width: 400,
           height: 370,
-          child: Padding(
-            padding: const EdgeInsets.all(20.0),
-            child: Column(
-              children: [
-                SizedBox(
-                  height: 10,
+          child: Column(
+            children: [
+              SizedBox(
+                height: 10,
+              ),
+              Text(
+                'Hakkında',
+                style: GoogleFonts.pacifico(
+                  fontSize: 28,
+                  color: Colors.white,
+                  fontWeight: FontWeight.w500,
                 ),
-                Text(
-                  'Hakkında',
-                  style: GoogleFonts.pacifico(
-                    fontSize: 28,
-                    color: Colors.white,
-                    fontWeight: FontWeight.w500,
-                  ),
-                ),
-                SizedBox(
-                  height: 10,
-                ),
-                Expanded(
-                  child: SingleChildScrollView(
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Expanded(
+                child: SingleChildScrollView(
+                  child: Padding(
+                    padding: const EdgeInsets.all(15.0),
                     child: Text(
                       '''- Bateri ritim tutmaya yarayan, zil ve davullardan oluşan, çalarken akıcı, dengeli ve koordineli olmayı gerektiren bir müzik aletidir. 
 - Perküsyonların yani vurmalı çalgıların en popüler üyelerinden birisidir. 
@@ -154,34 +158,34 @@ class ClassicPageState extends State<DrumInfo1> {
                     ),
                   ),
                 ),
-                SizedBox(
-                  height: 20,
-                ),
-                // SizedBox(
-                //   width: 170,
-                //   child: MaterialButton(
-                //     shape: RoundedRectangleBorder(
-                //       borderRadius: BorderRadius.circular(8),
-                //     ),
-                //     onPressed: () => {
-                //       Navigator.of(context).pushReplacement(MaterialPageRoute(
-                //         builder: (context) => BassExtra(),
-                //       ))
-                //     },
-                //     color: Colors.white70,
-                //     child: Padding(
-                //       padding: const EdgeInsets.all(4.0),
-                //       child: Row(
-                //         children: [
-                //           Icon(Icons.touch_app),
-                //           Text('Tamamını oku'),
-                //         ],
-                //       ),
-                //     ),
-                //   ),
-                // )
-              ],
-            ),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              // SizedBox(
+              //   width: 170,
+              //   child: MaterialButton(
+              //     shape: RoundedRectangleBorder(
+              //       borderRadius: BorderRadius.circular(8),
+              //     ),
+              //     onPressed: () => {
+              //       Navigator.of(context).pushReplacement(MaterialPageRoute(
+              //         builder: (context) => BassExtra(),
+              //       ))
+              //     },
+              //     color: Colors.white70,
+              //     child: Padding(
+              //       padding: const EdgeInsets.all(4.0),
+              //       child: Row(
+              //         children: [
+              //           Icon(Icons.touch_app),
+              //           Text('Tamamını oku'),
+              //         ],
+              //       ),
+              //     ),
+              //   ),
+              // )
+            ],
           ),
         ),
       ),

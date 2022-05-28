@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 import 'contrabass/contrabass_info1.dart';
 import 'contrabass/contrabass_info2.dart';
-import 'contrabass/contrabass_info3.dart';
 
 class ContraBass extends StatelessWidget {
   const ContraBass({Key? key}) : super(key: key);
@@ -18,7 +17,6 @@ class ContraBass extends StatelessWidget {
         children: [
           CtbInfo1(),
           CtbInfo2(),
-          CtbInfo3(),
         ],
       ),
     );

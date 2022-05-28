@@ -33,7 +33,7 @@ class ClassicPageState extends State<ClairnetInfo1> {
 
   @override
   Widget build(BuildContext context) {
-    final _controller = PageController();
+    final controller = PageController();
 
     return Scaffold(
       extendBodyBehindAppBar: true,
@@ -52,7 +52,7 @@ class ClassicPageState extends State<ClairnetInfo1> {
       ),
       body: _buildBody(
         decoration: BoxDecoration(),
-        controller: _controller,
+        controller: controller,
       ),
     );
   }
@@ -74,18 +74,22 @@ class ClassicPageState extends State<ClairnetInfo1> {
 
   _buildPageView() {
     return Container(
+      padding: EdgeInsets.all(8),
       height: _boxHeight,
-      margin: EdgeInsets.only(top: _boxHeight / 3.5),
+      margin: EdgeInsets.only(top: _boxHeight / 5),
       child: PageView.builder(
           itemCount: appBannerList.length,
           controller: _pageController,
           itemBuilder: (BuildContext context, int index) {
-            return Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(28),
-                image: DecorationImage(
-                  image: AssetImage(appBannerList[index].image),
-                  fit: BoxFit.cover,
+            return Padding(
+              padding: const EdgeInsets.all(15.0),
+              child: Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(28),
+                  image: DecorationImage(
+                    image: AssetImage(appBannerList[index].image),
+                    fit: BoxFit.cover,
+                  ),
                 ),
               ),
             );
@@ -105,26 +109,26 @@ class ClassicPageState extends State<ClairnetInfo1> {
         child: SizedBox(
           width: 400,
           height: 370,
-          child: Padding(
-            padding: const EdgeInsets.all(20.0),
-            child: Column(
-              children: [
-                SizedBox(
-                  height: 10,
+          child: Column(
+            children: [
+              SizedBox(
+                height: 10,
+              ),
+              Text(
+                'Hakkında',
+                style: GoogleFonts.pacifico(
+                  fontSize: 28,
+                  color: Colors.white,
+                  fontWeight: FontWeight.w500,
                 ),
-                Text(
-                  'Hakkında',
-                  style: GoogleFonts.pacifico(
-                    fontSize: 28,
-                    color: Colors.white,
-                    fontWeight: FontWeight.w500,
-                  ),
-                ),
-                SizedBox(
-                  height: 10,
-                ),
-                Expanded(
-                  child: SingleChildScrollView(
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Expanded(
+                child: SingleChildScrollView(
+                  child: Padding(
+                    padding: const EdgeInsets.all(5),
                     child: Text(
                       '''- Klarnet, sert ve dayanıklı ağaçlardan genellikle de abanoz ağacından yapılan üflemeli bir çalgı türüdür. 
 - Klarnet çalabilmek için kamış ve kamışı beke sabitleyip düzgün frekanslarda titreşim oluşması için bileziğe ihtiyaç vardır. 
@@ -151,34 +155,34 @@ class ClassicPageState extends State<ClairnetInfo1> {
                     ),
                   ),
                 ),
-                SizedBox(
-                  height: 20,
-                ),
-                // SizedBox(
-                //   width: 170,
-                //   child: MaterialButton(
-                //     shape: RoundedRectangleBorder(
-                //       borderRadius: BorderRadius.circular(8),
-                //     ),
-                //     onPressed: () => {
-                //       Navigator.of(context).pushReplacement(MaterialPageRoute(
-                //         builder: (context) => BassExtra(),
-                //       ))
-                //     },
-                //     color: Colors.white70,
-                //     child: Padding(
-                //       padding: const EdgeInsets.all(4.0),
-                //       child: Row(
-                //         children: [
-                //           Icon(Icons.touch_app),
-                //           Text('Tamamını oku'),
-                //         ],
-                //       ),
-                //     ),
-                //   ),
-                // )
-              ],
-            ),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              // SizedBox(
+              //   width: 170,
+              //   child: MaterialButton(
+              //     shape: RoundedRectangleBorder(
+              //       borderRadius: BorderRadius.circular(8),
+              //     ),
+              //     onPressed: () => {
+              //       Navigator.of(context).pushReplacement(MaterialPageRoute(
+              //         builder: (context) => BassExtra(),
+              //       ))
+              //     },
+              //     color: Colors.white70,
+              //     child: Padding(
+              //       padding: const EdgeInsets.all(4.0),
+              //       child: Row(
+              //         children: [
+              //           Icon(Icons.touch_app),
+              //           Text('Tamamını oku'),
+              //         ],
+              //       ),
+              //     ),
+              //   ),
+              // )
+            ],
           ),
         ),
       ),

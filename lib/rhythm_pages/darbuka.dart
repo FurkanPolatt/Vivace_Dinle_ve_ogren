@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 import 'darbuka/darbuka_info1.dart';
 import 'darbuka/darbuka_info2.dart';
-import 'darbuka/darbuka_info3.dart';
 
 class Darbuka extends StatelessWidget {
   const Darbuka({Key? key}) : super(key: key);
@@ -18,7 +17,6 @@ class Darbuka extends StatelessWidget {
         children: [
           DarbukaInfo1(),
           DarbukaInfo2(),
-          DarbukaInfo3(),
         ],
       ),
     );
