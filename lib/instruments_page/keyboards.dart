@@ -63,7 +63,7 @@ class KeyBoards extends StatelessWidget {
                                   child: Opacity(
                                     opacity: 0.85,
                                     child: Text(
-                                      'Piyano',
+                                      'Akustik Piyano',
                                       textAlign: TextAlign.center,
                                       style: GoogleFonts.pacifico(
                                           color: Colors.white, fontSize: 30),
