@@ -25,7 +25,6 @@ class _HomePageState extends State<HomePage> {
   final keyTwo = GlobalKey();
   final keyThree = GlobalKey();
   final keyFour = GlobalKey();
-  final keyFive = GlobalKey();
 
   @override
   void initState() {
@@ -51,7 +50,6 @@ class _HomePageState extends State<HomePage> {
                 keyTwo,
                 keyThree,
                 keyFour,
-                keyFive,
               ]),
         );
       }
@@ -143,58 +141,54 @@ class _HomePageState extends State<HomePage> {
                     },
                     child: FadeInLeft(
                       delay: Duration(microseconds: 100),
-                      child: Showcase(
-                        key: keyFour,
-                        description: 'Yaptığınız test bilgilerine ulaşmak için burayı kullanabilirsiniz',
-                        child: Row(children: [
-                          Expanded(
-                            child: Icon(
-                              Icons.book_outlined,
-                              color: Colors.white54,
-                            ),
+                      child: Row(children: [
+                        Expanded(
+                          child: Icon(
+                            Icons.book_outlined,
+                            color: Colors.white54,
                           ),
-                          Expanded(
-                            flex: 9,
-                            child: Text(
-                              'Test',
-                              style: TextStyle(color: Colors.white),
-                            ),
+                        ),
+                        Expanded(
+                          flex: 9,
+                          child: Text(
+                            'Test',
+                            style: TextStyle(color: Colors.white),
                           ),
-                        ]),
-                      ),
+                        ),
+                      ]),
                     ),
                   ),
                 ),
-                ListTile(
-                  title: InkWell(
-                    onTap: () {
-                      showDialog(
-                          context: context,
-                          builder: (BuildContext context) {
-                            return AlertDialog(
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(12),
-                              ),
-                              backgroundColor: Colors.white70,
-                              title: Text(
-                                  'Eğitim merkezlerinizi uygulamamıza eklemek için lütfen bizimle iletişime geçiniz',
-                                  textAlign: TextAlign.center),
-                              actions: [
-                                Center(
-                                  child: Text(
-                                    'E-posta: Virtuoso@gmail.com',
-                                    style: TextStyle(fontSize: 20),
-                                  ),
+                Showcase(
+                  key: keyFour,
+                  description: 'İrtibat için buraya tıklayınız',
+                  child: ListTile(
+                    title: InkWell(
+                      onTap: () {
+                        showDialog(
+                            context: context,
+                            builder: (BuildContext context) {
+                              return AlertDialog(
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(12),
                                 ),
-                              ],
-                            );
-                          });
-                    },
-                    child: FadeInLeft(
-                      delay: Duration(microseconds: 100),
-                      child: Showcase(
-                        key: keyFive,
-                        description: 'Eğitim merkezlerini eklemek için ilgililerin irtibat bilgisi',
+                                backgroundColor: Colors.white70,
+                                title: Text(
+                                    'Eğitim merkezlerinizi uygulamamıza eklemek için lütfen bizimle iletişime geçiniz',
+                                    textAlign: TextAlign.center),
+                                actions: [
+                                  Center(
+                                    child: Text(
+                                      'E-posta: Virtuoso@gmail.com',
+                                      style: TextStyle(fontSize: 20),
+                                    ),
+                                  ),
+                                ],
+                              );
+                            });
+                      },
+                      child: FadeInLeft(
+                        delay: Duration(microseconds: 100),
                         child: Row(children: [
                           Expanded(
                             child: Icon(
@@ -261,7 +255,7 @@ class _HomePageState extends State<HomePage> {
                       Expanded(
                         child: Showcase(
                           key: keyOne,
-                          description: 'Enstrümanlar hakkında bilgi edinmek için ilgili kategoriyi seçin',
+                          description: 'Enstrümanlar hakkında bilgi edinmek ve videoları izlemek için ilgili kategoriyi seçin',
                           child: Material(
                             borderRadius: BorderRadius.circular(23),
                             clipBehavior: Clip.antiAliasWithSaveLayer,
