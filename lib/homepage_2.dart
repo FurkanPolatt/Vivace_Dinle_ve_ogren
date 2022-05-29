@@ -84,14 +84,14 @@ class HomePage2 extends StatelessWidget {
                                         ),
                                       );
                                     },
-                                    child: Text(
-                                      'Giriş Yap',
-                                      style: TextStyle(fontSize: 20),
-                                    ),
                                     color: Colors.white54,
                                     elevation: 10,
                                     shape: RoundedRectangleBorder(
                                       borderRadius: BorderRadius.circular(10),
+                                    ),
+                                    child: Text(
+                                      'Giriş Yap',
+                                      style: TextStyle(fontSize: 20),
                                     ),
                                   ),
                                 ),
@@ -141,14 +141,14 @@ class HomePage2 extends StatelessWidget {
                                         ),
                                       );
                                     },
-                                    child: Text(
-                                      'Giriş Yap',
-                                      style: TextStyle(fontSize: 20),
-                                    ),
                                     color: Colors.white54,
                                     elevation: 10,
                                     shape: RoundedRectangleBorder(
                                       borderRadius: BorderRadius.circular(10),
+                                    ),
+                                    child: Text(
+                                      'Giriş Yap',
+                                      style: TextStyle(fontSize: 20),
                                     ),
                                   ),
                                 ),
@@ -235,6 +235,10 @@ class HomePage2 extends StatelessWidget {
                               );
                             },
                             child: Ink.image(
+                              image: AssetImage('assets/images/guitar.jpg'),
+                              height: 500,
+                              width: 500,
+                              fit: BoxFit.cover,
                               child: Center(
                                 child: Opacity(
                                   opacity: 0.85,
@@ -246,10 +250,6 @@ class HomePage2 extends StatelessWidget {
                                   ),
                                 ),
                               ),
-                              image: AssetImage('assets/images/guitar.jpg'),
-                              height: 500,
-                              width: 500,
-                              fit: BoxFit.cover,
                             ),
                           ),
                         ),
@@ -272,6 +272,10 @@ class HomePage2 extends StatelessWidget {
                                   ));
                             },
                             child: Ink.image(
+                              image: AssetImage('assets/images/violin.jpg'),
+                              height: 500,
+                              width: 500,
+                              fit: BoxFit.cover,
                               child: Center(
                                 child: Opacity(
                                   opacity: 0.85,
@@ -283,10 +287,6 @@ class HomePage2 extends StatelessWidget {
                                   ),
                                 ),
                               ),
-                              image: AssetImage('assets/images/violin.jpg'),
-                              height: 500,
-                              width: 500,
-                              fit: BoxFit.cover,
                             ),
                           ),
                         ),
@@ -315,6 +315,10 @@ class HomePage2 extends StatelessWidget {
                               );
                             },
                             child: Ink.image(
+                              image: AssetImage('assets/images/wind.jpg'),
+                              height: 500,
+                              width: 500,
+                              fit: BoxFit.cover,
                               child: Center(
                                 child: Opacity(
                                   opacity: 0.85,
@@ -326,10 +330,6 @@ class HomePage2 extends StatelessWidget {
                                   ),
                                 ),
                               ),
-                              image: AssetImage('assets/images/wind.jpg'),
-                              height: 500,
-                              width: 500,
-                              fit: BoxFit.cover,
                             ),
                           ),
                         ),
@@ -352,6 +352,10 @@ class HomePage2 extends StatelessWidget {
                               );
                             },
                             child: Ink.image(
+                              image: AssetImage('assets/images/drum.jpg'),
+                              height: 500,
+                              width: 500,
+                              fit: BoxFit.cover,
                               child: Center(
                                 child: Opacity(
                                   opacity: 0.85,
@@ -363,10 +367,6 @@ class HomePage2 extends StatelessWidget {
                                   ),
                                 ),
                               ),
-                              image: AssetImage('assets/images/drum.jpg'),
-                              height: 500,
-                              width: 500,
-                              fit: BoxFit.cover,
                             ),
                           ),
                         ),
@@ -395,6 +395,10 @@ class HomePage2 extends StatelessWidget {
                               );
                             },
                             child: Ink.image(
+                              image: AssetImage('assets/images/piano.jpg'),
+                              height: 130,
+                              width: 500,
+                              fit: BoxFit.cover,
                               child: Center(
                                 child: Opacity(
                                   opacity: 0.85,
@@ -406,10 +410,6 @@ class HomePage2 extends StatelessWidget {
                                   ),
                                 ),
                               ),
-                              image: AssetImage('assets/images/piano.jpg'),
-                              height: 130,
-                              width: 500,
-                              fit: BoxFit.cover,
                             ),
                           ),
                         ),
@@ -452,15 +452,15 @@ class HomePage2 extends StatelessWidget {
                                                 ),
                                               );
                                             },
-                                            child: Text(
-                                              'Giriş Yap',
-                                              style: TextStyle(fontSize: 20),
-                                            ),
                                             color: Colors.white54,
                                             elevation: 10,
                                             shape: RoundedRectangleBorder(
                                               borderRadius:
                                                   BorderRadius.circular(10),
+                                            ),
+                                            child: Text(
+                                              'Giriş Yap',
+                                              style: TextStyle(fontSize: 20),
                                             ),
                                           ),
                                         ),
@@ -469,6 +469,10 @@ class HomePage2 extends StatelessWidget {
                                   });
                             },
                             child: Ink.image(
+                              image: AssetImage('assets/images/test.jpg'),
+                              height: 100,
+                              width: 100,
+                              fit: BoxFit.cover,
                               child: Center(
                                 child: Opacity(
                                   opacity: 0.85,
@@ -480,10 +484,6 @@ class HomePage2 extends StatelessWidget {
                                   ),
                                 ),
                               ),
-                              image: AssetImage('assets/images/test.jpg'),
-                              height: 100,
-                              width: 100,
-                              fit: BoxFit.cover,
                             ),
                           ),
                         ),
