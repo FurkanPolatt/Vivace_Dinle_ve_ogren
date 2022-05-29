@@ -32,8 +32,12 @@ class _SplashScreenState extends State<SplashScreen> {
             fit: BoxFit.cover,
           ),
         ),
-        child: Container(
-          child: Lottie.asset('assets/animation/splash_quiz.json', height: 270),
+        child: Opacity(
+          opacity: 0.8,
+          child: Container(
+            child:
+                Lottie.asset('assets/animation/splash_quiz.json', height: 270),
+          ),
         ),
       ),
     );
