@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 import 'cello/cello_info1.dart';
 import 'cello/cello_info2.dart';
-import 'cello/cello_info3.dart';
 
 class Cello extends StatelessWidget {
   const Cello({Key? key}) : super(key: key);
@@ -18,7 +17,6 @@ class Cello extends StatelessWidget {
         children: [
           CelloInfo1(),
           CelloInfo2(),
-          CelloInfo3(),
         ],
       ),
     );

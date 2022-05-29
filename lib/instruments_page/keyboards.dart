@@ -1,3 +1,4 @@
+import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:musicedu_app/keyboard_pages/electro_piano.dart';
@@ -39,34 +40,37 @@ class KeyBoards extends StatelessWidget {
                   child: Row(
                     children: [
                       Expanded(
-                        child: Material(
-                          borderRadius: BorderRadius.circular(23),
-                          clipBehavior: Clip.antiAliasWithSaveLayer,
-                          elevation: 15,
-                          child: InkWell(
-                            onTap: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => Piano(),
-                                ),
-                              );
-                            },
-                            child: Ink.image(
-                              child: Center(
-                                child: Opacity(
-                                  opacity: 0.85,
-                                  child: Text(
-                                    'Piyano',
-                                    textAlign: TextAlign.center,
-                                    style: GoogleFonts.pacifico(
-                                        color: Colors.white, fontSize: 30),
+                        child: FadeInLeft(
+                          child: Material(
+                            borderRadius: BorderRadius.circular(23),
+                            clipBehavior: Clip.antiAliasWithSaveLayer,
+                            elevation: 15,
+                            child: InkWell(
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => Piano(),
+                                  ),
+                                );
+                              },
+                              child: Ink.image(
+                                image:
+                                    AssetImage('assets/page_images/piano.jpg'),
+                                height: 150,
+                                fit: BoxFit.cover,
+                                child: Center(
+                                  child: Opacity(
+                                    opacity: 0.85,
+                                    child: Text(
+                                      'Akustik Piyano',
+                                      textAlign: TextAlign.center,
+                                      style: GoogleFonts.pacifico(
+                                          color: Colors.white, fontSize: 30),
+                                    ),
                                   ),
                                 ),
                               ),
-                              image: AssetImage('assets/page_images/piano.jpg'),
-                              height: 150,
-                              fit: BoxFit.cover,
                             ),
                           ),
                         ),
@@ -81,35 +85,37 @@ class KeyBoards extends StatelessWidget {
                   child: Row(
                     children: [
                       Expanded(
-                        child: Material(
-                          borderRadius: BorderRadius.circular(23),
-                          clipBehavior: Clip.antiAliasWithSaveLayer,
-                          elevation: 15,
-                          child: InkWell(
-                            onTap: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => ElectroPiano(),
-                                ),
-                              );
-                            },
-                            child: Ink.image(
-                              child: Center(
-                                child: Opacity(
-                                  opacity: 0.85,
-                                  child: Text(
-                                    'Elektronik Piyano',
-                                    textAlign: TextAlign.center,
-                                    style: GoogleFonts.pacifico(
-                                        color: Colors.white, fontSize: 30),
+                        child: FadeInLeft(
+                          child: Material(
+                            borderRadius: BorderRadius.circular(23),
+                            clipBehavior: Clip.antiAliasWithSaveLayer,
+                            elevation: 15,
+                            child: InkWell(
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => ElectroPiano(),
+                                  ),
+                                );
+                              },
+                              child: Ink.image(
+                                image: AssetImage(
+                                    'assets/page_images/electropiano.jpg'),
+                                height: 150,
+                                fit: BoxFit.cover,
+                                child: Center(
+                                  child: Opacity(
+                                    opacity: 0.85,
+                                    child: Text(
+                                      'Elektronik Piyano',
+                                      textAlign: TextAlign.center,
+                                      style: GoogleFonts.pacifico(
+                                          color: Colors.white, fontSize: 30),
+                                    ),
                                   ),
                                 ),
                               ),
-                              image: AssetImage(
-                                  'assets/page_images/electropiano.jpg'),
-                              height: 150,
-                              fit: BoxFit.cover,
                             ),
                           ),
                         ),
@@ -124,34 +130,36 @@ class KeyBoards extends StatelessWidget {
                   child: Row(
                     children: [
                       Expanded(
-                        child: Material(
-                          borderRadius: BorderRadius.circular(23),
-                          clipBehavior: Clip.antiAliasWithSaveLayer,
-                          elevation: 15,
-                          child: InkWell(
-                            onTap: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => Org(),
-                                ),
-                              );
-                            },
-                            child: Ink.image(
-                              child: Center(
-                                child: Opacity(
-                                  opacity: 0.85,
-                                  child: Text(
-                                    'Org',
-                                    textAlign: TextAlign.center,
-                                    style: GoogleFonts.pacifico(
-                                        color: Colors.white, fontSize: 30),
+                        child: FadeInLeft(
+                          child: Material(
+                            borderRadius: BorderRadius.circular(23),
+                            clipBehavior: Clip.antiAliasWithSaveLayer,
+                            elevation: 15,
+                            child: InkWell(
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => Org(),
+                                  ),
+                                );
+                              },
+                              child: Ink.image(
+                                image: AssetImage('assets/page_images/org.jpg'),
+                                height: 150,
+                                fit: BoxFit.cover,
+                                child: Center(
+                                  child: Opacity(
+                                    opacity: 0.85,
+                                    child: Text(
+                                      'Org',
+                                      textAlign: TextAlign.center,
+                                      style: GoogleFonts.pacifico(
+                                          color: Colors.white, fontSize: 30),
+                                    ),
                                   ),
                                 ),
                               ),
-                              image: AssetImage('assets/page_images/org.jpg'),
-                              height: 150,
-                              fit: BoxFit.cover,
                             ),
                           ),
                         ),
@@ -164,35 +172,37 @@ class KeyBoards extends StatelessWidget {
                   child: Row(
                     children: [
                       Expanded(
-                        child: Material(
-                          borderRadius: BorderRadius.circular(23),
-                          clipBehavior: Clip.antiAliasWithSaveLayer,
-                          elevation: 15,
-                          child: InkWell(
-                            onTap: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => Melodica(),
-                                ),
-                              );
-                            },
-                            child: Ink.image(
-                              child: Center(
-                                child: Opacity(
-                                  opacity: 0.85,
-                                  child: Text(
-                                    'Melodika',
-                                    textAlign: TextAlign.center,
-                                    style: GoogleFonts.pacifico(
-                                        color: Colors.white, fontSize: 30),
+                        child: FadeInLeft(
+                          child: Material(
+                            borderRadius: BorderRadius.circular(23),
+                            clipBehavior: Clip.antiAliasWithSaveLayer,
+                            elevation: 15,
+                            child: InkWell(
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => Melodica(),
+                                  ),
+                                );
+                              },
+                              child: Ink.image(
+                                image: AssetImage(
+                                    'assets/page_images/melodica.jpg'),
+                                height: 140,
+                                fit: BoxFit.cover,
+                                child: Center(
+                                  child: Opacity(
+                                    opacity: 0.85,
+                                    child: Text(
+                                      'Melodika',
+                                      textAlign: TextAlign.center,
+                                      style: GoogleFonts.pacifico(
+                                          color: Colors.white, fontSize: 30),
+                                    ),
                                   ),
                                 ),
                               ),
-                              image:
-                                  AssetImage('assets/page_images/melodica.jpg'),
-                              height: 140,
-                              fit: BoxFit.cover,
                             ),
                           ),
                         ),

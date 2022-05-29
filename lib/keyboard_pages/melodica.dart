@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 import 'melodica/melodica_info1.dart';
 import 'melodica/melodica_info2.dart';
-import 'melodica/melodica_info3.dart';
 
 class Melodica extends StatelessWidget {
   const Melodica({Key? key}) : super(key: key);
@@ -18,7 +17,6 @@ class Melodica extends StatelessWidget {
         children: [
           MelodicaInfo1(),
           MelodicaInfo2(),
-          MelodicaInfo3(),
         ],
       ),
     );

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 import 'cajon/cajon_info1.dart';
 import 'cajon/cajon_info2.dart';
-import 'cajon/cajon_info3.dart';
 
 class Cajon extends StatelessWidget {
   const Cajon({Key? key}) : super(key: key);
@@ -18,7 +17,6 @@ class Cajon extends StatelessWidget {
         children: [
           CajonInfo1(),
           CajonInfo2(),
-          CajonInfo3(),
         ],
       ),
     );

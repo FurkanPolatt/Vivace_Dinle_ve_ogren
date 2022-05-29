@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:musicedu_app/keyboard_pages/piano/piano_info1.dart';
 import 'package:musicedu_app/keyboard_pages/piano/piano_info2.dart';
-import 'package:musicedu_app/keyboard_pages/piano/piano_info3.dart';
 
 class Piano extends StatelessWidget {
   const Piano({Key? key}) : super(key: key);
@@ -17,7 +16,6 @@ class Piano extends StatelessWidget {
         children: [
           PianoInfo1(),
           PianoInfo2(),
-          PianoInfo3(),
         ],
       ),
     );

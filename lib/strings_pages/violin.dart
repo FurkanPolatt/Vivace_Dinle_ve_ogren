@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:musicedu_app/strings_pages/violin/violin_info1.dart';
 import 'package:musicedu_app/strings_pages/violin/violin_info2.dart';
-import 'package:musicedu_app/strings_pages/violin/violin_info3.dart';
 
 class Violin extends StatelessWidget {
   const Violin({Key? key}) : super(key: key);
@@ -17,7 +16,6 @@ class Violin extends StatelessWidget {
         children: [
           ViolinInfo1(),
           ViolinInfo2(),
-          ViolinInfo3(),
         ],
       ),
     );
