@@ -153,32 +153,6 @@ X: Sağ elin serçe parmağı
                   ),
                 ),
               ),
-              // SizedBox(
-              //   height: 20,
-              // ),
-              // SizedBox(
-              //   width: 170,
-              //   child: MaterialButton(
-              //     shape: RoundedRectangleBorder(
-              //       borderRadius: BorderRadius.circular(8),
-              //     ),
-              //     onPressed: () => {
-              //       Navigator.of(context).pushReplacement(MaterialPageRoute(
-              //         builder: (context) => BassExtra(),
-              //       ))
-              //     },
-              //     color: Colors.white70,
-              //     child: Padding(
-              //       padding: const EdgeInsets.all(4.0),
-              //       child: Row(
-              //         children: [
-              //           Icon(Icons.touch_app),
-              //           Text('Tamamını oku'),
-              //         ],
-              //       ),
-              //     ),
-              //   ),
-              // )
             ],
           ),
         ),

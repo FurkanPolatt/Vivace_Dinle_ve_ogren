@@ -86,36 +86,6 @@ class HomePage extends StatelessWidget {
                 ListTile(
                   title: InkWell(
                     onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => QuizApp(),
-                        ),
-                      );
-                    },
-                    child: FadeInLeft(
-                      delay: Duration(microseconds: 100),
-                      child: Row(children: [
-                        Expanded(
-                          child: Icon(
-                            Icons.book_outlined,
-                            color: Colors.white54,
-                          ),
-                        ),
-                        Expanded(
-                          flex: 9,
-                          child: Text(
-                            'Test',
-                            style: TextStyle(color: Colors.white),
-                          ),
-                        ),
-                      ]),
-                    ),
-                  ),
-                ),
-                ListTile(
-                  title: InkWell(
-                    onTap: () {
                       showDialog(
                           context: context,
                           builder: (BuildContext context) {

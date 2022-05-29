@@ -16,10 +16,28 @@ class _LoginPageState extends State<LoginPage> {
   final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
   Future signIn() async {
-    await FirebaseAuth.instance.signInWithEmailAndPassword(
-      email: _emailController.text.trim(),
-      password: _passwordController.text.trim(),
-    );
+    try {
+      await FirebaseAuth.instance.signInWithEmailAndPassword(
+        email: _emailController.text.trim(),
+        password: _passwordController.text.trim(),
+      );
+    } on FirebaseAuthException {
+      showDialog(
+          context: context,
+          builder: (context) {
+            return Padding(
+              padding: const EdgeInsets.all(15.0),
+              child: AlertDialog(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                backgroundColor: Colors.white70,
+                title: Text('E posta adresiniz veya şifreniz yanlış',
+                    textAlign: TextAlign.center),
+              ),
+            );
+          });
+    }
   }
 
   @override
