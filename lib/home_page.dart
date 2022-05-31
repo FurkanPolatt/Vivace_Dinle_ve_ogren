@@ -95,21 +95,21 @@ class _HomePageState extends State<HomePage> {
                         style: TextStyle(color: Colors.white)),
                   ),
                 ),
-                ListTile(
-                  title: InkWell(
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => EduPage(),
-                        ),
-                      );
-                    },
-                    child: FadeInLeft(
-                      delay: Duration(microseconds: 100),
-                      child: Showcase(
-                        key: keyThree,
-                        description: 'Bulunduğunuz ildeki kurs yeri bilgilerine buradan ulaşabilirsiniz',
+                Showcase(
+                  key: keyThree,
+                  description: 'Bulunduğunuz ildeki kurs yeri bilgilerine buradan ulaşabilirsiniz',
+                  child: ListTile(
+                    title: InkWell(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => EduPage(),
+                          ),
+                        );
+                      },
+                      child: FadeInLeft(
+                        delay: Duration(microseconds: 100),
                         child: Row(children: [
                           Expanded(
                             child: Icon(
