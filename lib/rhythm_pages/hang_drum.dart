@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 import 'handpan/handpan_info1.dart';
 import 'handpan/handpan_info2.dart';
-import 'handpan/handpan_info3.dart';
 
 class HandPan extends StatelessWidget {
   const HandPan({Key? key}) : super(key: key);
@@ -18,7 +17,6 @@ class HandPan extends StatelessWidget {
         children: [
           HandpanInfo1(),
           HandpanInfo2(),
-          HandpanInfo3(),
         ],
       ),
     );

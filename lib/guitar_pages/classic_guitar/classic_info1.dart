@@ -33,7 +33,7 @@ class ClassicPageState extends State<ClassicInfo1> {
 
   @override
   Widget build(BuildContext context) {
-    final _controller = PageController();
+    final controller = PageController();
 
     return Scaffold(
       extendBodyBehindAppBar: true,
@@ -52,7 +52,7 @@ class ClassicPageState extends State<ClassicInfo1> {
       ),
       body: _buildBody(
         decoration: BoxDecoration(),
-        controller: _controller,
+        controller: controller,
       ),
     );
   }
@@ -73,34 +73,30 @@ class ClassicPageState extends State<ClassicInfo1> {
   }
 
   _buildPageView() {
-    return Padding(
-      padding: const EdgeInsets.all(1),
-      child: Container(
-        padding: EdgeInsets.all(8),
-        height: _boxHeight,
-        margin: EdgeInsets.only(top: _boxHeight / 5),
-        child: PageView.builder(
-            itemCount: appBannerList.length,
-            controller: _pageController,
-            itemBuilder: (BuildContext context, int index) {
-              return Padding(
-                padding: const EdgeInsets.all(15.0),
-                child: Container(
-                  padding: EdgeInsets.all(5),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(28),
-                    image: DecorationImage(
-                      image: AssetImage(appBannerList[index].image),
-                      fit: BoxFit.cover,
-                    ),
+    return Container(
+      padding: EdgeInsets.all(8),
+      height: _boxHeight,
+      margin: EdgeInsets.only(top: _boxHeight / 5),
+      child: PageView.builder(
+          itemCount: appBannerList.length,
+          controller: _pageController,
+          itemBuilder: (BuildContext context, int index) {
+            return Padding(
+              padding: const EdgeInsets.all(15.0),
+              child: Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(28),
+                  image: DecorationImage(
+                    image: AssetImage(appBannerList[index].image),
+                    fit: BoxFit.cover,
                   ),
                 ),
-              );
-            },
-            onPageChanged: (int index) {
-              _currentPageNotifier.value = index;
-            }),
-      ),
+              ),
+            );
+          },
+          onPageChanged: (int index) {
+            _currentPageNotifier.value = index;
+          }),
     );
   }
 
@@ -113,30 +109,28 @@ class ClassicPageState extends State<ClassicInfo1> {
         child: SizedBox(
           width: 400,
           height: 500,
-          child: Padding(
-            padding: const EdgeInsets.all(1),
-            child: Column(
-              children: [
-                SizedBox(
-                  height: 10,
+          child: Column(
+            children: [
+              SizedBox(
+                height: 10,
+              ),
+              Text(
+                'Hakkında',
+                style: GoogleFonts.pacifico(
+                  fontSize: 28,
+                  color: Colors.white,
+                  fontWeight: FontWeight.w500,
                 ),
-                Text(
-                  'Hakkında',
-                  style: GoogleFonts.pacifico(
-                    fontSize: 28,
-                    color: Colors.white,
-                    fontWeight: FontWeight.w500,
-                  ),
-                ),
-                SizedBox(
-                  height: 10,
-                ),
-                Expanded(
-                  child: SingleChildScrollView(
-                    child: Padding(
-                      padding: const EdgeInsets.all(5.0),
-                      child: Text(
-                        '''- Modern klasik gitar, 1850'li yıllarda İspanyol usta Antonio Torres sayesinde günümüzdeki şeklini aldı.
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Expanded(
+                child: SingleChildScrollView(
+                  child: Padding(
+                    padding: const EdgeInsets.all(5.0),
+                    child: Text(
+                      '''- Modern klasik gitar, 1850'li yıllarda İspanyol usta Antonio Torres sayesinde günümüzdeki şeklini aldı.
 - Gitarın gövdesinin ortasında ses deliği denilen yuvarlak bir boşluk bulunur. 
 - Gitarın telleri titreştiğinde gövdenin içinde bulunan hava titreşir ve tek çıkış noktası olan bu yuvarlak boşluktan dışarı ses olarak geri çıkar. 
 - Toplam 6 tel vardır: 3’ü kalın tel çelikten ve kalan 3’ü de ince tel naylondan yapılmıştır.
@@ -150,43 +144,16 @@ M: Orta parmak
 A: Yüzük parmağı
 X: Sağ elin serçe parmağı
  ''',
-                        style: TextStyle(
-                          fontSize: 15,
-                          color: Colors.white,
-                        ),
-                        textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 15,
+                        color: Colors.white,
                       ),
+                      textAlign: TextAlign.center,
                     ),
                   ),
                 ),
-                // SizedBox(
-                //   height: 20,
-                // ),
-                // SizedBox(
-                //   width: 170,
-                //   child: MaterialButton(
-                //     shape: RoundedRectangleBorder(
-                //       borderRadius: BorderRadius.circular(8),
-                //     ),
-                //     onPressed: () => {
-                //       Navigator.of(context).pushReplacement(MaterialPageRoute(
-                //         builder: (context) => BassExtra(),
-                //       ))
-                //     },
-                //     color: Colors.white70,
-                //     child: Padding(
-                //       padding: const EdgeInsets.all(4.0),
-                //       child: Row(
-                //         children: [
-                //           Icon(Icons.touch_app),
-                //           Text('Tamamını oku'),
-                //         ],
-                //       ),
-                //     ),
-                //   ),
-                // )
-              ],
-            ),
+              ),
+            ],
           ),
         ),
       ),

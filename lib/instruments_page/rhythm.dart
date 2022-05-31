@@ -1,3 +1,4 @@
+import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:musicedu_app/rhythm_pages/cajon.dart';
@@ -36,169 +37,178 @@ class Rhythm extends StatelessWidget {
             child: Column(
               children: [
                 Expanded(
-                  child: Row(
-                    children: [
-                      Expanded(
-                        child: Material(
-                          borderRadius: BorderRadius.circular(23),
-                          clipBehavior: Clip.antiAliasWithSaveLayer,
-                          elevation: 15,
-                          child: InkWell(
-                            onTap: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => DrumKit(),
-                                ),
-                              );
-                            },
-                            child: Ink.image(
-                              child: Center(
-                                child: Opacity(
-                                  opacity: 0.85,
-                                  child: Text(
-                                    'Akustik Davul',
-                                    textAlign: TextAlign.center,
-                                    style: GoogleFonts.pacifico(
-                                        color: Colors.white, fontSize: 30),
+                  child: FadeInLeft(
+                    child: Row(
+                      children: [
+                        Expanded(
+                          child: Material(
+                            borderRadius: BorderRadius.circular(23),
+                            clipBehavior: Clip.antiAliasWithSaveLayer,
+                            elevation: 15,
+                            child: InkWell(
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => DrumKit(),
+                                  ),
+                                );
+                              },
+                              child: Ink.image(
+                                image: AssetImage(
+                                    'assets/page_images/drumkit.jpg'),
+                                height: 150,
+                                fit: BoxFit.cover,
+                                child: Center(
+                                  child: Opacity(
+                                    opacity: 0.85,
+                                    child: Text(
+                                      'Akustik Davul',
+                                      textAlign: TextAlign.center,
+                                      style: GoogleFonts.pacifico(
+                                          color: Colors.white, fontSize: 30),
+                                    ),
                                   ),
                                 ),
                               ),
-                              image:
-                                  AssetImage('assets/page_images/drumkit.jpg'),
-                              height: 150,
-                              fit: BoxFit.cover,
                             ),
                           ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                 ),
                 SizedBox(
                   height: 10,
                 ),
                 Expanded(
-                  child: Row(
-                    children: [
-                      Expanded(
-                        child: Material(
-                          borderRadius: BorderRadius.circular(23),
-                          clipBehavior: Clip.antiAliasWithSaveLayer,
-                          elevation: 15,
-                          child: InkWell(
-                            onTap: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => Cajon(),
-                                ),
-                              );
-                            },
-                            child: Ink.image(
-                              child: Center(
-                                child: Opacity(
-                                  opacity: 0.85,
-                                  child: Text(
-                                    'Cajon',
-                                    textAlign: TextAlign.center,
-                                    style: GoogleFonts.pacifico(
-                                        color: Colors.white, fontSize: 30),
+                  child: FadeInLeft(
+                    child: Row(
+                      children: [
+                        Expanded(
+                          child: Material(
+                            borderRadius: BorderRadius.circular(23),
+                            clipBehavior: Clip.antiAliasWithSaveLayer,
+                            elevation: 15,
+                            child: InkWell(
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => Cajon(),
+                                  ),
+                                );
+                              },
+                              child: Ink.image(
+                                image:
+                                    AssetImage('assets/page_images/cajon.jpg'),
+                                height: 150,
+                                fit: BoxFit.cover,
+                                child: Center(
+                                  child: Opacity(
+                                    opacity: 0.85,
+                                    child: Text(
+                                      'Cajon',
+                                      textAlign: TextAlign.center,
+                                      style: GoogleFonts.pacifico(
+                                          color: Colors.white, fontSize: 30),
+                                    ),
                                   ),
                                 ),
                               ),
-                              image: AssetImage('assets/page_images/cajon.jpg'),
-                              height: 150,
-                              fit: BoxFit.cover,
                             ),
                           ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                 ),
                 SizedBox(
                   height: 10,
                 ),
                 Expanded(
-                  child: Row(
-                    children: [
-                      Expanded(
-                        child: Material(
-                          borderRadius: BorderRadius.circular(23),
-                          clipBehavior: Clip.antiAliasWithSaveLayer,
-                          elevation: 15,
-                          child: InkWell(
-                            onTap: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => Darbuka(),
-                                ),
-                              );
-                            },
-                            child: Ink.image(
-                              child: Center(
-                                child: Opacity(
-                                  opacity: 0.85,
-                                  child: Text(
-                                    'Darbuka',
-                                    textAlign: TextAlign.center,
-                                    style: GoogleFonts.pacifico(
-                                        color: Colors.white, fontSize: 30),
+                  child: FadeInLeft(
+                    child: Row(
+                      children: [
+                        Expanded(
+                          child: Material(
+                            borderRadius: BorderRadius.circular(23),
+                            clipBehavior: Clip.antiAliasWithSaveLayer,
+                            elevation: 15,
+                            child: InkWell(
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => Darbuka(),
+                                  ),
+                                );
+                              },
+                              child: Ink.image(
+                                image: AssetImage(
+                                    'assets/page_images/darbuka.jpg'),
+                                height: 150,
+                                fit: BoxFit.cover,
+                                child: Center(
+                                  child: Opacity(
+                                    opacity: 0.85,
+                                    child: Text(
+                                      'Darbuka',
+                                      textAlign: TextAlign.center,
+                                      style: GoogleFonts.pacifico(
+                                          color: Colors.white, fontSize: 30),
+                                    ),
                                   ),
                                 ),
                               ),
-                              image:
-                                  AssetImage('assets/page_images/darbuka.jpg'),
-                              height: 150,
-                              fit: BoxFit.cover,
                             ),
                           ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                 ),
                 SizedBox(height: 10),
                 Expanded(
-                  child: Row(
-                    children: [
-                      Expanded(
-                        child: Material(
-                          borderRadius: BorderRadius.circular(23),
-                          clipBehavior: Clip.antiAliasWithSaveLayer,
-                          elevation: 15,
-                          child: InkWell(
-                            onTap: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => HandPan(),
-                                ),
-                              );
-                            },
-                            child: Ink.image(
-                              child: Center(
-                                child: Opacity(
-                                  opacity: 0.85,
-                                  child: Text(
-                                    'Handpan',
-                                    textAlign: TextAlign.center,
-                                    style: GoogleFonts.pacifico(
-                                        color: Colors.white, fontSize: 30),
+                  child: FadeInLeft(
+                    child: Row(
+                      children: [
+                        Expanded(
+                          child: Material(
+                            borderRadius: BorderRadius.circular(23),
+                            clipBehavior: Clip.antiAliasWithSaveLayer,
+                            elevation: 15,
+                            child: InkWell(
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => HandPan(),
+                                  ),
+                                );
+                              },
+                              child: Ink.image(
+                                image: AssetImage(
+                                    'assets/page_images/handpan.jpg'),
+                                height: 140,
+                                fit: BoxFit.cover,
+                                child: Center(
+                                  child: Opacity(
+                                    opacity: 0.85,
+                                    child: Text(
+                                      'Handpan',
+                                      textAlign: TextAlign.center,
+                                      style: GoogleFonts.pacifico(
+                                          color: Colors.white, fontSize: 30),
+                                    ),
                                   ),
                                 ),
                               ),
-                              image:
-                                  AssetImage('assets/page_images/handpan.jpg'),
-                              height: 140,
-                              fit: BoxFit.cover,
                             ),
                           ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                 )
               ],

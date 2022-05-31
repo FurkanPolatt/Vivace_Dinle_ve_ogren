@@ -6,7 +6,11 @@ class FluteInfo2 extends StatelessWidget {
   const FluteInfo2({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
+<<<<<<< HEAD
     final _controller = PageController();
+=======
+    final controller = PageController();
+>>>>>>> de32f042b76b56e2a4551c803a82cb998bb3c363
     return Scaffold(
       extendBodyBehindAppBar: true,
       backgroundColor: Colors.transparent,
@@ -22,7 +26,11 @@ class FluteInfo2 extends StatelessWidget {
         backgroundColor: Colors.transparent,
         elevation: 0,
       ),
+<<<<<<< HEAD
       body: _buildBody(decoration: BoxDecoration(), controller: _controller),
+=======
+      body: _buildBody(decoration: BoxDecoration(), controller: controller),
+>>>>>>> de32f042b76b56e2a4551c803a82cb998bb3c363
     );
   }
 }
@@ -35,15 +43,25 @@ _buildBody(
     children: <Widget>[
       Stack(
         children: <Widget>[
+<<<<<<< HEAD
           _buildPageView2(),
         ],
       ),
       _buildPageView()
+=======
+          _buildPageView(),
+        ],
+      ),
+>>>>>>> de32f042b76b56e2a4551c803a82cb998bb3c363
     ],
   );
 }
 
+<<<<<<< HEAD
 _buildPageView2() {
+=======
+_buildPageView() {
+>>>>>>> de32f042b76b56e2a4551c803a82cb998bb3c363
   return Container(
       color: Colors.black87,
       height: _boxHeight,
@@ -62,6 +80,7 @@ _buildPageView2() {
         },
       ));
 }
+<<<<<<< HEAD
 
 _buildPageView() {
   return Container(
@@ -193,3 +212,5 @@ _buildPageView() {
       ));
 }
 */
+=======
+>>>>>>> de32f042b76b56e2a4551c803a82cb998bb3c363

@@ -62,6 +62,7 @@ _buildPageView2() {
         },
       ));
 }
+<<<<<<< HEAD
 
 _buildPageView() {
   return Container(
@@ -193,3 +194,5 @@ _buildPageView() {
       ));
 }
 */
+=======
+>>>>>>> de32f042b76b56e2a4551c803a82cb998bb3c363

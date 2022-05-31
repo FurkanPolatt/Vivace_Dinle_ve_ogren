@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 import 'electro_piano/electrop_info1.dart';
 import 'electro_piano/electrop_info2.dart';
-import 'electro_piano/electrop_info3.dart';
 
 class ElectroPiano extends StatelessWidget {
   const ElectroPiano({Key? key}) : super(key: key);
@@ -18,7 +17,6 @@ class ElectroPiano extends StatelessWidget {
         children: [
           ElectroPInfo1(),
           ElectroPInfo2(),
-          ElectroPInfo3(),
         ],
       ),
     );

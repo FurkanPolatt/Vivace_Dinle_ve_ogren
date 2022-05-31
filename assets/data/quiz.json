@@ -8,7 +8,7 @@
     "categoryId": 1,
     "questions": [
       {
-        "text": "Aşağıdakilerden hangisi 4 Telli bir enstrümandır",
+        "text": "Aşağıdakilerden hangisi 4 Telli bir enstrümandır ?",
         "duration": 30,
         "shuffleOptions": true,
         "options": [
@@ -31,94 +31,94 @@
         ]
       },
       {
-        "text": "Music question 02",
+        "text": "Aşağıdakilerden hangisi klarnetin parçalarından biri değildir?",
         "duration": 30,
         "shuffleOptions": true,
         "options": [
           {
-            "text": "Option A Text",
+            "text": "Bek (Ağızlık)",
+            "isCorrect": false
+          },
+          {
+            "text": "Baril (Fıçı veya barel)",
+            "isCorrect": false
+          },
+          {
+            "text": "Kalak (Pavillon)",
+            "isCorrect": false
+          },
+          {
+            "text": "Soprano",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "text": "Aşağıdakilerden hangisi Trombonun çeşitlerinden biridir ?",
+        "duration": 30,
+        "shuffleOptions": true,
+        "options": [
+          {
+            "text": "Sürmeli - Pistonlu",
             "isCorrect": true
           },
           {
-            "text": "Option B Text",
+            "text": "Üflemeli",
             "isCorrect": false
           },
           {
-            "text": "Option C Text",
+            "text": "Ritmli",
             "isCorrect": false
           },
           {
-            "text": "Option D Text",
+            "text": "Yaylı",
             "isCorrect": false
           }
         ]
       },
       {
-        "text": "Music question 03",
+        "text": "Çoğunlukla pirinçten yapılan, koni ve “S” biçiminde olan, ağızındaki kamışla ses çıkaran bir çalgı aşağıdakilerden hangisidir ? ",
         "duration": 30,
         "shuffleOptions": true,
         "options": [
           {
-            "text": "Option A Text",
+            "text": "Klarnet",
+            "isCorrect": false
+          },
+          {
+            "text": "Saksafon",
             "isCorrect": true
           },
           {
-            "text": "Option B Text",
+            "text": "Trombon",
             "isCorrect": false
           },
           {
-            "text": "Option C Text",
-            "isCorrect": false
-          },
-          {
-            "text": "Option D Text",
+            "text": "Yan Flüt",
             "isCorrect": false
           }
         ]
       },
       {
-        "text": "Music question 04",
+        "text": "Yan flütteki parmak deliklerine ne ad verilir ? ",
         "duration": 30,
         "shuffleOptions": true,
         "options": [
           {
-            "text": "Option A Text",
+            "text": "Bemol",
+            "isCorrect": false
+          },
+          {
+            "text": "Soprano",
+            "isCorrect": false
+          },
+          {
+            "text": "Bemol",
+            "isCorrect": false
+          },
+          {
+            "text": "Perde",
             "isCorrect": true
-          },
-          {
-            "text": "Option B Text",
-            "isCorrect": false
-          },
-          {
-            "text": "Option C Text",
-            "isCorrect": false
-          },
-          {
-            "text": "Option D Text",
-            "isCorrect": false
-          }
-        ]
-      },
-      {
-        "text": "Music question 05",
-        "duration": 30,
-        "shuffleOptions": true,
-        "options": [
-          {
-            "text": "Option A Text",
-            "isCorrect": true
-          },
-          {
-            "text": "Option B Text",
-            "isCorrect": false
-          },
-          {
-            "text": "Option C Text",
-            "isCorrect": false
-          },
-          {
-            "text": "Option D Text",
-            "isCorrect": false
           }
         ]
       }
@@ -133,139 +133,139 @@
     "categoryId": 1,
     "questions": [
       {
-        "text": "Music question 01",
+        "text": "Aşağıdakilerden hangisi vurmalı çalgıların  en popülerlerinden biridir ?",
         "duration": 30,
         "shuffleOptions": true,
         "options": [
           {
-            "text": "Option A Text",
+            "text": "Bateri",
             "isCorrect": true
           },
           {
-            "text": "Option B Text",
+            "text": "Handpan",
             "isCorrect": false
           },
           {
-            "text": "Option C Text",
+            "text": "Cajon",
             "isCorrect": false
           },
           {
-            "text": "Option D Text",
+            "text": "Trambon",
             "isCorrect": false
           }
         ]
       },
       {
-        "text": "Music question 02",
+        "text": "Aşağıdakilerden hangisi piyanonun bölümlerinde biri değildir ?",
         "duration": 30,
         "shuffleOptions": true,
         "options": [
           {
-            "text": "Option A Text",
+            "text": "Pedallar",
+            "isCorrect": false
+          },
+          {
+            "text": "Mobilya Tahtası",
+            "isCorrect": false
+          },
+          {
+            "text": "Klavye",
+            "isCorrect": false
+          },
+          {
+            "text": "Perde",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "text": "Aşağıdakilerden hangisi yaylı enstrumanlardan biri değildir ? ",
+        "duration": 30,
+        "shuffleOptions": true,
+        "options": [
+          {
+            "text": "Akustik Gitar",
             "isCorrect": true
           },
           {
-            "text": "Option B Text",
+            "text": "Kontrbas",
             "isCorrect": false
           },
           {
-            "text": "Option C Text",
+            "text": "Çello",
             "isCorrect": false
           },
           {
-            "text": "Option D Text",
+            "text": "Keman",
             "isCorrect": false
           }
         ]
       },
       {
-        "text": "Music question 03",
+        "text": "Yaylı çalgılar ailesinin ikinci üyesi ve diğer adı da Alto olarak bilinen fiziki yapısı kemana çok benzeyen enstruman aşağıdakilerden hangisidir ?",
         "duration": 30,
         "shuffleOptions": true,
         "options": [
           {
-            "text": "Option A Text",
+            "text": "Cajon",
+            "isCorrect": false
+          },
+          {
+            "text": "Çello",
+            "isCorrect": false
+          },
+          {
+            "text": "Viola",
             "isCorrect": true
           },
           {
-            "text": "Option B Text",
-            "isCorrect": false
-          },
-          {
-            "text": "Option C Text",
-            "isCorrect": false
-          },
-          {
-            "text": "Option D Text",
+            "text": "Kontrbas",
             "isCorrect": false
           }
         ]
       },
       {
-        "text": "Music question 04",
+        "text": "Klasik gitarla ilgili  aşağıda verilen bilgilerden hangisi doğru değildir ?",
         "duration": 30,
         "shuffleOptions": true,
         "options": [
           {
-            "text": "Option A Text",
+            "text": "Genelde klasik ve flamenko tarzı müziklerde kullanılır.",
+            "isCorrect": false
+          },
+          {
+            "text": "Genellikle parmak ile çalınır.",
+            "isCorrect": false
+          },
+          {
+            "text": "Toplam altı tel vardır.",
+            "isCorrect": false
+          },
+          {
+            "text": "Boş gövdeli ve katı gövdeli olmak üzere iki gruba ayrılır.",
             "isCorrect": true
-          },
-          {
-            "text": "Option B Text",
-            "isCorrect": false
-          },
-          {
-            "text": "Option C Text",
-            "isCorrect": false
-          },
-          {
-            "text": "Option D Text",
-            "isCorrect": false
           }
         ]
       },
       {
-        "text": "Music question 05",
+        "text": "Keman ailesinden, Violone adı verilen yay kullanılarak ya da parmaklar yardımıyla çalınan enstruman aşağıdakilerden hangisidir ?",
         "duration": 30,
         "shuffleOptions": true,
         "options": [
           {
-            "text": "Option A Text",
+            "text": "Kontrbas",
             "isCorrect": true
           },
           {
-            "text": "Option B Text",
+            "text": "Çello",
             "isCorrect": false
           },
           {
-            "text": "Option C Text",
+            "text": "Viola",
             "isCorrect": false
           },
           {
-            "text": "Option D Text",
-            "isCorrect": false
-          }
-        ]
-      },
-      {
-        "text": "Music question 06",
-        "duration": 30,
-        "shuffleOptions": true,
-        "options": [
-          {
-            "text": "Option A Text",
-            "isCorrect": true
-          },
-          {
-            "text": "Option B Text",
-            "isCorrect": false
-          },
-          {
-            "text": "Option C Text",
-            "isCorrect": false
-          },
-          {
-            "text": "Option D Text",
+            "text": "Keman",
             "isCorrect": false
           }
         ]
@@ -281,116 +281,116 @@
     "categoryId": 2,
     "questions": [
       {
-        "text": "Music question 01",
+        "text": "Başlangıçta Peru'dan gelen, ön veya arka yüzleri, eller, parmaklar veya bazen fırçalar ve esas olarak Afro-Perulu müziğinde çalınan ritmli enstrumanın adı aşağıdakilerden hangisidir ?",
         "duration": 30,
         "shuffleOptions": true,
         "options": [
           {
-            "text": "Option A Text",
+            "text": "Cajon",
             "isCorrect": true
           },
           {
-            "text": "Option B Text",
+            "text": "Handpan",
             "isCorrect": false
           },
           {
-            "text": "Option C Text",
+            "text": "Darbuka",
             "isCorrect": false
           },
           {
-            "text": "Option D Text",
+            "text": "Bateri",
             "isCorrect": false
           }
         ]
       },
       {
-        "text": "Music question 02",
+        "text": "Saksafon genel olarak aşağıdaki hangi müzik tarzında kullanımı yaygınıdır ?",
         "duration": 30,
         "shuffleOptions": true,
         "options": [
           {
-            "text": "Option A Text",
+            "text": "Caz",
             "isCorrect": true
           },
           {
-            "text": "Option B Text",
+            "text": "Klasik Müzik",
             "isCorrect": false
           },
           {
-            "text": "Option C Text",
+            "text": "Batı Müziği",
             "isCorrect": false
           },
           {
-            "text": "Option D Text",
+            "text": "Türk Müziği",
             "isCorrect": false
           }
         ]
       },
       {
-        "text": "Music question 03",
+        "text": "Aşağıdaki hangisi Türkiye de en yaygın olarak kullanılan klarnet çeşitlerinden biridir ",
         "duration": 30,
         "shuffleOptions": true,
         "options": [
           {
-            "text": "Option A Text",
+            "text": "Si Bemol Klarnet (Bb)",
+            "isCorrect": false
+          },
+          {
+            "text": "La Klarnet (A) ",
+            "isCorrect": false
+          },
+          {
+            "text": "Sol Klarnet (G)",
             "isCorrect": true
           },
           {
-            "text": "Option B Text",
-            "isCorrect": false
-          },
-          {
-            "text": "Option C Text",
-            "isCorrect": false
-          },
-          {
-            "text": "Option D Text",
+            "text": "Alto Klarnet (Mi Bemol)",
             "isCorrect": false
           }
         ]
       },
       {
-        "text": "Music question 04",
+        "text": "Günümüz anlamındaki keman ilk olarak 14.yüzyılda nerede ortaya çıkmıştır ? ",
         "duration": 30,
         "shuffleOptions": true,
         "options": [
           {
-            "text": "Option A Text",
+            "text": "İtalya",
+            "isCorrect": false
+          },
+          {
+            "text": "ABD",
             "isCorrect": true
           },
           {
-            "text": "Option B Text",
+            "text": "İspanya",
             "isCorrect": false
           },
           {
-            "text": "Option C Text",
-            "isCorrect": false
-          },
-          {
-            "text": "Option D Text",
+            "text": "Meksika",
             "isCorrect": false
           }
         ]
       },
       {
-        "text": "Music question 05",
+        "text": "İlk örnekleri Fransa'da ortaya çıkan çellonun kaçıncı yüzyılda ortaya çıktığı bilinmektedir ?",
         "duration": 30,
         "shuffleOptions": true,
         "options": [
           {
-            "text": "Option A Text",
+            "text": "18",
+            "isCorrect": false
+          },
+          {
+            "text": "16",
             "isCorrect": true
           },
           {
-            "text": "Option B Text",
+            "text": "15",
             "isCorrect": false
           },
           {
-            "text": "Option C Text",
-            "isCorrect": false
-          },
-          {
-            "text": "Option D Text",
+            "text": "17",
             "isCorrect": false
           }
         ]

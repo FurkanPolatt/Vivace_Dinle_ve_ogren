@@ -2,23 +2,21 @@ import 'package:flutter/material.dart';
 
 import 'classic_guitar/classic_info1.dart';
 import 'classic_guitar/classic_info2.dart';
-import 'classic_guitar/classic_info3.dart';
 
 class ClassicPage extends StatelessWidget {
   const ClassicPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    final _controller = PageController();
+    final controller = PageController();
     return Scaffold(
       backgroundColor: Colors.grey[900],
       body: PageView(
         scrollDirection: Axis.vertical,
-        controller: _controller,
+        controller: controller,
         children: [
           ClassicInfo1(),
           ClassicInfo2(),
-          ClassicInfo3(),
         ],
       ),
     );

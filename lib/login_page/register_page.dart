@@ -1,6 +1,8 @@
 import 'package:animate_do/animate_do.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class RegisterPage extends StatefulWidget {
@@ -27,6 +29,17 @@ class _RegisterPageState extends State<RegisterPage> {
     super.dispose();
   }
 
+  void _errorMessage(String text) {
+    Fluttertoast.showToast(
+        msg: text,
+        timeInSecForIosWeb: 2,
+        toastLength: Toast.LENGTH_SHORT,
+        gravity: ToastGravity.CENTER,
+        backgroundColor: Colors.black54,
+        fontSize: 18,
+        textColor: Colors.white);
+  }
+
   Future signUp() async {
     try {
       if (passwordConfirmed()) {
@@ -34,21 +47,16 @@ class _RegisterPageState extends State<RegisterPage> {
             email: _emailController.text.trim(),
             password: _passwordController.text.trim());
       }
-    } on FirebaseException {
-      showDialog(
-          context: context,
-          builder: (context) {
-            return Padding(
-              padding: const EdgeInsets.all(15.0),
-              child: AlertDialog(
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(12),
-                ),
-                backgroundColor: Colors.white70,
-                title: Text('Hesap oluşturuldu', textAlign: TextAlign.center),
-              ),
-            );
-          });
+    } catch (e) {
+      if (e.toString().contains('unknown')) {
+        _errorMessage('Lütfen bir e posta adresi giriniz');
+      }
+      if (e.toString().contains('invalid-email')) {
+        _errorMessage('E posta adresi geçersizdir');
+      }
+      if (kDebugMode) {
+        print('error: $e');
+      }
     }
   }
 

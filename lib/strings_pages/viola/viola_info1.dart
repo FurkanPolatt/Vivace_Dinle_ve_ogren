@@ -74,18 +74,22 @@ class ClassicPageState extends State<ViolaInfo1> {
 
   _buildPageView() {
     return Container(
+      padding: EdgeInsets.all(8),
       height: _boxHeight,
-      margin: EdgeInsets.only(top: _boxHeight / 3.5),
+      margin: EdgeInsets.only(top: _boxHeight / 5),
       child: PageView.builder(
           itemCount: appBannerList.length,
           controller: _pageController,
           itemBuilder: (BuildContext context, int index) {
-            return Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(28),
-                image: DecorationImage(
-                  image: AssetImage(appBannerList[index].image),
-                  fit: BoxFit.cover,
+            return Padding(
+              padding: const EdgeInsets.all(15),
+              child: Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(28),
+                  image: DecorationImage(
+                    image: AssetImage(appBannerList[index].image),
+                    fit: BoxFit.cover,
+                  ),
                 ),
               ),
             );
@@ -105,26 +109,26 @@ class ClassicPageState extends State<ViolaInfo1> {
         child: SizedBox(
           width: 400,
           height: 370,
-          child: Padding(
-            padding: const EdgeInsets.all(20.0),
-            child: Column(
-              children: [
-                SizedBox(
-                  height: 10,
+          child: Column(
+            children: [
+              SizedBox(
+                height: 10,
+              ),
+              Text(
+                'Hakkında',
+                style: GoogleFonts.pacifico(
+                  fontSize: 28,
+                  color: Colors.white,
+                  fontWeight: FontWeight.w500,
                 ),
-                Text(
-                  'Hakkında',
-                  style: GoogleFonts.pacifico(
-                    fontSize: 28,
-                    color: Colors.white,
-                    fontWeight: FontWeight.w500,
-                  ),
-                ),
-                SizedBox(
-                  height: 10,
-                ),
-                Expanded(
-                  child: SingleChildScrollView(
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Expanded(
+                child: SingleChildScrollView(
+                  child: Padding(
+                    padding: const EdgeInsets.all(5.0),
                     child: Text(
                       '''- Viyola, yaylı çalgılar ailesinin ikinci üyesidir ve Alto' da denir. 
 - 7. yüzyılda İngiltere’de icat edildiği ileri sürüldüğü gibi, aynı yüzyılda İtalya’da bulunduğu da iddia edilmektedir. 
@@ -143,34 +147,34 @@ class ClassicPageState extends State<ViolaInfo1> {
                     ),
                   ),
                 ),
-                SizedBox(
-                  height: 20,
-                ),
-                // SizedBox(
-                //   width: 170,
-                //   child: MaterialButton(
-                //     shape: RoundedRectangleBorder(
-                //       borderRadius: BorderRadius.circular(8),
-                //     ),
-                //     onPressed: () => {
-                //       Navigator.of(context).pushReplacement(MaterialPageRoute(
-                //         builder: (context) => BassExtra(),
-                //       ))
-                //     },
-                //     color: Colors.white70,
-                //     child: Padding(
-                //       padding: const EdgeInsets.all(4.0),
-                //       child: Row(
-                //         children: [
-                //           Icon(Icons.touch_app),
-                //           Text('Tamamını oku'),
-                //         ],
-                //       ),
-                //     ),
-                //   ),
-                // )
-              ],
-            ),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              // SizedBox(
+              //   width: 170,
+              //   child: MaterialButton(
+              //     shape: RoundedRectangleBorder(
+              //       borderRadius: BorderRadius.circular(8),
+              //     ),
+              //     onPressed: () => {
+              //       Navigator.of(context).pushReplacement(MaterialPageRoute(
+              //         builder: (context) => BassExtra(),
+              //       ))
+              //     },
+              //     color: Colors.white70,
+              //     child: Padding(
+              //       padding: const EdgeInsets.all(4.0),
+              //       child: Row(
+              //         children: [
+              //           Icon(Icons.touch_app),
+              //           Text('Tamamını oku'),
+              //         ],
+              //       ),
+              //     ),
+              //   ),
+              // )
+            ],
           ),
         ),
       ),

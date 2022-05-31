@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 import 'org/org_info1.dart';
 import 'org/org_info2.dart';
-import 'org/org_info3.dart';
 
 class Org extends StatelessWidget {
   const Org({Key? key}) : super(key: key);
@@ -18,7 +17,6 @@ class Org extends StatelessWidget {
         children: [
           OrgInfo1(),
           OrgInfo2(),
-          OrgInfo3(),
         ],
       ),
     );

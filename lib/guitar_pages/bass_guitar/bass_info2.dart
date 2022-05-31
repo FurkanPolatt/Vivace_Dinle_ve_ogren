@@ -6,7 +6,7 @@ class BassInfo2 extends StatelessWidget {
   const BassInfo2({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    final _controller = PageController();
+    final controller = PageController();
     return Scaffold(
       extendBodyBehindAppBar: true,
       backgroundColor: Colors.transparent,
@@ -22,7 +22,7 @@ class BassInfo2 extends StatelessWidget {
         backgroundColor: Colors.transparent,
         elevation: 0,
       ),
-      body: _buildBody(decoration: BoxDecoration(), controller: _controller),
+      body: _buildBody(decoration: BoxDecoration(), controller: controller),
     );
   }
 }
@@ -38,7 +38,10 @@ _buildBody(
           _buildPageView2(),
         ],
       ),
+<<<<<<< HEAD
       _buildPageView()
+=======
+>>>>>>> de32f042b76b56e2a4551c803a82cb998bb3c363
     ],
   );
 }
@@ -62,6 +65,7 @@ _buildPageView2() {
         },
       ));
 }
+<<<<<<< HEAD
 
 _buildPageView() {
   return Container(
@@ -193,3 +197,5 @@ _buildPageView() {
       ));
 }
 */
+=======
+>>>>>>> de32f042b76b56e2a4551c803a82cb998bb3c363
