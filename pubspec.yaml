@@ -58,6 +58,7 @@ dependencies:
   user_profile_avatar: ^0.1.0
   widget_circular_animator: ^1.0.0
   sidebarx: ^0.3.0+1
+  showcaseview: ^1.1.5
   fluttertoast: ^8.0.9
 
 

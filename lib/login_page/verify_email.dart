@@ -4,6 +4,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 import 'package:musicedu_app/home_page.dart';
+import 'package:showcaseview/showcaseview.dart';
 
 class VerifyEmail extends StatefulWidget {
   const VerifyEmail({Key? key}) : super(key: key);
@@ -74,7 +75,9 @@ class _VerifyEmailState extends State<VerifyEmail> {
 
   @override
   Widget build(BuildContext context) => isEmailVerified
-      ? HomePage()
+      ? ShowCaseWidget(
+        builder: Builder(builder: (_) => HomePage()),
+      )
       : Scaffold(
           appBar: AppBar(
             leading: BackButton(
