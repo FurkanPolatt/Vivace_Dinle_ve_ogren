@@ -97,115 +97,114 @@ class _HomePageState extends State<HomePage> {
                 ),
                 Showcase(
                   key: keyThree,
-                  description: 'Bulunduğunuz ildeki kurs yeri bilgilerine buradan ulaşabilirsiniz',
-                  child: ListTile(
-                    title: InkWell(
-                      onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => EduPage(),
-                          ),
-                        );
-                      },
-                      child: FadeInLeft(
-                        delay: Duration(microseconds: 100),
-                        child: Row(children: [
-                          Expanded(
-                            child: Icon(
-                              Icons.search,
-                              color: Colors.white54,
+                  description: 'Yan menüden şehrinizdeki kursları arayıp aynı zamanda iletişim ve kullanıcı bilgilerini öğrenebilirsiniz',
+                  child: Column(
+                    children: [
+                      ListTile(
+                      title: InkWell(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => EduPage(),
                             ),
-                          ),
-                          Expanded(
-                            flex: 9,
-                            child: Text(
-                              'Kurs Ara',
-                              style: TextStyle(color: Colors.white),
+                          );
+                        },
+                        child: FadeInLeft(
+                          delay: Duration(microseconds: 100),
+                          child: Row(children: [
+                            Expanded(
+                              child: Icon(
+                                Icons.search,
+                                color: Colors.white54,
+                              ),
                             ),
-                          ),
-                        ]),
+                            Expanded(
+                              flex: 9,
+                              child: Text(
+                                'Kurs Ara',
+                                style: TextStyle(color: Colors.white),
+                              ),
+                            ),
+                          ]),
+                        ),
                       ),
                     ),
-                  ),
-                ),
-                ListTile(
-                  title: InkWell(
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => QuizApp(),
+                      ListTile(
+                      title: InkWell(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => QuizApp(),
+                            ),
+                          );
+                        },
+                        child: FadeInLeft(
+                          delay: Duration(microseconds: 100),
+                          child: Row(children: [
+                            Expanded(
+                              child: Icon(
+                                Icons.book_outlined,
+                                color: Colors.white54,
+                              ),
+                            ),
+                            Expanded(
+                              flex: 9,
+                              child: Text(
+                                'Test',
+                                style: TextStyle(color: Colors.white),
+                              ),
+                            ),
+                          ]),
                         ),
-                      );
-                    },
-                    child: FadeInLeft(
-                      delay: Duration(microseconds: 100),
-                      child: Row(children: [
-                        Expanded(
-                          child: Icon(
-                            Icons.book_outlined,
-                            color: Colors.white54,
-                          ),
-                        ),
-                        Expanded(
-                          flex: 9,
-                          child: Text(
-                            'Test',
-                            style: TextStyle(color: Colors.white),
-                          ),
-                        ),
-                      ]),
+                      ),
                     ),
-                  ),
-                ),
-                Showcase(
-                  key: keyFour,
-                  description: 'İrtibat için buraya tıklayınız',
-                  child: ListTile(
-                    title: InkWell(
-                      onTap: () {
-                        showDialog(
-                            context: context,
-                            builder: (BuildContext context) {
-                              return AlertDialog(
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(12),
-                                ),
-                                backgroundColor: Colors.white70,
-                                title: Text(
-                                    'Eğitim merkezlerinizi uygulamamıza eklemek için lütfen bizimle iletişime geçiniz',
-                                    textAlign: TextAlign.center),
-                                actions: [
-                                  Center(
-                                    child: Text(
-                                      'E-posta: Virtuoso@gmail.com',
-                                      style: TextStyle(fontSize: 20),
-                                    ),
+                      ListTile(
+                      title: InkWell(
+                        onTap: () {
+                          showDialog(
+                              context: context,
+                              builder: (BuildContext context) {
+                                return AlertDialog(
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(12),
                                   ),
-                                ],
-                              );
-                            });
-                      },
-                      child: FadeInLeft(
-                        delay: Duration(microseconds: 100),
-                        child: Row(children: [
-                          Expanded(
-                            child: Icon(
-                              Icons.mail_outline_outlined,
-                              color: Colors.white54,
+                                  backgroundColor: Colors.white70,
+                                  title: Text(
+                                      'Eğitim merkezlerinizi uygulamamıza eklemek için lütfen bizimle iletişime geçiniz',
+                                      textAlign: TextAlign.center),
+                                  actions: [
+                                    Center(
+                                      child: Text(
+                                        'E-posta: Virtuoso@gmail.com',
+                                        style: TextStyle(fontSize: 20),
+                                      ),
+                                    ),
+                                  ],
+                                );
+                              });
+                        },
+                        child: FadeInLeft(
+                          delay: Duration(microseconds: 100),
+                          child: Row(children: [
+                            Expanded(
+                              child: Icon(
+                                Icons.mail_outline_outlined,
+                                color: Colors.white54,
+                              ),
                             ),
-                          ),
-                          Expanded(
-                            flex: 9,
-                            child: Text(
-                              'Bize Ulaşın',
-                              style: TextStyle(color: Colors.white, fontSize: 14),
+                            Expanded(
+                              flex: 9,
+                              child: Text(
+                                'Bize Ulaşın',
+                                style: TextStyle(color: Colors.white, fontSize: 14),
+                              ),
                             ),
-                          ),
-                        ]),
+                          ]),
+                        ),
                       ),
-                    ),
+                    ),]
                   ),
                 ),
                 Divider(color: Colors.white70, thickness: 1),
