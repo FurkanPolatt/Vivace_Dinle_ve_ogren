@@ -33,64 +33,6 @@ class _VideoListWidgetState extends State<VideoListWidget> {
   Widget build(BuildContext context) {
     return Card(
       margin: EdgeInsets.symmetric(vertical: 16, horizontal: 16),
-<<<<<<< HEAD
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Padding(
-            padding: EdgeInsets.all(8),
-            child: Text(
-              videoListData!.videoTitle,
-              style: TextStyle(fontSize: 50),
-            ),
-          ),
-          AspectRatio(
-              aspectRatio: 1,
-              child: BetterPlayerListVideoPlayer(
-                BetterPlayerDataSource(
-                  BetterPlayerDataSourceType.network,
-                  videoListData!.videoUrl,
-                  notificationConfiguration:
-                      BetterPlayerNotificationConfiguration(
-                          showNotification: false,
-                          title: videoListData!.videoTitle,
-                          author: "Test"),
-                  bufferingConfiguration: BetterPlayerBufferingConfiguration(
-                      minBufferMs: 2000,
-                      maxBufferMs: 10000,
-                      bufferForPlaybackMs: 1000,
-                      bufferForPlaybackAfterRebufferMs: 2000),
-                ),
-                configuration: BetterPlayerConfiguration(
-                    autoPlay: false, aspectRatio: 1, handleLifecycle: false),
-                //key: Key(videoListData.hashCode.toString()),
-                playFraction: 0.8,
-                betterPlayerListVideoPlayerController: controller,
-              )),
-          Padding(
-            padding: EdgeInsets.all(8),
-            child: Text("text "
-                "text "
-                "text"
-                "text "
-                "text"
-                "text"),
-          ),
-          Center(
-            child: Wrap(children: [
-              ElevatedButton(
-                child: Text("Play"),
-                onPressed: () {
-                  controller!.play();
-                },
-              ),
-              const SizedBox(width: 8),
-              ElevatedButton(
-                child: Text("Pause"),
-                onPressed: () {
-                  controller!.pause();
-                },
-=======
       child: Container(
         color: Colors.black54,
         child: Column(
@@ -101,7 +43,6 @@ class _VideoListWidgetState extends State<VideoListWidget> {
               child: Text(
                 videoListData!.videoTitle,
                 style: TextStyle(fontSize: 50),
->>>>>>> fa904d477a03808579c05e773c715bb27f6da14d
               ),
             ),
             AspectRatio(

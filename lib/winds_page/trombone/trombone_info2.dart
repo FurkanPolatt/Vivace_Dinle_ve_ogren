@@ -1,63 +1,80 @@
-import 'package:better_player/better_player.dart';
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class TromboneInfo2 extends StatelessWidget {
+import '../../constants.dart';
+import '../../model/video_list_data.dart';
+import '../../video_list/video_list_widget.dart';
+
+class TromboneInfo2 extends StatefulWidget {
   const TromboneInfo2({Key? key}) : super(key: key);
+
   @override
-  Widget build(BuildContext context) {
-    final controller = PageController();
-    return Scaffold(
-      extendBodyBehindAppBar: true,
-      backgroundColor: Colors.transparent,
-      appBar: AppBar(
-        title: Opacity(
-          opacity: 0.80,
-          child: Text(
-            'Öğretici',
-            style: GoogleFonts.pacifico(fontSize: 25, color: Colors.white),
+  _VideoListPageState createState() => _VideoListPageState();
+}
+
+//
+class _VideoListPageState extends State<TromboneInfo2> {
+  final _random = new Random();
+  final List<String> _videos = [
+    Constants.bugBuckBunnyVideoUrl,
+    Constants.forBiggerBlazesUrl,
+    Constants.fileTestVideoUrl,
+    Constants.fileTestVideoEncryptUrl,
+  ];
+  List<VideoListData> dataList = [];
+  var value = 0;
+
+  @override
+  void initState() {
+    _setupData();
+    super.initState();
+  }
+
+  void _setupData() {
+    for (int index = 0; index < 10; index++) {
+      var randomVideoUrl = _videos[_random.nextInt(_videos.length)];
+      dataList.add(VideoListData("test $index", randomVideoUrl));
+    }
+  }
+
+  _buildPageView() {
+    return Container(
+      color: Colors.grey[900],
+      child: Column(children: [
+        Expanded(
+          child: ListView.builder(
+            itemCount: dataList.length,
+            itemBuilder: (context, index) {
+              VideoListData videoListData = dataList[index];
+              return VideoListWidget(
+                videoListData: videoListData,
+              );
+            },
           ),
-        ),
-        centerTitle: true,
-        backgroundColor: Colors.transparent,
-        elevation: 0,
-      ),
-      body: _buildBody(decoration: BoxDecoration(), controller: controller),
+        )
+      ]),
     );
   }
-}
 
-const _boxHeight = 250.0;
-
-_buildBody(
-    {required PageController controller, required BoxDecoration decoration}) {
-  return Column(
-    children: <Widget>[
-      Stack(
-        children: <Widget>[
-          _buildPageView(),
-        ],
-      ),
-    ],
-  );
-}
-
-_buildPageView() {
-  return Container(
-      color: Colors.black87,
-      height: _boxHeight,
-      margin: EdgeInsets.only(top: _boxHeight / 3.1),
-      child: PageView.builder(
-        itemBuilder: (BuildContext context, int index) {
-          return AspectRatio(
-            aspectRatio: 16 / 9,
-            child: BetterPlayer.network(
-              "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
-              betterPlayerConfiguration: BetterPlayerConfiguration(
-                aspectRatio: 16 / 9,
-              ),
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        extendBodyBehindAppBar: true,
+        backgroundColor: Colors.transparent,
+        appBar: AppBar(
+          title: Opacity(
+            opacity: 0.90,
+            child: Text(
+              'Klasik Gitar',
+              style: GoogleFonts.pacifico(fontSize: 25, color: Colors.white),
             ),
-          );
-        },
-      ));
+          ),
+          centerTitle: true,
+          backgroundColor: Colors.transparent,
+          elevation: 0,
+        ),
+        body: _buildPageView());
+  }
 }

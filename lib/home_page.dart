@@ -9,11 +9,8 @@ import 'package:musicedu_app/instruments_page/winds.dart';
 import 'package:musicedu_app/quiz_page/quiz_main.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:showcaseview/showcaseview.dart';
-<<<<<<< HEAD
-=======
 import 'package:widget_circular_animator/widget_circular_animator.dart';
 
->>>>>>> fa904d477a03808579c05e773c715bb27f6da14d
 import 'education_ad/edu_page.dart';
 
 class HomePage extends StatefulWidget {
@@ -315,13 +312,10 @@ class _HomePageState extends State<HomePage> {
                                   ));
                             },
                             child: Ink.image(
-<<<<<<< HEAD
-=======
                               image: AssetImage('assets/images/violin.jpg'),
                               height: 500,
                               width: 500,
                               fit: BoxFit.cover,
->>>>>>> fa904d477a03808579c05e773c715bb27f6da14d
                               child: Center(
                                 child: Opacity(
                                   opacity: 0.85,
@@ -361,13 +355,10 @@ class _HomePageState extends State<HomePage> {
                               );
                             },
                             child: Ink.image(
-<<<<<<< HEAD
-=======
                               image: AssetImage('assets/images/wind.jpg'),
                               height: 500,
                               width: 500,
                               fit: BoxFit.cover,
->>>>>>> fa904d477a03808579c05e773c715bb27f6da14d
                               child: Center(
                                 child: Opacity(
                                   opacity: 0.85,
@@ -401,13 +392,10 @@ class _HomePageState extends State<HomePage> {
                               );
                             },
                             child: Ink.image(
-<<<<<<< HEAD
-=======
                               image: AssetImage('assets/images/drum.jpg'),
                               height: 500,
                               width: 500,
                               fit: BoxFit.cover,
->>>>>>> fa904d477a03808579c05e773c715bb27f6da14d
                               child: Center(
                                 child: Opacity(
                                   opacity: 0.85,
@@ -447,19 +435,10 @@ class _HomePageState extends State<HomePage> {
                               );
                             },
                             child: Ink.image(
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> fa904d477a03808579c05e773c715bb27f6da14d
                               image: AssetImage('assets/images/piano.jpg'),
                               height: 130,
                               width: 500,
                               fit: BoxFit.cover,
-<<<<<<< HEAD
-=======
->>>>>>> 7755d07ab91c93938992f807db305b09f5fcdfe6
-=======
->>>>>>> fa904d477a03808579c05e773c715bb27f6da14d
                               child: Center(
                                 child: Opacity(
                                   opacity: 0.85,
