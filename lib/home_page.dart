@@ -437,10 +437,13 @@ class _HomePageState extends State<HomePage> {
                               );
                             },
                             child: Ink.image(
+<<<<<<< HEAD
                               image: AssetImage('assets/images/piano.jpg'),
                               height: 130,
                               width: 500,
                               fit: BoxFit.cover,
+=======
+>>>>>>> 7755d07ab91c93938992f807db305b09f5fcdfe6
                               child: Center(
                                 child: Opacity(
                                   opacity: 0.85,
