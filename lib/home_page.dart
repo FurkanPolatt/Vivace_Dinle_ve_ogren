@@ -6,17 +6,12 @@ import 'package:musicedu_app/instruments_page/keyboards.dart';
 import 'package:musicedu_app/instruments_page/rhythm.dart';
 import 'package:musicedu_app/instruments_page/strings.dart';
 import 'package:musicedu_app/instruments_page/winds.dart';
-import 'package:circular_profile_avatar/circular_profile_avatar.dart';
 import 'package:musicedu_app/quiz_page/quiz_main.dart';
-<<<<<<< HEAD
-=======
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:showcaseview/showcaseview.dart';
-
->>>>>>> 5bb5bb46981bfcee515586fa559a870346d4a9be
-import 'education_ad/edu_page.dart';
-import 'package:user_profile_avatar/user_profile_avatar.dart';
 import 'package:widget_circular_animator/widget_circular_animator.dart';
+
+import 'education_ad/edu_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -63,7 +58,6 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    final user = FirebaseAuth.instance.currentUser!;
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
@@ -267,7 +261,6 @@ class _HomePageState extends State<HomePage> {
                   child: Row(
                     children: [
                       Expanded(
-<<<<<<< HEAD
                         child: Material(
                           borderRadius: BorderRadius.circular(23),
                           clipBehavior: Clip.antiAliasWithSaveLayer,
@@ -282,6 +275,10 @@ class _HomePageState extends State<HomePage> {
                               );
                             },
                             child: Ink.image(
+                              image: AssetImage('assets/images/guitar.jpg'),
+                              height: 500,
+                              width: 500,
+                              fit: BoxFit.cover,
                               child: Center(
                                 child: Opacity(
                                   opacity: 0.85,
@@ -290,46 +287,9 @@ class _HomePageState extends State<HomePage> {
                                     textAlign: TextAlign.center,
                                     style: GoogleFonts.pacifico(
                                         color: Colors.white, fontSize: 20),
-=======
-                        child: Showcase(
-                          key: keyOne,
-                          description:
-                              'Enstrümanlar hakkında bilgi edinmek ve videoları izlemek için ilgili kategoriyi seçin',
-                          child: Material(
-                            borderRadius: BorderRadius.circular(23),
-                            clipBehavior: Clip.antiAliasWithSaveLayer,
-                            elevation: 15,
-                            child: InkWell(
-                              onTap: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) => GuitarnWorld(),
-                                  ),
-                                );
-                              },
-                              child: Ink.image(
-                                image: AssetImage('assets/images/guitar.jpg'),
-                                height: 500,
-                                width: 500,
-                                fit: BoxFit.cover,
-                                child: Center(
-                                  child: Opacity(
-                                    opacity: 0.85,
-                                    child: Text(
-                                      'Telli       Enstrümanlar',
-                                      textAlign: TextAlign.center,
-                                      style: GoogleFonts.pacifico(
-                                          color: Colors.white, fontSize: 20),
-                                    ),
->>>>>>> 5bb5bb46981bfcee515586fa559a870346d4a9be
                                   ),
                                 ),
                               ),
-                              image: AssetImage('assets/images/guitar.jpg'),
-                              height: 500,
-                              width: 500,
-                              fit: BoxFit.cover,
                             ),
                           ),
                         ),
@@ -352,13 +312,10 @@ class _HomePageState extends State<HomePage> {
                                   ));
                             },
                             child: Ink.image(
-<<<<<<< HEAD
-=======
                               image: AssetImage('assets/images/violin.jpg'),
                               height: 500,
                               width: 500,
                               fit: BoxFit.cover,
->>>>>>> 5bb5bb46981bfcee515586fa559a870346d4a9be
                               child: Center(
                                 child: Opacity(
                                   opacity: 0.85,
@@ -370,10 +327,6 @@ class _HomePageState extends State<HomePage> {
                                   ),
                                 ),
                               ),
-                              image: AssetImage('assets/images/violin.jpg'),
-                              height: 500,
-                              width: 500,
-                              fit: BoxFit.cover,
                             ),
                           ),
                         ),
@@ -402,13 +355,10 @@ class _HomePageState extends State<HomePage> {
                               );
                             },
                             child: Ink.image(
-<<<<<<< HEAD
-=======
                               image: AssetImage('assets/images/wind.jpg'),
                               height: 500,
                               width: 500,
                               fit: BoxFit.cover,
->>>>>>> 5bb5bb46981bfcee515586fa559a870346d4a9be
                               child: Center(
                                 child: Opacity(
                                   opacity: 0.85,
@@ -420,10 +370,6 @@ class _HomePageState extends State<HomePage> {
                                   ),
                                 ),
                               ),
-                              image: AssetImage('assets/images/wind.jpg'),
-                              height: 500,
-                              width: 500,
-                              fit: BoxFit.cover,
                             ),
                           ),
                         ),
@@ -446,13 +392,10 @@ class _HomePageState extends State<HomePage> {
                               );
                             },
                             child: Ink.image(
-<<<<<<< HEAD
-=======
                               image: AssetImage('assets/images/drum.jpg'),
                               height: 500,
                               width: 500,
                               fit: BoxFit.cover,
->>>>>>> 5bb5bb46981bfcee515586fa559a870346d4a9be
                               child: Center(
                                 child: Opacity(
                                   opacity: 0.85,
@@ -464,10 +407,6 @@ class _HomePageState extends State<HomePage> {
                                   ),
                                 ),
                               ),
-                              image: AssetImage('assets/images/drum.jpg'),
-                              height: 500,
-                              width: 500,
-                              fit: BoxFit.cover,
                             ),
                           ),
                         ),
@@ -496,13 +435,10 @@ class _HomePageState extends State<HomePage> {
                               );
                             },
                             child: Ink.image(
-<<<<<<< HEAD
-=======
                               image: AssetImage('assets/images/piano.jpg'),
                               height: 130,
                               width: 500,
                               fit: BoxFit.cover,
->>>>>>> 5bb5bb46981bfcee515586fa559a870346d4a9be
                               child: Center(
                                 child: Opacity(
                                   opacity: 0.85,
@@ -514,10 +450,6 @@ class _HomePageState extends State<HomePage> {
                                   ),
                                 ),
                               ),
-                              image: AssetImage('assets/images/piano.jpg'),
-                              height: 130,
-                              width: 500,
-                              fit: BoxFit.cover,
                             ),
                           ),
                         ),
@@ -531,7 +463,6 @@ class _HomePageState extends State<HomePage> {
                   child: Row(
                     children: [
                       Expanded(
-<<<<<<< HEAD
                         child: Material(
                           borderRadius: BorderRadius.circular(23),
                           clipBehavior: Clip.antiAliasWithSaveLayer,
@@ -546,6 +477,10 @@ class _HomePageState extends State<HomePage> {
                               );
                             },
                             child: Ink.image(
+                              image: AssetImage('assets/images/test.jpg'),
+                              height: 100,
+                              width: 100,
+                              fit: BoxFit.cover,
                               child: Center(
                                 child: Opacity(
                                   opacity: 0.85,
@@ -554,46 +489,9 @@ class _HomePageState extends State<HomePage> {
                                     textAlign: TextAlign.center,
                                     style: GoogleFonts.pacifico(
                                         color: Colors.white, fontSize: 25),
-=======
-                        child: Showcase(
-                          key: keyTwo,
-                          description:
-                              'Öğrendiğiniz bilgileri test etmek için buraya tıklayın',
-                          child: Material(
-                            borderRadius: BorderRadius.circular(23),
-                            clipBehavior: Clip.antiAliasWithSaveLayer,
-                            elevation: 15,
-                            child: InkWell(
-                              onTap: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) => QuizApp(),
-                                  ),
-                                );
-                              },
-                              child: Ink.image(
-                                image: AssetImage('assets/images/test.jpg'),
-                                height: 100,
-                                width: 100,
-                                fit: BoxFit.cover,
-                                child: Center(
-                                  child: Opacity(
-                                    opacity: 0.85,
-                                    child: Text(
-                                      'Kendini Test et',
-                                      textAlign: TextAlign.center,
-                                      style: GoogleFonts.pacifico(
-                                          color: Colors.white, fontSize: 25),
-                                    ),
->>>>>>> 5bb5bb46981bfcee515586fa559a870346d4a9be
                                   ),
                                 ),
                               ),
-                              image: AssetImage('assets/images/test.jpg'),
-                              height: 100,
-                              width: 100,
-                              fit: BoxFit.cover,
                             ),
                           ),
                         ),
