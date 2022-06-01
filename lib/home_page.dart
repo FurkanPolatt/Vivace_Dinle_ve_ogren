@@ -1,4 +1,3 @@
-import 'package:animate_do/animate_do.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -7,11 +6,17 @@ import 'package:musicedu_app/instruments_page/keyboards.dart';
 import 'package:musicedu_app/instruments_page/rhythm.dart';
 import 'package:musicedu_app/instruments_page/strings.dart';
 import 'package:musicedu_app/instruments_page/winds.dart';
+import 'package:circular_profile_avatar/circular_profile_avatar.dart';
 import 'package:musicedu_app/quiz_page/quiz_main.dart';
+<<<<<<< HEAD
+=======
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:showcaseview/showcaseview.dart';
 
+>>>>>>> 5bb5bb46981bfcee515586fa559a870346d4a9be
 import 'education_ad/edu_page.dart';
+import 'package:user_profile_avatar/user_profile_avatar.dart';
+import 'package:widget_circular_animator/widget_circular_animator.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -58,10 +63,6 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    Future<void> _signOut() async {
-      await FirebaseAuth.instance.signOut();
-    }
-
     final user = FirebaseAuth.instance.currentUser!;
     return Scaffold(
       extendBodyBehindAppBar: true,
@@ -94,16 +95,38 @@ class _HomePageState extends State<HomePage> {
               children: [
                 Material(
                   color: Colors.indigo,
-                  elevation: 12,
+                  // color: Colors.indigo,
+                  elevation: 9,
                   borderRadius: BorderRadius.only(
                     bottomLeft: Radius.circular(25),
                     bottomRight: Radius.circular(25),
                   ),
-                  child: DrawerHeader(
-                    // decoration: BoxDecoration(color: Colors.black38),
-                    child: Text('Kullanıcı:  ${user.email!}',
-                        style: TextStyle(color: Colors.white)),
+
+                  child: Center(
+                    child: WidgetCircularAnimator(
+                      size: 200,
+                      innerIconsSize: 4,
+                      outerIconsSize: 4,
+                      innerAnimation: Curves.easeInOutBack,
+                      outerAnimation: Curves.easeInOutBack,
+                      innerColor: Color.fromARGB(255, 253, 252, 255),
+                      outerColor: Color.fromARGB(255, 28, 181, 163),
+                      innerAnimationSeconds: 10,
+                      outerAnimationSeconds: 10,
+                      child: Container(
+                        decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            color: Color.fromARGB(210, 63, 6, 31)),
+                        child: Icon(
+                          Icons.music_note,
+                          color: Color.fromARGB(255, 13, 168, 195),
+                          size: 60,
+                        ),
+                      ),
+                    ),
                   ),
+
+                  // decoration: BoxDecoration(color: Colors.black38),
                 ),
                 ListTile(
                   title: InkWell(
@@ -115,24 +138,48 @@ class _HomePageState extends State<HomePage> {
                         ),
                       );
                     },
-                    child: FadeInLeft(
-                      delay: Duration(microseconds: 100),
-                      child: Row(children: [
-                        Expanded(
-                          child: Icon(
-                            Icons.search,
-                            color: Colors.white54,
-                          ),
+                    child: Row(children: [
+                      Expanded(
+                        child: Icon(
+                          Icons.search,
+                          color: Colors.white54,
                         ),
-                        Expanded(
-                          flex: 9,
-                          child: Text(
-                            'Kurs Ara',
-                            style: TextStyle(color: Colors.white),
-                          ),
+                      ),
+                      Expanded(
+                        flex: 9,
+                        child: Text(
+                          'Kurs Ara',
+                          style: TextStyle(color: Colors.white),
                         ),
-                      ]),
-                    ),
+                      ),
+                    ]),
+                  ),
+                ),
+                ListTile(
+                  title: InkWell(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => QuizApp(),
+                        ),
+                      );
+                    },
+                    child: Row(children: [
+                      Expanded(
+                        child: Icon(
+                          Icons.book_outlined,
+                          color: Colors.white54,
+                        ),
+                      ),
+                      Expanded(
+                        flex: 9,
+                        child: Text(
+                          'Test',
+                          style: TextStyle(color: Colors.white),
+                        ),
+                      ),
+                    ]),
                   ),
                 ),
                 ListTile(
@@ -160,48 +207,43 @@ class _HomePageState extends State<HomePage> {
                             );
                           });
                     },
-                    child: FadeInLeft(
-                      delay: Duration(microseconds: 100),
-                      child: Row(children: [
-                        Expanded(
-                          child: Icon(
-                            Icons.mail_outline_outlined,
-                            color: Colors.white54,
-                          ),
+                    child: Row(children: [
+                      Expanded(
+                        child: Icon(
+                          Icons.mail_outline_outlined,
+                          color: Colors.white54,
                         ),
-                        Expanded(
-                          flex: 9,
-                          child: Text(
-                            'Bize Ulaşın',
-                            style: TextStyle(color: Colors.white, fontSize: 14),
-                          ),
+                      ),
+                      Expanded(
+                        flex: 9,
+                        child: Text(
+                          'Bize Ulaşın',
+                          style: TextStyle(color: Colors.white, fontSize: 14),
                         ),
-                      ]),
-                    ),
+                      ),
+                    ]),
                   ),
                 ),
-                Divider(color: Colors.white70, thickness: 1),
                 ListTile(
                   title: InkWell(
-                    onTap: _signOut,
-                    child: FadeInLeft(
-                      delay: Duration(microseconds: 100),
-                      child: Row(children: [
-                        Expanded(
-                          child: Icon(
-                            Icons.exit_to_app,
-                            color: Colors.white54,
-                          ),
+                    onTap: () {
+                      FirebaseAuth.instance.signOut();
+                    },
+                    child: Row(children: [
+                      Expanded(
+                        child: Icon(
+                          Icons.exit_to_app,
+                          color: Colors.white54,
                         ),
-                        Expanded(
-                          flex: 9,
-                          child: Text(
-                            'Çıkış Yap',
-                            style: TextStyle(color: Colors.white),
-                          ),
+                      ),
+                      Expanded(
+                        flex: 9,
+                        child: Text(
+                          'Çıkış Yap',
+                          style: TextStyle(color: Colors.white),
                         ),
-                      ]),
-                    ),
+                      ),
+                    ]),
                   ),
                 ),
               ],
@@ -225,6 +267,30 @@ class _HomePageState extends State<HomePage> {
                   child: Row(
                     children: [
                       Expanded(
+<<<<<<< HEAD
+                        child: Material(
+                          borderRadius: BorderRadius.circular(23),
+                          clipBehavior: Clip.antiAliasWithSaveLayer,
+                          elevation: 15,
+                          child: InkWell(
+                            onTap: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => GuitarnWorld(),
+                                ),
+                              );
+                            },
+                            child: Ink.image(
+                              child: Center(
+                                child: Opacity(
+                                  opacity: 0.85,
+                                  child: Text(
+                                    'Telli       Enstrümanlar',
+                                    textAlign: TextAlign.center,
+                                    style: GoogleFonts.pacifico(
+                                        color: Colors.white, fontSize: 20),
+=======
                         child: Showcase(
                           key: keyOne,
                           description:
@@ -256,9 +322,14 @@ class _HomePageState extends State<HomePage> {
                                       style: GoogleFonts.pacifico(
                                           color: Colors.white, fontSize: 20),
                                     ),
+>>>>>>> 5bb5bb46981bfcee515586fa559a870346d4a9be
                                   ),
                                 ),
                               ),
+                              image: AssetImage('assets/images/guitar.jpg'),
+                              height: 500,
+                              width: 500,
+                              fit: BoxFit.cover,
                             ),
                           ),
                         ),
@@ -281,10 +352,13 @@ class _HomePageState extends State<HomePage> {
                                   ));
                             },
                             child: Ink.image(
+<<<<<<< HEAD
+=======
                               image: AssetImage('assets/images/violin.jpg'),
                               height: 500,
                               width: 500,
                               fit: BoxFit.cover,
+>>>>>>> 5bb5bb46981bfcee515586fa559a870346d4a9be
                               child: Center(
                                 child: Opacity(
                                   opacity: 0.85,
@@ -296,6 +370,10 @@ class _HomePageState extends State<HomePage> {
                                   ),
                                 ),
                               ),
+                              image: AssetImage('assets/images/violin.jpg'),
+                              height: 500,
+                              width: 500,
+                              fit: BoxFit.cover,
                             ),
                           ),
                         ),
@@ -324,10 +402,13 @@ class _HomePageState extends State<HomePage> {
                               );
                             },
                             child: Ink.image(
+<<<<<<< HEAD
+=======
                               image: AssetImage('assets/images/wind.jpg'),
                               height: 500,
                               width: 500,
                               fit: BoxFit.cover,
+>>>>>>> 5bb5bb46981bfcee515586fa559a870346d4a9be
                               child: Center(
                                 child: Opacity(
                                   opacity: 0.85,
@@ -339,6 +420,10 @@ class _HomePageState extends State<HomePage> {
                                   ),
                                 ),
                               ),
+                              image: AssetImage('assets/images/wind.jpg'),
+                              height: 500,
+                              width: 500,
+                              fit: BoxFit.cover,
                             ),
                           ),
                         ),
@@ -361,10 +446,13 @@ class _HomePageState extends State<HomePage> {
                               );
                             },
                             child: Ink.image(
+<<<<<<< HEAD
+=======
                               image: AssetImage('assets/images/drum.jpg'),
                               height: 500,
                               width: 500,
                               fit: BoxFit.cover,
+>>>>>>> 5bb5bb46981bfcee515586fa559a870346d4a9be
                               child: Center(
                                 child: Opacity(
                                   opacity: 0.85,
@@ -376,6 +464,10 @@ class _HomePageState extends State<HomePage> {
                                   ),
                                 ),
                               ),
+                              image: AssetImage('assets/images/drum.jpg'),
+                              height: 500,
+                              width: 500,
+                              fit: BoxFit.cover,
                             ),
                           ),
                         ),
@@ -404,10 +496,13 @@ class _HomePageState extends State<HomePage> {
                               );
                             },
                             child: Ink.image(
+<<<<<<< HEAD
+=======
                               image: AssetImage('assets/images/piano.jpg'),
                               height: 130,
                               width: 500,
                               fit: BoxFit.cover,
+>>>>>>> 5bb5bb46981bfcee515586fa559a870346d4a9be
                               child: Center(
                                 child: Opacity(
                                   opacity: 0.85,
@@ -419,6 +514,10 @@ class _HomePageState extends State<HomePage> {
                                   ),
                                 ),
                               ),
+                              image: AssetImage('assets/images/piano.jpg'),
+                              height: 130,
+                              width: 500,
+                              fit: BoxFit.cover,
                             ),
                           ),
                         ),
@@ -432,6 +531,30 @@ class _HomePageState extends State<HomePage> {
                   child: Row(
                     children: [
                       Expanded(
+<<<<<<< HEAD
+                        child: Material(
+                          borderRadius: BorderRadius.circular(23),
+                          clipBehavior: Clip.antiAliasWithSaveLayer,
+                          elevation: 15,
+                          child: InkWell(
+                            onTap: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => QuizApp(),
+                                ),
+                              );
+                            },
+                            child: Ink.image(
+                              child: Center(
+                                child: Opacity(
+                                  opacity: 0.85,
+                                  child: Text(
+                                    'Kendini Test et',
+                                    textAlign: TextAlign.center,
+                                    style: GoogleFonts.pacifico(
+                                        color: Colors.white, fontSize: 25),
+=======
                         child: Showcase(
                           key: keyTwo,
                           description:
@@ -463,9 +586,14 @@ class _HomePageState extends State<HomePage> {
                                       style: GoogleFonts.pacifico(
                                           color: Colors.white, fontSize: 25),
                                     ),
+>>>>>>> 5bb5bb46981bfcee515586fa559a870346d4a9be
                                   ),
                                 ),
                               ),
+                              image: AssetImage('assets/images/test.jpg'),
+                              height: 100,
+                              width: 100,
+                              fit: BoxFit.cover,
                             ),
                           ),
                         ),
