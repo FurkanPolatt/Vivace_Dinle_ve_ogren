@@ -6,13 +6,15 @@ import 'package:musicedu_app/instruments_page/keyboards.dart';
 import 'package:musicedu_app/instruments_page/rhythm.dart';
 import 'package:musicedu_app/instruments_page/strings.dart';
 import 'package:musicedu_app/instruments_page/winds.dart';
-import 'package:circular_profile_avatar/circular_profile_avatar.dart';
 import 'package:musicedu_app/quiz_page/quiz_main.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:showcaseview/showcaseview.dart';
-import 'education_ad/edu_page.dart';
-import 'package:user_profile_avatar/user_profile_avatar.dart';
+<<<<<<< HEAD
+=======
 import 'package:widget_circular_animator/widget_circular_animator.dart';
+
+>>>>>>> fa904d477a03808579c05e773c715bb27f6da14d
+import 'education_ad/edu_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -59,7 +61,6 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    final user = FirebaseAuth.instance.currentUser!;
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
@@ -76,7 +77,7 @@ class _HomePageState extends State<HomePage> {
         title: Text(
           'Vivace',
           style: GoogleFonts.damion(
-            fontSize: 42,
+            fontSize: 41,
           ),
         ),
         centerTitle: true,
@@ -314,6 +315,13 @@ class _HomePageState extends State<HomePage> {
                                   ));
                             },
                             child: Ink.image(
+<<<<<<< HEAD
+=======
+                              image: AssetImage('assets/images/violin.jpg'),
+                              height: 500,
+                              width: 500,
+                              fit: BoxFit.cover,
+>>>>>>> fa904d477a03808579c05e773c715bb27f6da14d
                               child: Center(
                                 child: Opacity(
                                   opacity: 0.85,
@@ -325,10 +333,6 @@ class _HomePageState extends State<HomePage> {
                                   ),
                                 ),
                               ),
-                              image: AssetImage('assets/images/violin.jpg'),
-                              height: 500,
-                              width: 500,
-                              fit: BoxFit.cover,
                             ),
                           ),
                         ),
@@ -357,6 +361,13 @@ class _HomePageState extends State<HomePage> {
                               );
                             },
                             child: Ink.image(
+<<<<<<< HEAD
+=======
+                              image: AssetImage('assets/images/wind.jpg'),
+                              height: 500,
+                              width: 500,
+                              fit: BoxFit.cover,
+>>>>>>> fa904d477a03808579c05e773c715bb27f6da14d
                               child: Center(
                                 child: Opacity(
                                   opacity: 0.85,
@@ -368,10 +379,6 @@ class _HomePageState extends State<HomePage> {
                                   ),
                                 ),
                               ),
-                              image: AssetImage('assets/images/wind.jpg'),
-                              height: 500,
-                              width: 500,
-                              fit: BoxFit.cover,
                             ),
                           ),
                         ),
@@ -394,6 +401,13 @@ class _HomePageState extends State<HomePage> {
                               );
                             },
                             child: Ink.image(
+<<<<<<< HEAD
+=======
+                              image: AssetImage('assets/images/drum.jpg'),
+                              height: 500,
+                              width: 500,
+                              fit: BoxFit.cover,
+>>>>>>> fa904d477a03808579c05e773c715bb27f6da14d
                               child: Center(
                                 child: Opacity(
                                   opacity: 0.85,
@@ -405,10 +419,6 @@ class _HomePageState extends State<HomePage> {
                                   ),
                                 ),
                               ),
-                              image: AssetImage('assets/images/drum.jpg'),
-                              height: 500,
-                              width: 500,
-                              fit: BoxFit.cover,
                             ),
                           ),
                         ),
@@ -438,12 +448,18 @@ class _HomePageState extends State<HomePage> {
                             },
                             child: Ink.image(
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> fa904d477a03808579c05e773c715bb27f6da14d
                               image: AssetImage('assets/images/piano.jpg'),
                               height: 130,
                               width: 500,
                               fit: BoxFit.cover,
+<<<<<<< HEAD
 =======
 >>>>>>> 7755d07ab91c93938992f807db305b09f5fcdfe6
+=======
+>>>>>>> fa904d477a03808579c05e773c715bb27f6da14d
                               child: Center(
                                 child: Opacity(
                                   opacity: 0.85,
