@@ -21,7 +21,7 @@ class _VideoListWidgetState extends State<VideoListWidget> {
   void initState() {
     super.initState();
     controller = BetterPlayerListVideoPlayerController();
-    betterPlayerConfiguration = BetterPlayerConfiguration(autoPlay: true);
+    betterPlayerConfiguration = BetterPlayerConfiguration(autoPlay: false);
   }
 
   @override
@@ -61,7 +61,7 @@ class _VideoListWidgetState extends State<VideoListWidget> {
                       bufferForPlaybackAfterRebufferMs: 2000),
                 ),
                 configuration: BetterPlayerConfiguration(
-                    autoPlay: false, aspectRatio: 1, handleLifecycle: true),
+                    autoPlay: false, aspectRatio: 1, handleLifecycle: false),
                 //key: Key(videoListData.hashCode.toString()),
                 playFraction: 0.8,
                 betterPlayerListVideoPlayerController: controller,
