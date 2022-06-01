@@ -74,7 +74,7 @@ class _HomePageState extends State<HomePage> {
         title: Text(
           'Vivace',
           style: GoogleFonts.damion(
-            fontSize: 42,
+            fontSize: 41,
           ),
         ),
         centerTitle: true,
