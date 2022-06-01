@@ -212,18 +212,6 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ),
       ),
-      // DiscoButton(
-      //   onPressed: () {
-      //     Navigator.pushNamed(context, QuizHistoryScreen.routeName);
-      //   },
-      //   child: Text(
-      //     "Test Geçmişi",
-      //     style: GoogleFonts.pacifico(
-      //       fontSize: 30,
-      //     ),
-      //   ),
-      //   isActive: true,
-      // ),
     ];
   }
 }
