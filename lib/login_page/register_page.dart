@@ -52,7 +52,7 @@ class _RegisterPageState extends State<RegisterPage> {
         _errorMessage('Lütfen bir e posta adresi giriniz');
       }
       if (e.toString().contains('invalid-email')) {
-        _errorMessage('E posta adresi geçersizdir');
+        _errorMessage('Geçersiz E posta adresi');
       }
       if (kDebugMode) {
         print('error: $e');

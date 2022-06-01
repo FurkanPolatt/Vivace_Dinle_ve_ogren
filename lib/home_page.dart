@@ -8,12 +8,58 @@ import 'package:musicedu_app/instruments_page/strings.dart';
 import 'package:musicedu_app/instruments_page/winds.dart';
 import 'package:circular_profile_avatar/circular_profile_avatar.dart';
 import 'package:musicedu_app/quiz_page/quiz_main.dart';
+<<<<<<< HEAD
+=======
+import 'package:shared_preferences/shared_preferences.dart';
+import 'package:showcaseview/showcaseview.dart';
+
+>>>>>>> 5bb5bb46981bfcee515586fa559a870346d4a9be
 import 'education_ad/edu_page.dart';
 import 'package:user_profile_avatar/user_profile_avatar.dart';
 import 'package:widget_circular_animator/widget_circular_animator.dart';
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
+
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  final keyOne = GlobalKey();
+  final keyTwo = GlobalKey();
+  final keyThree = GlobalKey();
+  final keyFour = GlobalKey();
+
+  @override
+  void initState() {
+    super.initState();
+    SharedPreferences sharedPrefs;
+
+    displayShowCase() async {
+      sharedPrefs = await SharedPreferences.getInstance();
+      bool? showCaseVisibilityStatus =
+          sharedPrefs.getBool('displayShowcaseHomePage');
+      if (showCaseVisibilityStatus == null) {
+        sharedPrefs.setBool('displayShowcaseHomePage', false);
+        return true;
+      }
+      return false;
+    }
+
+    displayShowCase().then((status) {
+      if (status) {
+        WidgetsBinding.instance.addPostFrameCallback(
+          (_) => ShowCaseWidget.of(context)?.startShowCase([
+            keyOne,
+            keyTwo,
+            keyThree,
+            keyFour,
+          ]),
+        );
+      }
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -21,6 +67,16 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
+        leading: Builder(builder: (context) {
+          return Showcase(
+            key: keyThree,
+            description:
+                'Yan menüden bulunduğunuz ildeki eğitim merkezlerini görüntüleyebilir aynı zamanda iletişim bilgilerimize ulaşabilirsiniz',
+            child: IconButton(
+                onPressed: () => Scaffold.of(context).openDrawer(),
+                icon: Icon(Icons.menu)),
+          );
+        }),
         title: Text(
           'Vivace',
           style: GoogleFonts.damion(
@@ -211,6 +267,7 @@ class HomePage extends StatelessWidget {
                   child: Row(
                     children: [
                       Expanded(
+<<<<<<< HEAD
                         child: Material(
                           borderRadius: BorderRadius.circular(23),
                           clipBehavior: Clip.antiAliasWithSaveLayer,
@@ -233,6 +290,39 @@ class HomePage extends StatelessWidget {
                                     textAlign: TextAlign.center,
                                     style: GoogleFonts.pacifico(
                                         color: Colors.white, fontSize: 20),
+=======
+                        child: Showcase(
+                          key: keyOne,
+                          description:
+                              'Enstrümanlar hakkında bilgi edinmek ve videoları izlemek için ilgili kategoriyi seçin',
+                          child: Material(
+                            borderRadius: BorderRadius.circular(23),
+                            clipBehavior: Clip.antiAliasWithSaveLayer,
+                            elevation: 15,
+                            child: InkWell(
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => GuitarnWorld(),
+                                  ),
+                                );
+                              },
+                              child: Ink.image(
+                                image: AssetImage('assets/images/guitar.jpg'),
+                                height: 500,
+                                width: 500,
+                                fit: BoxFit.cover,
+                                child: Center(
+                                  child: Opacity(
+                                    opacity: 0.85,
+                                    child: Text(
+                                      'Telli       Enstrümanlar',
+                                      textAlign: TextAlign.center,
+                                      style: GoogleFonts.pacifico(
+                                          color: Colors.white, fontSize: 20),
+                                    ),
+>>>>>>> 5bb5bb46981bfcee515586fa559a870346d4a9be
                                   ),
                                 ),
                               ),
@@ -262,6 +352,13 @@ class HomePage extends StatelessWidget {
                                   ));
                             },
                             child: Ink.image(
+<<<<<<< HEAD
+=======
+                              image: AssetImage('assets/images/violin.jpg'),
+                              height: 500,
+                              width: 500,
+                              fit: BoxFit.cover,
+>>>>>>> 5bb5bb46981bfcee515586fa559a870346d4a9be
                               child: Center(
                                 child: Opacity(
                                   opacity: 0.85,
@@ -305,6 +402,13 @@ class HomePage extends StatelessWidget {
                               );
                             },
                             child: Ink.image(
+<<<<<<< HEAD
+=======
+                              image: AssetImage('assets/images/wind.jpg'),
+                              height: 500,
+                              width: 500,
+                              fit: BoxFit.cover,
+>>>>>>> 5bb5bb46981bfcee515586fa559a870346d4a9be
                               child: Center(
                                 child: Opacity(
                                   opacity: 0.85,
@@ -342,6 +446,13 @@ class HomePage extends StatelessWidget {
                               );
                             },
                             child: Ink.image(
+<<<<<<< HEAD
+=======
+                              image: AssetImage('assets/images/drum.jpg'),
+                              height: 500,
+                              width: 500,
+                              fit: BoxFit.cover,
+>>>>>>> 5bb5bb46981bfcee515586fa559a870346d4a9be
                               child: Center(
                                 child: Opacity(
                                   opacity: 0.85,
@@ -385,6 +496,13 @@ class HomePage extends StatelessWidget {
                               );
                             },
                             child: Ink.image(
+<<<<<<< HEAD
+=======
+                              image: AssetImage('assets/images/piano.jpg'),
+                              height: 130,
+                              width: 500,
+                              fit: BoxFit.cover,
+>>>>>>> 5bb5bb46981bfcee515586fa559a870346d4a9be
                               child: Center(
                                 child: Opacity(
                                   opacity: 0.85,
@@ -413,6 +531,7 @@ class HomePage extends StatelessWidget {
                   child: Row(
                     children: [
                       Expanded(
+<<<<<<< HEAD
                         child: Material(
                           borderRadius: BorderRadius.circular(23),
                           clipBehavior: Clip.antiAliasWithSaveLayer,
@@ -435,6 +554,39 @@ class HomePage extends StatelessWidget {
                                     textAlign: TextAlign.center,
                                     style: GoogleFonts.pacifico(
                                         color: Colors.white, fontSize: 25),
+=======
+                        child: Showcase(
+                          key: keyTwo,
+                          description:
+                              'Öğrendiğiniz bilgileri test etmek için buraya tıklayın',
+                          child: Material(
+                            borderRadius: BorderRadius.circular(23),
+                            clipBehavior: Clip.antiAliasWithSaveLayer,
+                            elevation: 15,
+                            child: InkWell(
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => QuizApp(),
+                                  ),
+                                );
+                              },
+                              child: Ink.image(
+                                image: AssetImage('assets/images/test.jpg'),
+                                height: 100,
+                                width: 100,
+                                fit: BoxFit.cover,
+                                child: Center(
+                                  child: Opacity(
+                                    opacity: 0.85,
+                                    child: Text(
+                                      'Kendini Test et',
+                                      textAlign: TextAlign.center,
+                                      style: GoogleFonts.pacifico(
+                                          color: Colors.white, fontSize: 25),
+                                    ),
+>>>>>>> 5bb5bb46981bfcee515586fa559a870346d4a9be
                                   ),
                                 ),
                               ),
