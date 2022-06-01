@@ -1,4 +1,3 @@
-import 'package:animate_do/animate_do.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -7,19 +6,17 @@ import 'package:musicedu_app/instruments_page/keyboards.dart';
 import 'package:musicedu_app/instruments_page/rhythm.dart';
 import 'package:musicedu_app/instruments_page/strings.dart';
 import 'package:musicedu_app/instruments_page/winds.dart';
+import 'package:circular_profile_avatar/circular_profile_avatar.dart';
 import 'package:musicedu_app/quiz_page/quiz_main.dart';
-
 import 'education_ad/edu_page.dart';
+import 'package:user_profile_avatar/user_profile_avatar.dart';
+import 'package:widget_circular_animator/widget_circular_animator.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    Future<void> _signOut() async {
-      await FirebaseAuth.instance.signOut();
-    }
-
     final user = FirebaseAuth.instance.currentUser!;
     return Scaffold(
       extendBodyBehindAppBar: true,
@@ -42,16 +39,38 @@ class HomePage extends StatelessWidget {
               children: [
                 Material(
                   color: Colors.indigo,
-                  elevation: 12,
+                  // color: Colors.indigo,
+                  elevation: 9,
                   borderRadius: BorderRadius.only(
                     bottomLeft: Radius.circular(25),
                     bottomRight: Radius.circular(25),
                   ),
-                  child: DrawerHeader(
-                    // decoration: BoxDecoration(color: Colors.black38),
-                    child: Text('Kullanıcı:  ${user.email!}',
-                        style: TextStyle(color: Colors.white)),
+
+                  child: Center(
+                    child: WidgetCircularAnimator(
+                      size: 200,
+                      innerIconsSize: 4,
+                      outerIconsSize: 4,
+                      innerAnimation: Curves.easeInOutBack,
+                      outerAnimation: Curves.easeInOutBack,
+                      innerColor: Color.fromARGB(255, 253, 252, 255),
+                      outerColor: Color.fromARGB(255, 28, 181, 163),
+                      innerAnimationSeconds: 10,
+                      outerAnimationSeconds: 10,
+                      child: Container(
+                        decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            color: Color.fromARGB(210, 63, 6, 31)),
+                        child: Icon(
+                          Icons.music_note,
+                          color: Color.fromARGB(255, 13, 168, 195),
+                          size: 60,
+                        ),
+                      ),
+                    ),
                   ),
+
+                  // decoration: BoxDecoration(color: Colors.black38),
                 ),
                 ListTile(
                   title: InkWell(
@@ -63,24 +82,48 @@ class HomePage extends StatelessWidget {
                         ),
                       );
                     },
-                    child: FadeInLeft(
-                      delay: Duration(microseconds: 100),
-                      child: Row(children: [
-                        Expanded(
-                          child: Icon(
-                            Icons.search,
-                            color: Colors.white54,
-                          ),
+                    child: Row(children: [
+                      Expanded(
+                        child: Icon(
+                          Icons.search,
+                          color: Colors.white54,
                         ),
-                        Expanded(
-                          flex: 9,
-                          child: Text(
-                            'Kurs Ara',
-                            style: TextStyle(color: Colors.white),
-                          ),
+                      ),
+                      Expanded(
+                        flex: 9,
+                        child: Text(
+                          'Kurs Ara',
+                          style: TextStyle(color: Colors.white),
                         ),
-                      ]),
-                    ),
+                      ),
+                    ]),
+                  ),
+                ),
+                ListTile(
+                  title: InkWell(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => QuizApp(),
+                        ),
+                      );
+                    },
+                    child: Row(children: [
+                      Expanded(
+                        child: Icon(
+                          Icons.book_outlined,
+                          color: Colors.white54,
+                        ),
+                      ),
+                      Expanded(
+                        flex: 9,
+                        child: Text(
+                          'Test',
+                          style: TextStyle(color: Colors.white),
+                        ),
+                      ),
+                    ]),
                   ),
                 ),
                 ListTile(
@@ -108,48 +151,43 @@ class HomePage extends StatelessWidget {
                             );
                           });
                     },
-                    child: FadeInLeft(
-                      delay: Duration(microseconds: 100),
-                      child: Row(children: [
-                        Expanded(
-                          child: Icon(
-                            Icons.mail_outline_outlined,
-                            color: Colors.white54,
-                          ),
+                    child: Row(children: [
+                      Expanded(
+                        child: Icon(
+                          Icons.mail_outline_outlined,
+                          color: Colors.white54,
                         ),
-                        Expanded(
-                          flex: 9,
-                          child: Text(
-                            'Bize Ulaşın',
-                            style: TextStyle(color: Colors.white, fontSize: 14),
-                          ),
+                      ),
+                      Expanded(
+                        flex: 9,
+                        child: Text(
+                          'Bize Ulaşın',
+                          style: TextStyle(color: Colors.white, fontSize: 14),
                         ),
-                      ]),
-                    ),
+                      ),
+                    ]),
                   ),
                 ),
-                Divider(color: Colors.white70, thickness: 1),
                 ListTile(
                   title: InkWell(
-                    onTap: _signOut,
-                    child: FadeInLeft(
-                      delay: Duration(microseconds: 100),
-                      child: Row(children: [
-                        Expanded(
-                          child: Icon(
-                            Icons.exit_to_app,
-                            color: Colors.white54,
-                          ),
+                    onTap: () {
+                      FirebaseAuth.instance.signOut();
+                    },
+                    child: Row(children: [
+                      Expanded(
+                        child: Icon(
+                          Icons.exit_to_app,
+                          color: Colors.white54,
                         ),
-                        Expanded(
-                          flex: 9,
-                          child: Text(
-                            'Çıkış Yap',
-                            style: TextStyle(color: Colors.white),
-                          ),
+                      ),
+                      Expanded(
+                        flex: 9,
+                        child: Text(
+                          'Çıkış Yap',
+                          style: TextStyle(color: Colors.white),
                         ),
-                      ]),
-                    ),
+                      ),
+                    ]),
                   ),
                 ),
               ],
@@ -173,38 +211,35 @@ class HomePage extends StatelessWidget {
                   child: Row(
                     children: [
                       Expanded(
-                        child: FadeInLeft(
-                          delay: Duration(microseconds: 200),
-                          child: Material(
-                            borderRadius: BorderRadius.circular(23),
-                            clipBehavior: Clip.antiAliasWithSaveLayer,
-                            elevation: 15,
-                            child: InkWell(
-                              onTap: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) => GuitarnWorld(),
-                                  ),
-                                );
-                              },
-                              child: Ink.image(
-                                image: AssetImage('assets/images/guitar.jpg'),
-                                height: 500,
-                                width: 500,
-                                fit: BoxFit.cover,
-                                child: Center(
-                                  child: Opacity(
-                                    opacity: 0.85,
-                                    child: Text(
-                                      'Telli       Enstrümanlar',
-                                      textAlign: TextAlign.center,
-                                      style: GoogleFonts.pacifico(
-                                          color: Colors.white, fontSize: 20),
-                                    ),
+                        child: Material(
+                          borderRadius: BorderRadius.circular(23),
+                          clipBehavior: Clip.antiAliasWithSaveLayer,
+                          elevation: 15,
+                          child: InkWell(
+                            onTap: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => GuitarnWorld(),
+                                ),
+                              );
+                            },
+                            child: Ink.image(
+                              child: Center(
+                                child: Opacity(
+                                  opacity: 0.85,
+                                  child: Text(
+                                    'Telli       Enstrümanlar',
+                                    textAlign: TextAlign.center,
+                                    style: GoogleFonts.pacifico(
+                                        color: Colors.white, fontSize: 20),
                                   ),
                                 ),
                               ),
+                              image: AssetImage('assets/images/guitar.jpg'),
+                              height: 500,
+                              width: 500,
+                              fit: BoxFit.cover,
                             ),
                           ),
                         ),
@@ -213,38 +248,35 @@ class HomePage extends StatelessWidget {
                         width: 10,
                       ),
                       Expanded(
-                        child: FadeInRight(
-                          delay: Duration(microseconds: 200),
-                          child: Material(
-                            borderRadius: BorderRadius.circular(23),
-                            clipBehavior: Clip.antiAliasWithSaveLayer,
-                            elevation: 15,
-                            child: InkWell(
-                              splashColor: Colors.black26,
-                              onTap: () {
-                                Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                      builder: (context) => Strings(),
-                                    ));
-                              },
-                              child: Ink.image(
-                                image: AssetImage('assets/images/violin.jpg'),
-                                height: 500,
-                                width: 500,
-                                fit: BoxFit.cover,
-                                child: Center(
-                                  child: Opacity(
-                                    opacity: 0.85,
-                                    child: Text(
-                                      'Yaylı      Enstrümanlar',
-                                      textAlign: TextAlign.center,
-                                      style: GoogleFonts.pacifico(
-                                          color: Colors.white, fontSize: 20),
-                                    ),
+                        child: Material(
+                          borderRadius: BorderRadius.circular(23),
+                          clipBehavior: Clip.antiAliasWithSaveLayer,
+                          elevation: 15,
+                          child: InkWell(
+                            splashColor: Colors.black26,
+                            onTap: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => Strings(),
+                                  ));
+                            },
+                            child: Ink.image(
+                              child: Center(
+                                child: Opacity(
+                                  opacity: 0.85,
+                                  child: Text(
+                                    'Yaylı      Enstrümanlar',
+                                    textAlign: TextAlign.center,
+                                    style: GoogleFonts.pacifico(
+                                        color: Colors.white, fontSize: 20),
                                   ),
                                 ),
                               ),
+                              image: AssetImage('assets/images/violin.jpg'),
+                              height: 500,
+                              width: 500,
+                              fit: BoxFit.cover,
                             ),
                           ),
                         ),
@@ -259,38 +291,35 @@ class HomePage extends StatelessWidget {
                   child: Row(
                     children: [
                       Expanded(
-                        child: FadeInLeft(
-                          delay: Duration(microseconds: 200),
-                          child: Material(
-                            borderRadius: BorderRadius.circular(23),
-                            clipBehavior: Clip.antiAliasWithSaveLayer,
-                            elevation: 15,
-                            child: InkWell(
-                              onTap: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) => Winds(),
-                                  ),
-                                );
-                              },
-                              child: Ink.image(
-                                image: AssetImage('assets/images/wind.jpg'),
-                                height: 500,
-                                width: 500,
-                                fit: BoxFit.cover,
-                                child: Center(
-                                  child: Opacity(
-                                    opacity: 0.85,
-                                    child: Text(
-                                      'Nefesli   Enstrümanlar',
-                                      textAlign: TextAlign.center,
-                                      style: GoogleFonts.pacifico(
-                                          color: Colors.white, fontSize: 20),
-                                    ),
+                        child: Material(
+                          borderRadius: BorderRadius.circular(23),
+                          clipBehavior: Clip.antiAliasWithSaveLayer,
+                          elevation: 15,
+                          child: InkWell(
+                            onTap: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => Winds(),
+                                ),
+                              );
+                            },
+                            child: Ink.image(
+                              child: Center(
+                                child: Opacity(
+                                  opacity: 0.85,
+                                  child: Text(
+                                    'Nefesli   Enstrümanlar',
+                                    textAlign: TextAlign.center,
+                                    style: GoogleFonts.pacifico(
+                                        color: Colors.white, fontSize: 20),
                                   ),
                                 ),
                               ),
+                              image: AssetImage('assets/images/wind.jpg'),
+                              height: 500,
+                              width: 500,
+                              fit: BoxFit.cover,
                             ),
                           ),
                         ),
@@ -299,38 +328,35 @@ class HomePage extends StatelessWidget {
                         width: 10,
                       ),
                       Expanded(
-                        child: FadeInRight(
-                          delay: Duration(microseconds: 200),
-                          child: Material(
-                            borderRadius: BorderRadius.circular(23),
-                            clipBehavior: Clip.antiAliasWithSaveLayer,
-                            elevation: 15,
-                            child: InkWell(
-                              onTap: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) => Rhythm(),
-                                  ),
-                                );
-                              },
-                              child: Ink.image(
-                                image: AssetImage('assets/images/drum.jpg'),
-                                height: 500,
-                                width: 500,
-                                fit: BoxFit.cover,
-                                child: Center(
-                                  child: Opacity(
-                                    opacity: 0.85,
-                                    child: Text(
-                                      'Ritim    Enstrümanları',
-                                      textAlign: TextAlign.center,
-                                      style: GoogleFonts.pacifico(
-                                          color: Colors.white, fontSize: 20),
-                                    ),
+                        child: Material(
+                          borderRadius: BorderRadius.circular(23),
+                          clipBehavior: Clip.antiAliasWithSaveLayer,
+                          elevation: 15,
+                          child: InkWell(
+                            onTap: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => Rhythm(),
+                                ),
+                              );
+                            },
+                            child: Ink.image(
+                              child: Center(
+                                child: Opacity(
+                                  opacity: 0.85,
+                                  child: Text(
+                                    'Ritim    Enstrümanları',
+                                    textAlign: TextAlign.center,
+                                    style: GoogleFonts.pacifico(
+                                        color: Colors.white, fontSize: 20),
                                   ),
                                 ),
                               ),
+                              image: AssetImage('assets/images/drum.jpg'),
+                              height: 500,
+                              width: 500,
+                              fit: BoxFit.cover,
                             ),
                           ),
                         ),
@@ -345,38 +371,35 @@ class HomePage extends StatelessWidget {
                   child: Row(
                     children: [
                       Expanded(
-                        child: FadeInUp(
-                          delay: Duration(microseconds: 200),
-                          child: Material(
-                            borderRadius: BorderRadius.circular(23),
-                            clipBehavior: Clip.antiAliasWithSaveLayer,
-                            elevation: 15,
-                            child: InkWell(
-                              onTap: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) => KeyBoards(),
-                                  ),
-                                );
-                              },
-                              child: Ink.image(
-                                image: AssetImage('assets/images/piano.jpg'),
-                                height: 130,
-                                width: 500,
-                                fit: BoxFit.cover,
-                                child: Center(
-                                  child: Opacity(
-                                    opacity: 0.85,
-                                    child: Text(
-                                      'Tuşlu   Enstrümanlar',
-                                      textAlign: TextAlign.center,
-                                      style: GoogleFonts.pacifico(
-                                          color: Colors.white, fontSize: 25),
-                                    ),
+                        child: Material(
+                          borderRadius: BorderRadius.circular(23),
+                          clipBehavior: Clip.antiAliasWithSaveLayer,
+                          elevation: 15,
+                          child: InkWell(
+                            onTap: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => KeyBoards(),
+                                ),
+                              );
+                            },
+                            child: Ink.image(
+                              child: Center(
+                                child: Opacity(
+                                  opacity: 0.85,
+                                  child: Text(
+                                    'Tuşlu   Enstrümanlar',
+                                    textAlign: TextAlign.center,
+                                    style: GoogleFonts.pacifico(
+                                        color: Colors.white, fontSize: 25),
                                   ),
                                 ),
                               ),
+                              image: AssetImage('assets/images/piano.jpg'),
+                              height: 130,
+                              width: 500,
+                              fit: BoxFit.cover,
                             ),
                           ),
                         ),
@@ -390,38 +413,35 @@ class HomePage extends StatelessWidget {
                   child: Row(
                     children: [
                       Expanded(
-                        child: FadeInUp(
-                          delay: Duration(microseconds: 200),
-                          child: Material(
-                            borderRadius: BorderRadius.circular(23),
-                            clipBehavior: Clip.antiAliasWithSaveLayer,
-                            elevation: 15,
-                            child: InkWell(
-                              onTap: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) => QuizApp(),
-                                  ),
-                                );
-                              },
-                              child: Ink.image(
-                                image: AssetImage('assets/images/test.jpg'),
-                                height: 100,
-                                width: 100,
-                                fit: BoxFit.cover,
-                                child: Center(
-                                  child: Opacity(
-                                    opacity: 0.85,
-                                    child: Text(
-                                      'Kendini Test et',
-                                      textAlign: TextAlign.center,
-                                      style: GoogleFonts.pacifico(
-                                          color: Colors.white, fontSize: 25),
-                                    ),
+                        child: Material(
+                          borderRadius: BorderRadius.circular(23),
+                          clipBehavior: Clip.antiAliasWithSaveLayer,
+                          elevation: 15,
+                          child: InkWell(
+                            onTap: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => QuizApp(),
+                                ),
+                              );
+                            },
+                            child: Ink.image(
+                              child: Center(
+                                child: Opacity(
+                                  opacity: 0.85,
+                                  child: Text(
+                                    'Kendini Test et',
+                                    textAlign: TextAlign.center,
+                                    style: GoogleFonts.pacifico(
+                                        color: Colors.white, fontSize: 25),
                                   ),
                                 ),
                               ),
+                              image: AssetImage('assets/images/test.jpg'),
+                              height: 100,
+                              width: 100,
+                              fit: BoxFit.cover,
                             ),
                           ),
                         ),
