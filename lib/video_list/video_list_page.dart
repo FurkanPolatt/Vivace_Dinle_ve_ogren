@@ -14,10 +14,8 @@ class VideoListPage extends StatefulWidget {
 class _VideoListPageState extends State<VideoListPage> {
   final _random = new Random();
   final List<String> _videos = [
-    Constants.bugBuckBunnyVideoUrl,
-    Constants.forBiggerBlazesUrl,
-    Constants.fileTestVideoUrl,
-    Constants.fileTestVideoEncryptUrl,
+    Constants.keman1,
+    Constants.keman2,
   ];
   List<VideoListData> dataList = [];
   var value = 0;

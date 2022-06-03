@@ -18,10 +18,10 @@ class CelloInfo2 extends StatefulWidget {
 class _VideoListPageState extends State<CelloInfo2> {
   final _random = new Random();
   final List<String> _videos = [
-    Constants.bugBuckBunnyVideoUrl,
-    Constants.forBiggerBlazesUrl,
-    Constants.fileTestVideoUrl,
-    Constants.fileTestVideoEncryptUrl,
+    Constants.cello1,
+    Constants.cello2,
+    Constants.cello3,
+    Constants.cello4,
   ];
   List<VideoListData> dataList = [];
   var value = 0;
@@ -33,7 +33,7 @@ class _VideoListPageState extends State<CelloInfo2> {
   }
 
   void _setupData() {
-    for (int index = 0; index < 10; index++) {
+    for (int index = 0; index < 4; index++) {
       var randomVideoUrl = _videos[_random.nextInt(_videos.length)];
       dataList.add(VideoListData("test $index", randomVideoUrl));
     }

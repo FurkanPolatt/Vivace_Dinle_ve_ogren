@@ -18,10 +18,9 @@ class ClairnetInfo2 extends StatefulWidget {
 class _VideoListPageState extends State<ClairnetInfo2> {
   final _random = new Random();
   final List<String> _videos = [
-    Constants.bugBuckBunnyVideoUrl,
-    Constants.forBiggerBlazesUrl,
-    Constants.fileTestVideoUrl,
-    Constants.fileTestVideoEncryptUrl,
+    Constants.klarnet1,
+    Constants.klarnet2,
+    Constants.klarnet3,
   ];
   List<VideoListData> dataList = [];
   var value = 0;

@@ -18,10 +18,7 @@ class CajonInfo2 extends StatefulWidget {
 class _VideoListPageState extends State<CajonInfo2> {
   final _random = new Random();
   final List<String> _videos = [
-    Constants.bugBuckBunnyVideoUrl,
-    Constants.forBiggerBlazesUrl,
-    Constants.fileTestVideoUrl,
-    Constants.fileTestVideoEncryptUrl,
+    Constants.kaj1,
   ];
   List<VideoListData> dataList = [];
   var value = 0;
@@ -33,7 +30,7 @@ class _VideoListPageState extends State<CajonInfo2> {
   }
 
   void _setupData() {
-    for (int index = 0; index < 10; index++) {
+    for (int index = 0; index < 1; index++) {
       var randomVideoUrl = _videos[_random.nextInt(_videos.length)];
       dataList.add(VideoListData("test $index", randomVideoUrl));
     }
