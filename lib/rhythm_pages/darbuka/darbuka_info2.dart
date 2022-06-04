@@ -16,10 +16,6 @@ class DarbukaInfo2 extends StatefulWidget {
 
 //
 class _VideoListPageState extends State<DarbukaInfo2> {
-  final _random = new Random();
-  final List<String> _videos = [
-    Constants.darb1,
-  ];
   List<VideoListData> dataList = [];
   var value = 0;
 
@@ -30,10 +26,7 @@ class _VideoListPageState extends State<DarbukaInfo2> {
   }
 
   void _setupData() {
-    for (int index = 0; index < 1; index++) {
-      var randomVideoUrl = _videos[_random.nextInt(_videos.length)];
-      dataList.add(VideoListData("test $index", randomVideoUrl));
-    }
+    dataList.add(VideoListData("buraya başlık", Constants.darb1));
   }
 
   _buildPageView() {

@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -16,10 +14,6 @@ class CajonInfo2 extends StatefulWidget {
 
 //
 class _VideoListPageState extends State<CajonInfo2> {
-  final _random = new Random();
-  final List<String> _videos = [
-    Constants.kaj1,
-  ];
   List<VideoListData> dataList = [];
   var value = 0;
 
@@ -30,10 +24,7 @@ class _VideoListPageState extends State<CajonInfo2> {
   }
 
   void _setupData() {
-    for (int index = 0; index < 1; index++) {
-      var randomVideoUrl = _videos[_random.nextInt(_videos.length)];
-      dataList.add(VideoListData("test $index", randomVideoUrl));
-    }
+    dataList.add(VideoListData("buraya başlık", Constants.kaj1));
   }
 
   _buildPageView() {

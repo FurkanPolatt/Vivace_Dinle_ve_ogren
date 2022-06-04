@@ -16,12 +16,6 @@ class ViolinInfo2 extends StatefulWidget {
 
 //
 class _VideoListPageState extends State<ViolinInfo2> {
-  final _random = new Random();
-  final List<String> _videos = [
-    Constants.keman1,
-    Constants.keman2,
-    Constants.keman3,
-  ];
   List<VideoListData> dataList = [];
   var value = 0;
 
@@ -32,10 +26,9 @@ class _VideoListPageState extends State<ViolinInfo2> {
   }
 
   void _setupData() {
-    for (int index = 0; index < 3; index++) {
-      var randomVideoUrl = _videos[_random.nextInt(_videos.length)];
-      dataList.add(VideoListData("test $index", randomVideoUrl));
-    }
+    dataList.add(VideoListData("buraya başlık", Constants.keman1));
+    dataList.add(VideoListData("buraya başlık ", Constants.keman2));
+    dataList.add(VideoListData("buraya başlık ", Constants.keman3));
   }
 
   _buildPageView() {
