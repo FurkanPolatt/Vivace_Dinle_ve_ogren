@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -16,11 +14,6 @@ class FluteInfo2 extends StatefulWidget {
 
 //
 class _VideoListPageState extends State<FluteInfo2> {
-  final _random = new Random();
-  final List<String> _videos = [
-    Constants.yan1,
-    Constants.yan2,
-  ];
   List<VideoListData> dataList = [];
   var value = 0;
 
@@ -31,10 +24,8 @@ class _VideoListPageState extends State<FluteInfo2> {
   }
 
   void _setupData() {
-    for (int index = 0; index < 2; index++) {
-      var randomVideoUrl = _videos[_random.nextInt(_videos.length)];
-      dataList.add(VideoListData("test $index", randomVideoUrl));
-    }
+    dataList.add(VideoListData("buraya başlık", Constants.yan1));
+    dataList.add(VideoListData("buraya başlık ", Constants.yan2));
   }
 
   _buildPageView() {

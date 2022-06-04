@@ -16,11 +16,6 @@ class AcousticInfo2 extends StatefulWidget {
 
 //
 class _VideoListPageState extends State<AcousticInfo2> {
-  final _random = new Random();
-  final List<String> _videos = [
-    Constants.akustik1,
-    Constants.akustik2,
-  ];
   List<VideoListData> dataList = [];
   var value = 0;
 
@@ -31,10 +26,8 @@ class _VideoListPageState extends State<AcousticInfo2> {
   }
 
   void _setupData() {
-    for (int index = 0; index < 3; index++) {
-      var randomVideoUrl = _videos[_random.nextInt(_videos.length)];
-      dataList.add(VideoListData("test $index", randomVideoUrl));
-    }
+    dataList.add(VideoListData("buraya başlık", Constants.akustik2));
+    dataList.add(VideoListData("buraya başlık ", Constants.akustik1));
   }
 
   _buildPageView() {
