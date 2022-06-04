@@ -24,7 +24,7 @@ class _VideoListPageState extends State<DrumInfo2> {
   }
 
   void _setupData() {
-    dataList.add(VideoListData("buraya başlık", Constants.dav1));
+    dataList.add(VideoListData("Popüler müzik", Constants.dav1));
   }
 
   _buildPageView() {
@@ -41,7 +41,7 @@ class _VideoListPageState extends State<DrumInfo2> {
               );
             },
           ),
-        )
+        ),
       ]),
     );
   }
@@ -55,7 +55,7 @@ class _VideoListPageState extends State<DrumInfo2> {
           title: Opacity(
             opacity: 0.90,
             child: Text(
-              'Klasik Gitar',
+              'Akustik Davul',
               style: GoogleFonts.pacifico(fontSize: 25, color: Colors.white),
             ),
           ),

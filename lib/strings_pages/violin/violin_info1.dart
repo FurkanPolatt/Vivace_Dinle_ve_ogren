@@ -2,9 +2,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:page_view_indicators/circle_page_indicator.dart';
-
-import '../../guitar_pages/bass_guitar/view_image.dart';
 
 class ViolinInfo1 extends StatefulWidget {
   const ViolinInfo1({Key? key}) : super(key: key);
@@ -16,24 +13,11 @@ class ViolinInfo1 extends StatefulWidget {
 }
 
 class ClassicPageState extends State<ViolinInfo1> {
-  final _items = [
-    Colors.blue,
-    Colors.orange,
-    Colors.green,
-    Colors.pink,
-    Colors.red,
-    Colors.amber,
-    Colors.brown,
-    Colors.yellow,
-    Colors.blue,
-  ];
-  final _pageController = PageController();
-  final _currentPageNotifier = ValueNotifier<int>(0);
   final _boxHeight = 300.0;
 
   @override
   Widget build(BuildContext context) {
-    final _controller = PageController();
+    final controller = PageController();
 
     return Scaffold(
       extendBodyBehindAppBar: true,
@@ -52,7 +36,7 @@ class ClassicPageState extends State<ViolinInfo1> {
       ),
       body: _buildBody(
         decoration: BoxDecoration(),
-        controller: _controller,
+        controller: controller,
       ),
     );
   }
@@ -64,7 +48,6 @@ class ClassicPageState extends State<ViolinInfo1> {
         Stack(
           children: <Widget>[
             _buildPageView(),
-            _buildCircleIndicator(),
           ],
         ),
         _buildPageView2(),
@@ -77,26 +60,18 @@ class ClassicPageState extends State<ViolinInfo1> {
       padding: EdgeInsets.all(8),
       height: _boxHeight,
       margin: EdgeInsets.only(top: _boxHeight / 5),
-      child: PageView.builder(
-          itemCount: appBannerList.length,
-          controller: _pageController,
-          itemBuilder: (BuildContext context, int index) {
-            return Padding(
-              padding: const EdgeInsets.all(15),
-              child: Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(28),
-                  image: DecorationImage(
-                    image: AssetImage(appBannerList[index].image),
-                    fit: BoxFit.cover,
-                  ),
-                ),
-              ),
-            );
-          },
-          onPageChanged: (int index) {
-            _currentPageNotifier.value = index;
-          }),
+      child: Padding(
+        padding: const EdgeInsets.all(11.0),
+        child: Container(
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(28),
+            image: DecorationImage(
+              image: AssetImage('assets/background/violin.jpg'),
+              fit: BoxFit.cover,
+            ),
+          ),
+        ),
+      ),
     );
   }
 
@@ -109,28 +84,35 @@ class ClassicPageState extends State<ViolinInfo1> {
         child: SizedBox(
           width: 400,
           height: 370,
-          child: Column(
-            children: [
-              SizedBox(
-                height: 10,
-              ),
-              Text(
-                'Hakkında',
-                style: GoogleFonts.pacifico(
-                  fontSize: 28,
-                  color: Colors.white,
-                  fontWeight: FontWeight.w500,
+          child: Material(
+            elevation: 15,
+            shape:
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(50)),
+            color: Colors.grey[850],
+            child: Column(
+              children: [
+                SizedBox(
+                  height: 10,
                 ),
-              ),
-              SizedBox(
-                height: 10,
-              ),
-              Expanded(
-                child: SingleChildScrollView(
-                  child: Padding(
-                    padding: const EdgeInsets.all(5.0),
-                    child: Text(
-                      '''- Keman (veya viyolon), viyola ve viyolonselin de bulunduğu violin ailesinin en yüksek tondan çalan, en küçük üyesidir. 
+                Text(
+                  'Hakkında',
+                  style: GoogleFonts.pacifico(
+                    fontSize: 28,
+                    color: Colors.white,
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
+                Divider(color: Colors.white54, thickness: 1, height: 1),
+
+                SizedBox(
+                  height: 10,
+                ),
+                Expanded(
+                  child: SingleChildScrollView(
+                    child: Padding(
+                      padding: const EdgeInsets.all(5.0),
+                      child: Text(
+                        '''- Keman (veya viyolon), viyola ve viyolonselin de bulunduğu violin ailesinin en yüksek tondan çalan, en küçük üyesidir. 
 - Günümüz anlamdaki keman ilk olarak 14. yüzyılda Kuzey İtalya'da ortaya çıktı. 
 - Bu dönemden sonra keman Avrupa'da yayıldı.
 - İlk keman yapımcılarının Rebec, Rönesans da Fer tarafından Orta Çağ'da İtalya'da Lira da Braci, Fransa'da Viel adlarıyla kullanılan yaylı çalgılar Keman'ın atası sayılır. 
@@ -149,58 +131,44 @@ class ClassicPageState extends State<ViolinInfo1> {
 - Keman asıl olarak Batı’da ortaya çıkan bir enstrümandır. Bunun için genelde Batı Müziği’nde kullanılmaktadır. Keman çok yönlü bir enstrüman olduğundan dolayı pek bi’ tür kısıtlaması yoktur. Klasik müzikten tutun da pop müziğe, metal müziğe kadar kullanım alanları mevcuttur.
 
  ''',
-                      style: TextStyle(
-                        fontSize: 15,
-                        color: Colors.white,
+                        style: TextStyle(
+                          fontSize: 15,
+                          color: Colors.white,
+                        ),
+                        textAlign: TextAlign.center,
                       ),
-                      textAlign: TextAlign.center,
                     ),
                   ),
                 ),
-              ),
-              SizedBox(
-                height: 20,
-              ),
-              // SizedBox(
-              //   width: 170,
-              //   child: MaterialButton(
-              //     shape: RoundedRectangleBorder(
-              //       borderRadius: BorderRadius.circular(8),
-              //     ),
-              //     onPressed: () => {
-              //       Navigator.of(context).pushReplacement(MaterialPageRoute(
-              //         builder: (context) => BassExtra(),
-              //       ))
-              //     },
-              //     color: Colors.white70,
-              //     child: Padding(
-              //       padding: const EdgeInsets.all(4.0),
-              //       child: Row(
-              //         children: [
-              //           Icon(Icons.touch_app),
-              //           Text('Tamamını oku'),
-              //         ],
-              //       ),
-              //     ),
-              //   ),
-              // )
-            ],
+                SizedBox(
+                  height: 20,
+                ),
+                // SizedBox(
+                //   width: 170,
+                //   child: MaterialButton(
+                //     shape: RoundedRectangleBorder(
+                //       borderRadius: BorderRadius.circular(8),
+                //     ),
+                //     onPressed: () => {
+                //       Navigator.of(context).pushReplacement(MaterialPageRoute(
+                //         builder: (context) => BassExtra(),
+                //       ))
+                //     },
+                //     color: Colors.white70,
+                //     child: Padding(
+                //       padding: const EdgeInsets.all(4.0),
+                //       child: Row(
+                //         children: [
+                //           Icon(Icons.touch_app),
+                //           Text('Tamamını oku'),
+                //         ],
+                //       ),
+                //     ),
+                //   ),
+                // )
+              ],
+            ),
           ),
-        ),
-      ),
-    );
-  }
-
-  _buildCircleIndicator() {
-    return Positioned(
-      left: 0.0,
-      right: 0.0,
-      bottom: 0.0,
-      child: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: CirclePageIndicator(
-          itemCount: _items.length,
-          currentPageNotifier: _currentPageNotifier,
         ),
       ),
     );

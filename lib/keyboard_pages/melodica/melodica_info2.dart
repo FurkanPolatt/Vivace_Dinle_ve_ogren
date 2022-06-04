@@ -24,8 +24,8 @@ class _VideoListPageState extends State<MelodicaInfo2> {
   }
 
   void _setupData() {
-    dataList.add(VideoListData("buraya başlık", Constants.mel1));
-    dataList.add(VideoListData("buraya başlık ", Constants.mel2));
+    dataList.add(VideoListData("Klasik müzik", Constants.mel2));
+    dataList.add(VideoListData("Caz müzik ", Constants.mel1));
   }
 
   _buildPageView() {
@@ -56,7 +56,7 @@ class _VideoListPageState extends State<MelodicaInfo2> {
           title: Opacity(
             opacity: 0.90,
             child: Text(
-              'Klasik Gitar',
+              'Melodika',
               style: GoogleFonts.pacifico(fontSize: 25, color: Colors.white),
             ),
           ),

@@ -24,9 +24,8 @@ class _VideoListPageState extends State<HandpanInfo2> {
   }
 
   void _setupData() {
-    dataList.add(VideoListData("buraya başlık", Constants.hand1));
-    dataList.add(VideoListData("buraya başlık ", Constants.hand2));
-    dataList.add(VideoListData("buraya başlık ", Constants.hand3));
+    dataList.add(VideoListData("Klasik müzik", Constants.hand3));
+    dataList.add(VideoListData("Dünya müziği ", Constants.hand2));
   }
 
   _buildPageView() {
@@ -57,7 +56,7 @@ class _VideoListPageState extends State<HandpanInfo2> {
           title: Opacity(
             opacity: 0.90,
             child: Text(
-              'Klasik Gitar',
+              'Handpan',
               style: GoogleFonts.pacifico(fontSize: 25, color: Colors.white),
             ),
           ),

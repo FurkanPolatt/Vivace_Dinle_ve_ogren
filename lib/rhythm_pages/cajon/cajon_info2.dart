@@ -24,7 +24,7 @@ class _VideoListPageState extends State<CajonInfo2> {
   }
 
   void _setupData() {
-    dataList.add(VideoListData("buraya başlık", Constants.kaj1));
+    dataList.add(VideoListData("Flamenko müzik", Constants.kaj1));
   }
 
   _buildPageView() {
@@ -55,7 +55,7 @@ class _VideoListPageState extends State<CajonInfo2> {
           title: Opacity(
             opacity: 0.90,
             child: Text(
-              'Klasik Gitar',
+              'Cajon',
               style: GoogleFonts.pacifico(fontSize: 25, color: Colors.white),
             ),
           ),

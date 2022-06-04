@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -26,8 +24,8 @@ class _VideoListPageState extends State<ElectroInfo2> {
   }
 
   void _setupData() {
-    dataList.add(VideoListData("buraya başlık", Constants.electro1));
-    dataList.add(VideoListData("buraya başlık ", Constants.electro2));
+    dataList.add(VideoListData("Klasik müzik", Constants.electro1));
+    dataList.add(VideoListData("Türk müziği ", Constants.electro2));
   }
 
   _buildPageView() {
@@ -58,7 +56,7 @@ class _VideoListPageState extends State<ElectroInfo2> {
           title: Opacity(
             opacity: 0.90,
             child: Text(
-              'Klasik Gitar',
+              'Elektro Gitar',
               style: GoogleFonts.pacifico(fontSize: 25, color: Colors.white),
             ),
           ),

@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -26,8 +24,9 @@ class _VideoListPageState extends State<AcousticInfo2> {
   }
 
   void _setupData() {
-    dataList.add(VideoListData("buraya başlık", Constants.akustik2));
-    dataList.add(VideoListData("buraya başlık ", Constants.akustik1));
+    dataList.add(VideoListData("Türk müziği", Constants.akustik2));
+    dataList.add(VideoListData("Blues müzik", Constants.akustik1));
+    dataList.add(VideoListData("Caz müzik", Constants.akustik3));
   }
 
   _buildPageView() {
@@ -58,7 +57,7 @@ class _VideoListPageState extends State<AcousticInfo2> {
           title: Opacity(
             opacity: 0.90,
             child: Text(
-              'Klasik Gitar',
+              'Akustik Gitar',
               style: GoogleFonts.pacifico(fontSize: 25, color: Colors.white),
             ),
           ),

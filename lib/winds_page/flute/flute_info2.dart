@@ -24,8 +24,8 @@ class _VideoListPageState extends State<FluteInfo2> {
   }
 
   void _setupData() {
-    dataList.add(VideoListData("buraya başlık", Constants.yan1));
-    dataList.add(VideoListData("buraya başlık ", Constants.yan2));
+    dataList.add(VideoListData("Klasik müzik", Constants.yan2));
+    dataList.add(VideoListData("Türk müziği ", Constants.yan1));
   }
 
   _buildPageView() {
@@ -56,7 +56,7 @@ class _VideoListPageState extends State<FluteInfo2> {
           title: Opacity(
             opacity: 0.90,
             child: Text(
-              'Klasik Gitar',
+              'Yan Flüt',
               style: GoogleFonts.pacifico(fontSize: 25, color: Colors.white),
             ),
           ),

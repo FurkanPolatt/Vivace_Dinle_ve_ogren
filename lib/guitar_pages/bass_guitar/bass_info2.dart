@@ -24,9 +24,8 @@ class _VideoListPageState extends State<BassInfo2> {
   }
 
   void _setupData() {
-    dataList.add(VideoListData("buraya başlık", Constants.bas1));
-    dataList.add(VideoListData("buraya başlık ", Constants.bas2));
-    dataList.add(VideoListData("buraya başlık ", Constants.bas3));
+    dataList.add(VideoListData("Klasik müzik ", Constants.bas2));
+    dataList.add(VideoListData("Caz müzik", Constants.bas3));
   }
 
   _buildPageView() {
@@ -57,7 +56,7 @@ class _VideoListPageState extends State<BassInfo2> {
           title: Opacity(
             opacity: 0.90,
             child: Text(
-              'Klasik Gitar',
+              'Bas Gitar',
               style: GoogleFonts.pacifico(fontSize: 25, color: Colors.white),
             ),
           ),

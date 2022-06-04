@@ -2,9 +2,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:page_view_indicators/circle_page_indicator.dart';
-
-import '../../guitar_pages/bass_guitar/view_image.dart';
 
 class CtbInfo1 extends StatefulWidget {
   const CtbInfo1({Key? key}) : super(key: key);
@@ -16,19 +13,6 @@ class CtbInfo1 extends StatefulWidget {
 }
 
 class ClassicPageState extends State<CtbInfo1> {
-  final _items = [
-    Colors.blue,
-    Colors.orange,
-    Colors.green,
-    Colors.pink,
-    Colors.red,
-    Colors.amber,
-    Colors.brown,
-    Colors.yellow,
-    Colors.blue,
-  ];
-  final _pageController = PageController();
-  final _currentPageNotifier = ValueNotifier<int>(0);
   final _boxHeight = 300.0;
 
   @override
@@ -64,7 +48,6 @@ class ClassicPageState extends State<CtbInfo1> {
         Stack(
           children: <Widget>[
             _buildPageView(),
-            _buildCircleIndicator(),
           ],
         ),
         _buildPageView2(),
@@ -77,26 +60,18 @@ class ClassicPageState extends State<CtbInfo1> {
       padding: EdgeInsets.all(8),
       height: _boxHeight,
       margin: EdgeInsets.only(top: _boxHeight / 5),
-      child: PageView.builder(
-          itemCount: appBannerList.length,
-          controller: _pageController,
-          itemBuilder: (BuildContext context, int index) {
-            return Padding(
-              padding: const EdgeInsets.all(15.0),
-              child: Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(28),
-                  image: DecorationImage(
-                    image: AssetImage(appBannerList[index].image),
-                    fit: BoxFit.cover,
-                  ),
-                ),
-              ),
-            );
-          },
-          onPageChanged: (int index) {
-            _currentPageNotifier.value = index;
-          }),
+      child: Padding(
+        padding: const EdgeInsets.all(11.0),
+        child: Container(
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(28),
+            image: DecorationImage(
+              image: AssetImage('assets/background/ctb.jpg'),
+              fit: BoxFit.cover,
+            ),
+          ),
+        ),
+      ),
     );
   }
 
@@ -109,28 +84,34 @@ class ClassicPageState extends State<CtbInfo1> {
         child: SizedBox(
           width: 400,
           height: 370,
-          child: Column(
-            children: [
-              SizedBox(
-                height: 10,
-              ),
-              Text(
-                'Hakkında',
-                style: GoogleFonts.pacifico(
-                  fontSize: 28,
-                  color: Colors.white,
-                  fontWeight: FontWeight.w500,
+          child: Material(
+            elevation: 15,
+            shape:
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(50)),
+            color: Colors.grey[850],
+            child: Column(
+              children: [
+                SizedBox(
+                  height: 10,
                 ),
-              ),
-              SizedBox(
-                height: 10,
-              ),
-              Expanded(
-                child: SingleChildScrollView(
-                  child: Padding(
-                    padding: const EdgeInsets.all(5),
-                    child: Text(
-                      '''- Kontrbas, keman ailesindendir ve yaylılar grubunun en kalın sesli çalgısıdır. 
+                Text(
+                  'Hakkında',
+                  style: GoogleFonts.pacifico(
+                    fontSize: 28,
+                    color: Colors.white,
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
+                Divider(color: Colors.white54, thickness: 1, height: 1),
+                SizedBox(
+                  height: 10,
+                ),
+                Expanded(
+                  child: SingleChildScrollView(
+                    child: Padding(
+                      padding: const EdgeInsets.all(5),
+                      child: Text(
+                        '''- Kontrbas, keman ailesindendir ve yaylılar grubunun en kalın sesli çalgısıdır. 
 - Kontrbas Violone adı verilen bir Rönesans çalgısından türemiştir. 
 - 16. yüzyıldan 18. yüzyıla kadar bir değişim süreci geçirmiştir. 
 - 18. yüzyılın ikinci yarısında bugünkü biçimini almıştır. 
@@ -146,58 +127,21 @@ class ClassicPageState extends State<CtbInfo1> {
 - Senfonik orkestraların, caz, pop ve rock müzik topluluklarının ana çalgılarından biridir. Kontrbas, özellikle caz müziğin vazgeçilmez çalgısı olmuştur. 
 - Bu enstrüman için eser yazmış olan bestecilerin başında; K.D.von Dittesdorf, G.B.Vanhal, J.M.Sperger, V.Pichl, A.F.Hoffmeister, G.Bottesini, D.Dragonetti, A.Misek, S.Koussevitzky gelmektedir.
  ''',
-                      style: TextStyle(
-                        fontSize: 15,
-                        color: Colors.white,
+                        style: TextStyle(
+                          fontSize: 15,
+                          color: Colors.white,
+                        ),
+                        textAlign: TextAlign.center,
                       ),
-                      textAlign: TextAlign.center,
                     ),
                   ),
                 ),
-              ),
-              SizedBox(
-                height: 20,
-              ),
-              // SizedBox(
-              //   width: 170,
-              //   child: MaterialButton(
-              //     shape: RoundedRectangleBorder(
-              //       borderRadius: BorderRadius.circular(8),
-              //     ),
-              //     onPressed: () => {
-              //       Navigator.of(context).pushReplacement(MaterialPageRoute(
-              //         builder: (context) => BassExtra(),
-              //       ))
-              //     },
-              //     color: Colors.white70,
-              //     child: Padding(
-              //       padding: const EdgeInsets.all(4.0),
-              //       child: Row(
-              //         children: [
-              //           Icon(Icons.touch_app),
-              //           Text('Tamamını oku'),
-              //         ],
-              //       ),
-              //     ),
-              //   ),
-              // )
-            ],
+                SizedBox(
+                  height: 20,
+                ),
+              ],
+            ),
           ),
-        ),
-      ),
-    );
-  }
-
-  _buildCircleIndicator() {
-    return Positioned(
-      left: 0.0,
-      right: 0.0,
-      bottom: 0.0,
-      child: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: CirclePageIndicator(
-          itemCount: _items.length,
-          currentPageNotifier: _currentPageNotifier,
         ),
       ),
     );

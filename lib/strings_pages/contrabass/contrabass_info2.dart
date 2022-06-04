@@ -24,8 +24,8 @@ class _VideoListPageState extends State<CtbInfo2> {
   }
 
   void _setupData() {
-    dataList.add(VideoListData("buraya başlık", Constants.controbass1));
-    dataList.add(VideoListData("buraya başlık ", Constants.controbass2));
+    dataList.add(VideoListData("Klasik müzik", Constants.controbass1));
+    dataList.add(VideoListData("Caz müzik ", Constants.controbass2));
   }
 
   _buildPageView() {
@@ -56,7 +56,7 @@ class _VideoListPageState extends State<CtbInfo2> {
           title: Opacity(
             opacity: 0.90,
             child: Text(
-              'Klasik Gitar',
+              'Kontrabas',
               style: GoogleFonts.pacifico(fontSize: 25, color: Colors.white),
             ),
           ),

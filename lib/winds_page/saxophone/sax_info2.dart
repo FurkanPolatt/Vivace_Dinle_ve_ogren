@@ -24,8 +24,8 @@ class _VideoListPageState extends State<SaxInfo2> {
   }
 
   void _setupData() {
-    dataList.add(VideoListData("buraya başlık", Constants.sax1));
-    dataList.add(VideoListData("buraya başlık ", Constants.sax2));
+    dataList.add(VideoListData("Klasik müzik", Constants.sax1));
+    dataList.add(VideoListData("Caz müzik", Constants.sax2));
   }
 
   _buildPageView() {
@@ -56,7 +56,7 @@ class _VideoListPageState extends State<SaxInfo2> {
           title: Opacity(
             opacity: 0.90,
             child: Text(
-              'Klasik Gitar',
+              'Saksafon',
               style: GoogleFonts.pacifico(fontSize: 25, color: Colors.white),
             ),
           ),

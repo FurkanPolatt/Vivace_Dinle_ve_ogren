@@ -24,8 +24,8 @@ class _VideoListPageState extends State<ViolaInfo2> {
   }
 
   void _setupData() {
-    dataList.add(VideoListData("buraya başlık", Constants.viyola1));
-    dataList.add(VideoListData("buraya başlık ", Constants.viyola2));
+    dataList.add(VideoListData("Klasik müzik", Constants.viyola1));
+    dataList.add(VideoListData("Türk müziği ", Constants.viyola2));
   }
 
   _buildPageView() {
@@ -56,7 +56,7 @@ class _VideoListPageState extends State<ViolaInfo2> {
           title: Opacity(
             opacity: 0.90,
             child: Text(
-              'Klasik Gitar',
+              'Viyola',
               style: GoogleFonts.pacifico(fontSize: 25, color: Colors.white),
             ),
           ),

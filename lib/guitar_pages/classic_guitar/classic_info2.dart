@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -26,9 +24,9 @@ class _VideoListPageState extends State<ClassicInfo2> {
   }
 
   void _setupData() {
-    dataList.add(VideoListData("buraya başlık", Constants.klasik1));
-    dataList.add(VideoListData("buraya başlık ", Constants.klasik2));
-    dataList.add(VideoListData("buraya başlık ", Constants.klasik3));
+    dataList.add(VideoListData("Klasik müzik", Constants.klasik1));
+    dataList.add(VideoListData("Türk müziği ", Constants.klasik2));
+    dataList.add(VideoListData("Caz müzik ", Constants.klasik3));
   }
 
   _buildPageView() {

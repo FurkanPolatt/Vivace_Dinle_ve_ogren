@@ -2,14 +2,14 @@ class Constants {
   static const String klasik1 =
       "https://storage.googleapis.com/vivace/vivace/klasik%20gitar/F.%20Sor%20-%20Fantasie%2C%20Op.%207.%20Guitar%20by%20Ren%C3%A9%20Lac%C3%B4te%20(1868).mp4";
   static const String klasik2 =
-      "https://storage.googleapis.com/vivace/vivace/klasik%20gitar/S.%20Rachmaninov%2C%20Symphony%20no.%202%20-%20clarinet%20solo%20Pedro%20Franco.mp4";
+      "https://storage.googleapis.com/vivace/vivace/klasik%20gitar/serhat.mp4";
   static const String klasik3 =
       "https://storage.googleapis.com/vivace/vivace/klasik%20gitar/videoplayback.mp4";
   static const String akustik1 =
       "https://storage.googleapis.com/vivace/vivace/akustik-gitar/videoplayback.mp4";
   static const String akustik2 =
       "https://storage.googleapis.com/vivace/vivace/akustik-gitar/Sar%C4%B1%20Gelin%20-%20Akustik%20Gitar%20Cover.mp4";
-  static const String bas1 =
+  static const String akustik3 =
       "https://storage.googleapis.com/vivace/vivace/bass-gitar/Autumn%20Leaves%20-%20Fingerstyle%20JAZZ%20Guitar.mp4";
   static const String bas2 =
       "https://storage.googleapis.com/vivace/vivace/bass-gitar/BACH%20meets%20BASS!.mp4";
@@ -19,10 +19,6 @@ class Constants {
       "https://storage.googleapis.com/vivace/vivace/elektro%20gitar/sadsadas.mp4";
   static const String electro2 =
       "https://storage.googleapis.com/vivace/vivace/elektro%20gitar/videoplayback.mp4";
-  static const String elecpi1 =
-      "https://storage.googleapis.com/vivace/vivace/videoplayback.mp4";
-
-
   static const String elecpi1 =
       "https://storage.googleapis.com/vivace/vivace/videoplayback.mp4";
 

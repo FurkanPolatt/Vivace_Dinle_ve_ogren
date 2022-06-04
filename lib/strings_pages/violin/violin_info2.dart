@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -26,9 +24,9 @@ class _VideoListPageState extends State<ViolinInfo2> {
   }
 
   void _setupData() {
-    dataList.add(VideoListData("buraya başlık", Constants.keman1));
-    dataList.add(VideoListData("buraya başlık ", Constants.keman2));
-    dataList.add(VideoListData("buraya başlık ", Constants.keman3));
+    dataList.add(VideoListData("Klasik müzik", Constants.keman3));
+    dataList.add(VideoListData("Türk müziği ", Constants.keman2));
+    dataList.add(VideoListData("Caz müzik ", Constants.keman1));
   }
 
   _buildPageView() {
@@ -59,7 +57,7 @@ class _VideoListPageState extends State<ViolinInfo2> {
           title: Opacity(
             opacity: 0.90,
             child: Text(
-              'Klasik Gitar',
+              'Keman',
               style: GoogleFonts.pacifico(fontSize: 25, color: Colors.white),
             ),
           ),

@@ -24,9 +24,9 @@ class _VideoListPageState extends State<ClairnetInfo2> {
   }
 
   void _setupData() {
-    dataList.add(VideoListData("buraya başlık", Constants.klarnet1));
-    dataList.add(VideoListData("buraya başlık ", Constants.klarnet2));
-    dataList.add(VideoListData("buraya başlık ", Constants.klarnet3));
+    dataList.add(VideoListData("Klasik müzik", Constants.klarnet3));
+    dataList.add(VideoListData("Türk müziği ", Constants.klarnet2));
+    dataList.add(VideoListData("Caz müzik ", Constants.klarnet1));
   }
 
   _buildPageView() {
@@ -57,7 +57,7 @@ class _VideoListPageState extends State<ClairnetInfo2> {
           title: Opacity(
             opacity: 0.90,
             child: Text(
-              'Klasik Gitar',
+              'Klarnet',
               style: GoogleFonts.pacifico(fontSize: 25, color: Colors.white),
             ),
           ),

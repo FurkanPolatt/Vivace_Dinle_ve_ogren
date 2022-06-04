@@ -24,9 +24,9 @@ class _VideoListPageState extends State<TromboneInfo2> {
   }
 
   void _setupData() {
-    dataList.add(VideoListData("buraya başlık", Constants.trambon1));
-    dataList.add(VideoListData("buraya başlık ", Constants.trambon2));
-    dataList.add(VideoListData("buraya başlık ", Constants.trambon3));
+    dataList.add(VideoListData("Klasik müzik", Constants.trambon2));
+    dataList.add(VideoListData("Türk müziği ", Constants.trambon3));
+    dataList.add(VideoListData("Caz müzik", Constants.trambon1));
   }
 
   _buildPageView() {
@@ -57,7 +57,7 @@ class _VideoListPageState extends State<TromboneInfo2> {
           title: Opacity(
             opacity: 0.90,
             child: Text(
-              'Klasik Gitar',
+              'Trombon',
               style: GoogleFonts.pacifico(fontSize: 25, color: Colors.white),
             ),
           ),

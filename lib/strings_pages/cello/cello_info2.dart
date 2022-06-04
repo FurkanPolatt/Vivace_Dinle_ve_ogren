@@ -24,10 +24,10 @@ class _VideoListPageState extends State<CelloInfo2> {
   }
 
   void _setupData() {
-    dataList.add(VideoListData("buraya başlık", Constants.cello1));
-    dataList.add(VideoListData("buraya başlık ", Constants.cello2));
-    dataList.add(VideoListData("buraya başlık ", Constants.cello3));
-    dataList.add(VideoListData("buraya başlık ", Constants.cello4));
+    dataList.add(VideoListData("Klasik müzik", Constants.cello4));
+    dataList.add(VideoListData("Türk müziği ", Constants.cello3));
+    dataList.add(VideoListData("Caz müzik ", Constants.cello1));
+    dataList.add(VideoListData("Popüler müzik ", Constants.cello2));
   }
 
   _buildPageView() {
@@ -58,7 +58,7 @@ class _VideoListPageState extends State<CelloInfo2> {
           title: Opacity(
             opacity: 0.90,
             child: Text(
-              'Klasik Gitar',
+              'Çello',
               style: GoogleFonts.pacifico(fontSize: 25, color: Colors.white),
             ),
           ),

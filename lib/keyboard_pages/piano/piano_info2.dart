@@ -24,9 +24,9 @@ class _VideoListPageState extends State<PianoInfo2> {
   }
 
   void _setupData() {
-    dataList.add(VideoListData("buraya başlık", Constants.aksutikpi));
-    dataList.add(VideoListData("buraya başlık ", Constants.aksutikp2));
-    dataList.add(VideoListData("buraya başlık ", Constants.aksutikp3));
+    dataList.add(VideoListData("Klasik müzik", Constants.aksutikp3));
+    dataList.add(VideoListData("Türk müziği ", Constants.aksutikp2));
+    dataList.add(VideoListData("Caz müzik ", Constants.aksutikpi));
   }
 
   _buildPageView() {
@@ -57,7 +57,7 @@ class _VideoListPageState extends State<PianoInfo2> {
           title: Opacity(
             opacity: 0.90,
             child: Text(
-              'Klasik Gitar',
+              'Akustik Piyano',
               style: GoogleFonts.pacifico(fontSize: 25, color: Colors.white),
             ),
           ),
