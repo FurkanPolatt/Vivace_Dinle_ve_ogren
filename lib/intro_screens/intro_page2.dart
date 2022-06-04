@@ -32,7 +32,7 @@ class IntroPage2 extends StatelessWidget {
                     TypewriterAnimatedText(
                       'Vivace size hem enstrümanlar hakkında bilgi edinme hem de bilginizi test etme imkanı sunuyor',
                       textAlign: TextAlign.center,
-                      speed: Duration(milliseconds: 20),
+                      speed: Duration(milliseconds: 30),
                       textStyle: GoogleFonts.robotoMono(
                         fontWeight: FontWeight.bold,
                         textStyle: TextStyle(color: Colors.white, fontSize: 15),

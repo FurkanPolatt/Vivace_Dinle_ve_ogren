@@ -32,7 +32,7 @@ class IntroPage1 extends StatelessWidget {
                     TypewriterAnimatedText(
                       'Müziğin derinlerine ineceğiniz Vivace dünyasına hoşgeldiniz',
                       textAlign: TextAlign.center,
-                      speed: Duration(milliseconds: 20),
+                      speed: Duration(milliseconds: 30),
                       textStyle: GoogleFonts.robotoMono(
                         fontWeight: FontWeight.bold,
                         textStyle: TextStyle(color: Colors.white, fontSize: 15),

@@ -49,7 +49,6 @@ class _HomePageState extends State<HomePage> {
             keyOne,
             keyTwo,
             keyThree,
-            keyFour,
           ]),
         );
       }
@@ -152,33 +151,6 @@ class _HomePageState extends State<HomePage> {
                 ListTile(
                   title: InkWell(
                     onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => QuizApp(),
-                        ),
-                      );
-                    },
-                    child: Row(children: [
-                      Expanded(
-                        child: Icon(
-                          Icons.book_outlined,
-                          color: Colors.white54,
-                        ),
-                      ),
-                      Expanded(
-                        flex: 9,
-                        child: Text(
-                          'Test',
-                          style: TextStyle(color: Colors.white),
-                        ),
-                      ),
-                    ]),
-                  ),
-                ),
-                ListTile(
-                  title: InkWell(
-                    onTap: () {
                       showDialog(
                           context: context,
                           builder: (BuildContext context) {
@@ -261,32 +233,37 @@ class _HomePageState extends State<HomePage> {
                   child: Row(
                     children: [
                       Expanded(
-                        child: Material(
-                          borderRadius: BorderRadius.circular(23),
-                          clipBehavior: Clip.antiAliasWithSaveLayer,
-                          elevation: 15,
-                          child: InkWell(
-                            onTap: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => GuitarnWorld(),
-                                ),
-                              );
-                            },
-                            child: Ink.image(
-                              image: AssetImage('assets/images/guitar.jpg'),
-                              height: 500,
-                              width: 500,
-                              fit: BoxFit.cover,
-                              child: Center(
-                                child: Opacity(
-                                  opacity: 0.85,
-                                  child: Text(
-                                    'Telli       Enstrümanlar',
-                                    textAlign: TextAlign.center,
-                                    style: GoogleFonts.pacifico(
-                                        color: Colors.white, fontSize: 20),
+                        child: Showcase(
+                          key: keyOne,
+                          description:
+                              'Enstrümanlar hakkında bilgi edinmek için ilgili kategoriyi seçip ve videoları izlemek için sayfada aşağı kaydırabilirisiniz',
+                          child: Material(
+                            borderRadius: BorderRadius.circular(23),
+                            clipBehavior: Clip.antiAliasWithSaveLayer,
+                            elevation: 15,
+                            child: InkWell(
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => GuitarnWorld(),
+                                  ),
+                                );
+                              },
+                              child: Ink.image(
+                                image: AssetImage('assets/images/guitar.jpg'),
+                                height: 500,
+                                width: 500,
+                                fit: BoxFit.cover,
+                                child: Center(
+                                  child: Opacity(
+                                    opacity: 0.85,
+                                    child: Text(
+                                      'Telli       Enstrümanlar',
+                                      textAlign: TextAlign.center,
+                                      style: GoogleFonts.pacifico(
+                                          color: Colors.white, fontSize: 20),
+                                    ),
                                   ),
                                 ),
                               ),
@@ -463,32 +440,37 @@ class _HomePageState extends State<HomePage> {
                   child: Row(
                     children: [
                       Expanded(
-                        child: Material(
-                          borderRadius: BorderRadius.circular(23),
-                          clipBehavior: Clip.antiAliasWithSaveLayer,
-                          elevation: 15,
-                          child: InkWell(
-                            onTap: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => QuizApp(),
-                                ),
-                              );
-                            },
-                            child: Ink.image(
-                              image: AssetImage('assets/images/test.jpg'),
-                              height: 100,
-                              width: 100,
-                              fit: BoxFit.cover,
-                              child: Center(
-                                child: Opacity(
-                                  opacity: 0.85,
-                                  child: Text(
-                                    'Kendini Test et',
-                                    textAlign: TextAlign.center,
-                                    style: GoogleFonts.pacifico(
-                                        color: Colors.white, fontSize: 25),
+                        child: Showcase(
+                          key: keyTwo,
+                          description:
+                              'Öğrendiklerinizi test etmek için Kendini test et sayfasını ziyaret edebilirsiniz',
+                          child: Material(
+                            borderRadius: BorderRadius.circular(23),
+                            clipBehavior: Clip.antiAliasWithSaveLayer,
+                            elevation: 15,
+                            child: InkWell(
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => QuizApp(),
+                                  ),
+                                );
+                              },
+                              child: Ink.image(
+                                image: AssetImage('assets/images/test.jpg'),
+                                height: 100,
+                                width: 100,
+                                fit: BoxFit.cover,
+                                child: Center(
+                                  child: Opacity(
+                                    opacity: 0.85,
+                                    child: Text(
+                                      'Kendini Test et',
+                                      textAlign: TextAlign.center,
+                                      style: GoogleFonts.pacifico(
+                                          color: Colors.white, fontSize: 25),
+                                    ),
                                   ),
                                 ),
                               ),
