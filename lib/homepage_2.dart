@@ -119,63 +119,6 @@ class HomePage2 extends StatelessWidget {
                 ListTile(
                   title: InkWell(
                     onTap: () {
-                      showDialog(
-                          context: context,
-                          builder: (BuildContext context) {
-                            return AlertDialog(
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(12),
-                              ),
-                              backgroundColor: Colors.white70,
-                              title: Text(
-                                  'Bu özelliği kullanmak için lütfen giriş yapınız',
-                                  textAlign: TextAlign.center),
-                              actions: [
-                                Center(
-                                  child: MaterialButton(
-                                    onPressed: () {
-                                      Navigator.push(
-                                        context,
-                                        MaterialPageRoute(
-                                          builder: (context) => MainPage(),
-                                        ),
-                                      );
-                                    },
-                                    color: Colors.white54,
-                                    elevation: 10,
-                                    shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(10),
-                                    ),
-                                    child: Text(
-                                      'Giriş Yap',
-                                      style: TextStyle(fontSize: 20),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            );
-                          });
-                    },
-                    child: Row(children: [
-                      Expanded(
-                        child: Icon(
-                          Icons.book_outlined,
-                          color: Colors.white54,
-                        ),
-                      ),
-                      Expanded(
-                        flex: 6,
-                        child: Text(
-                          'Test',
-                          style: TextStyle(color: Colors.white),
-                        ),
-                      ),
-                    ]),
-                  ),
-                ),
-                ListTile(
-                  title: InkWell(
-                    onTap: () {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
