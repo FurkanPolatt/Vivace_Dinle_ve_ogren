@@ -23,9 +23,10 @@ Virtuoso
 ## Ürün Özellikleri
 
 - Telli enstrümanlar, yaylı enstrümanlar, nefesli enstrümanlar, ritim enstrümanları ve tuşlu enstrümanlar olmak üzere 5 farklı bölüme ayrılmış uygulamanın her bölümünde 4 farklı müzik aleti bulunmakta
-- Her müzik aletin için genel bilgiler, videolar ve ayrntılı bilgi için linkler yer almakta 
-- 'Kendini Test Et' sayfasında kullanıcıların çözmesi için sorular yer almakta 
-- 'Eğitim İlanları' sayfasında eğitmenlerin ilan yayınlaması ve öğrencilerin de eğitmenleri bulması olanağı bulunmakta
+- Her müzik aleti için ilk sayfada o alet hakkında bilgiler ve sayfa kaydırıldığında gözüken 2. sayfada da videolar yer almaktadır. 
+- 'Kendini Test Et' sayfasında kullanıcıların çözmesi için sorular yer almaktadır. Üyeler bu bölüm sayesinde uygulamayı kullanarak öğrendikleri bilgileri sınayabilir.
+- 'Kurs Ara' sayfasında müzik eğitmenlerinin ilanları yayınlamaktadır.
+- 'Bize Ulaşın' kısmında ürün sahiplerinin maili bulunmaktadır. Eğitmenler bu maile yazı yazarak ilan verebilir. 
 
 ## Hedef Kitle
 
@@ -74,24 +75,7 @@ Story'ler yapılacak işlere (task'lere) bölünmüştür. Miro Board'da gözük
   ![Screenshot 10](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/productss10.png)
   ![Screenshot 11](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/productss11.png)
   ![Screenshot 12](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/productss12.png)
-  ![Screenshot 13](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/productss13.png)
-  ![Screenshot 14](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/productss14.png)
-  ![Screenshot 15](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/productss15.png)
-  ![Screenshot 16](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/productss16.png)
-  ![Screenshot 17](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/productss17.png)
-  ![Screenshot 18](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/productss18.png)
-  ![Screenshot 19](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/productss19.png)
-  ![Screenshot 20](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/productss20.png)
-  ![Screenshot 21](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/productss21.png)
-  ![Screenshot 22](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/productss22.png)
-  ![Screenshot 23](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/productss23.png)
-  ![Screenshot 24](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/productss24.png)
-  ![Screenshot 25](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/productss25.png)
-  ![Screenshot 26](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/productss26.png)
-  ![Screenshot 27](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/productss27.png)
-  ![Screenshot 28](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/productss28.png)
-  ![Screenshot 29](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/productss29.png)
-  ![Screenshot 30](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/productss30.png)
+  
   
 - **Sprint Review**: 
 -  Sprint hedeflerine ulaştı ve ürün planladığı gibi geliştirildi. 
@@ -151,9 +135,9 @@ Story'ler yapılacak işlere (task'lara) bölünmüştür. Miro Board'da gözük
 ![Backlog 5](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/2.%20Sprint-backlog/2backlog5.jpg)
 
 - **Ürün Durumu**: Ekran görüntüleri:
-  ![Screenshot 1](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/2.%20Sprint-productss/2productss2%20intro1-.png)
-  ![Screenshot 2](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/2.%20Sprint-productss/2productss2%20intro2.png)
-  ![Screenshot 3](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/2.%20Sprint-productss/2productss2%20intro3.png)
+  ![Screenshot 1](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/2.%20Sprint-productss/2productss2%20intro1.png)
+  ![Screenshot 2](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/2.%20Sprint-productss/2productss%20intro2.png)
+  ![Screenshot 3](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/2.%20Sprint-productss/2productss%20intro3.png)
   ![Screenshot 4](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/2.%20Sprint-productss/2productss4.png)
   ![Screenshot 5](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/2.%20Sprint-productss/2productss5.png)
   ![Screenshot 6](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/2.%20Sprint-productss/2productss6.png)
@@ -196,4 +180,80 @@ Neler iyi gitti?
 **Diğer Notlar**:
 
  Miro'da ve Miro'daki Drive linkinde  sprint boyu yaptığımız her aşamayı anlattık, dosyaladık.
+ 
+ 
+ ---
+
+# Sprint 2
+
+- **Sprint Notları**: User Story'ler product backlog'ların içine yazılmıştır. Product backlog item'lara tıklandığında hikayelerin detayları okunabilir.
+
+- **Sprint içinde tamamlanması tahmin edilen puan**: 100 Puan
+
+- **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 300 puanlık backlog bulunmaktadır. İlk ve ikinci sprintte 100'er yani toplamda 200 puan tamamlandı. 3. sprintte de kalan 100 puanın tamamlanmasına karar verildi.
+
+- **Backlog düzeni ve Story seçimleri**: Backlog'umuz ilk yapılacak story'lere göre düzenlenmiştir. Sprint başına tahmin edilen puan sayısını geçmeyecek şekilde sıradan seçimler yapılmaktadır. Story başına çıkan tahmin puanı, toplam puanın yarısından az tutulmuştur. 
+
+Story'ler yapılacak işlere (task'lara) bölünmüştür. Miro Board'da gözüken kırmızı item'lar yapılacak işleri (task) gösterirken, mavi item'lar story'leri temsil etmektedir.
+
+- **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü Discord üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği word dosyası içine yazılıp ekran görüntüleri ile desteklenerek Readme'de tarafımızdan paylaşılmaktadır: [Sprint 3 Daily Scrum Chats](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/DailyScrumChatNotesSprint3.docx)
+
+
+
+ **Sprint board update**: Sprint board screenshotları: 
+![Backlog 1](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/3.%20Sprint%20Backlog-ss/3backlog1.jpg)
+![Backlog 2](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/3.%20Sprint%20Backlog-ss/3backlog2.jpg)
+![Backlog 3](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/3.%20Sprint%20Backlog-ss/3backlog3.jpg)
+![Backlog 4](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/3.%20Sprint%20Backlog-ss/3backlog4.jpg)
+![Backlog 5](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/3.%20Sprint%20Backlog-ss/3backlog5.jpg)
+
+
+- **Ürün Durumu**: Ekran görüntüleri:
+
+  ![Screenshot 1](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/3.%20Sprint-product-ss/3productss1.png)
+  ![Screenshot 2](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/3.%20Sprint-product-ss/3productss2.png)
+  ![Screenshot 3](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/3.%20Sprint-product-ss/3productss3.png)
+  ![Screenshot 4](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/3.%20Sprint-product-ss/3productss5.png)
+  ![Screenshot 5](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/3.%20Sprint-product-ss/3productss6.png)
+  ![Screenshot 6](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/3.%20Sprint-product-ss/3productss9.png)
+  ![Screenshot 7](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/3.%20Sprint-product-ss/3productss10.png)
+  ![Screenshot 8](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/3.%20Sprint-product-ss/3productss11.png)
+  ![Screenshot 9](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/3.%20Sprint-product-ss/3productss12.png)
+  ![Screenshot 10](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/3.%20Sprint-product-ss/3productss13.png)
+  ![Screenshot 11](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/3.%20Sprint-product-ss/3productss14.png)
+  ![Screenshot 12](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/3.%20Sprint-product-ss/3productss15.png)
+  ![Screenshot 13](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/3.%20Sprint-product-ss/3productss16.png)
+  ![Screenshot 14](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/3.%20Sprint-product-ss/3productss17.png)
+  ![Screenshot 15](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/3.%20Sprint-product-ss/3productss18.png)
+  ![Screenshot 16](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/3.%20Sprint-product-ss/3productss19.png)
+
+
+  
+- **Sprint Review**: 
+-  Sprint hedeflerine ulaştı ve ürün planlandığı gibi geliştirildi. 
+-  Ürün tamamlandı.
+-  *Alınan Kararlar:* 
+- Onur ürün APK'sını çıkartacak.
+- Furkan 1 dakikalık ürün tanıtım videosunu oluşturacak.
+- *Sprint Review katılımcıları:* Halil Furkan Polat, Firdevs Birinci, Onur Arık, Hazal Taneri, Merve Köse 
+
+- **Sprint Retrospective**:
+Önce 2 şey üzerine konuştuk: Neler iyi gitti ve hangi sorunlar ile karşılaştık. Ardından tüm üyelerden proje hakkında düşüncelerini dinledik.
+
+*Neler İyi Gitti?* 
+- Tüm görevler tamamlandı.
+- Ürün eksiksizce tamamlandı.
+- Takım 100% memnun ve herkes ürünü eksiksizce çıkarttığı için gururlu. 
+
+*Hangi Sorunlar İle Karşılaştık?*
+- Bu sprintte tasarım konusunda sıkıntılarımız oldu. Sürekli revize ettik bazı yerleri. Bunun sebebi bu hafta bazı üyelerimiz kişisel hayatlarında meşgullerdi ve birbirlerine feedback verme kısımları biraz eksik kaldı. Gün sonunda ise yapılan revizelerle herkesin hayal ettiği gibi bir tasarımla, tasarımda bütünlük sağlanarak tasarım tamamlandı.
+
+**Diğer Notlar**:
+
+ - Miro'da ve Miro'daki Drive linkinde sprint boyu yaptığımız her aşamayı anlattık, dosyaladık.
+ - Ürün hakkında detaylı bilgi: [Ürün Hakkında Detaylı Bilgi](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/Vivace'in%20T%C3%BCm%20%C3%96zellikleri.docx)
+ - Tüm üyelerin proje hakkında düşünceleri, fotoğrafları eşliğinde kendilerine ayrılan karelerde Miro'da belirtilmiştir.
+ - Tüm görevler bittiği için 04.06.2022 Vivace'ın doğum günü ilan edilmiş ve mum üflenip kek yenilmiştir. 
+ - ![Screenshot 1](https://github.com/FurkanPolatt/Vivace_Dinle_ve_ogren/blob/master/ProjectManagement/3.%20Sprint%20Sonu%20Toplant%C4%B1s%C4%B1.png)
+ 
 
