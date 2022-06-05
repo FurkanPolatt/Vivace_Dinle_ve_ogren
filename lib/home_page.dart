@@ -61,13 +61,14 @@ class _HomePageState extends State<HomePage> {
       extendBodyBehindAppBar: true,
       appBar: AppBar(
         leading: Builder(builder: (context) {
-          return Showcase(
-            key: keyThree,
-            description:
-                'Yan menüden bulunduğunuz ildeki eğitim merkezlerini görüntüleyebilir aynı zamanda iletişim bilgilerimize ulaşabilirsiniz',
-            child: IconButton(
-                onPressed: () => Scaffold.of(context).openDrawer(),
-                icon: Icon(Icons.menu)),
+          return IconButton(
+            onPressed: () => Scaffold.of(context).openDrawer(),
+            icon: Showcase(
+              key: keyThree,
+              description:
+                  'Yan menüden bulunduğunuz ildeki eğitim merkezlerini görüntüleyebilir aynı zamanda iletişim bilgilerimize ulaşabilirsiniz',
+              child: Icon(Icons.menu),
+            ),
           );
         }),
         title: Text(
