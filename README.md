@@ -184,7 +184,7 @@ Neler iyi gitti?
  
  ---
 
-# Sprint 2
+# Sprint 3
 
 - **Sprint Notları**: User Story'ler product backlog'ların içine yazılmıştır. Product backlog item'lara tıklandığında hikayelerin detayları okunabilir.
 
