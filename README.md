@@ -8,6 +8,7 @@ Virtuoso
 
 - Halil Furkan Polat: Product Owner
 - Firdevs Birinci: Scrum Master
+- Sedat Kazan: Graphic Desinger 
 - Onur Arık: Developer
 - Hazal Taneri: Developer
 - Merve Köse: Developer
